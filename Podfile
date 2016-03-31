@@ -15,5 +15,4 @@ target 'escUITests' do
 
 end
 
-pod 'Google/SignIn'
-pod 'GoogleMaps'
+pod 'Firebase', '>= 2.5.1'

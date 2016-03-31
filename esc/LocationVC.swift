@@ -14,6 +14,8 @@ class LocationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     @IBOutlet weak var pickLocation: UIPickerView!
     
     var pickLocationOptions: [String] = [String]()
+    var location: String?
+    var time: NSDate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,5 +43,24 @@ class LocationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     // The data to return for the row and component (column) that's being passed in
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickLocationOptions[row]
+    }
+    
+    // Catpure the picker view selection
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+        location = pickLocationOptions[row]
+    }
+    
+    @IBAction func setLocationTapped(sender: UIButton) {
+        self.performSegueWithIdentifier("goto_main", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goto_main" {
+            var mainVC = segue.destinationViewController as! MainVC
+            mainVC.location = location
+            mainVC.time = time
+        }
     }
 }

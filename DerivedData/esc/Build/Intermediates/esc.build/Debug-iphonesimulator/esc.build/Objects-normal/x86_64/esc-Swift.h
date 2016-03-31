@@ -89,87 +89,120 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 #endif
 
-#import "/Users/rebeccawshaw/Documents/Xcode/esc/esc/esc-Bridging-Header.h"
-
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
 @class UIApplication;
 @class NSObject;
-@class NSURL;
-@class GIDSignIn;
-@class GIDGoogleUser;
-@class NSError;
-@class NSManagedObjectModel;
-@class NSPersistentStoreCoordinator;
-@class NSManagedObjectContext;
 
 SWIFT_CLASS("_TtC3esc11AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate, GIDSignInDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * __nullable window;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
-- (BOOL)application:(UIApplication * __nonnull)application openURL:(NSURL * __nonnull)url sourceApplication:(NSString * __nullable)sourceApplication annotation:(id __nonnull)annotation;
-- (BOOL)application:(UIApplication * __nonnull)app openURL:(NSURL * __nonnull)url options:(NSDictionary<NSString *, id> * __nonnull)options;
-- (void)signIn:(GIDSignIn * __null_unspecified)signIn didSignInForUser:(GIDGoogleUser * __null_unspecified)user withError:(NSError * __null_unspecified)error;
-- (void)signIn:(GIDSignIn * __null_unspecified)signIn didDisconnectWithUser:(GIDGoogleUser * __null_unspecified)user withError:(NSError * __null_unspecified)error;
 - (void)applicationWillResignActive:(UIApplication * __nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * __nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * __nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * __nonnull)application;
-@property (nonatomic, strong) NSURL * __nonnull applicationDocumentsDirectory;
-@property (nonatomic, strong) NSManagedObjectModel * __nonnull managedObjectModel;
-@property (nonatomic, strong) NSPersistentStoreCoordinator * __nonnull persistentStoreCoordinator;
-@property (nonatomic, strong) NSManagedObjectContext * __nonnull managedObjectContext;
-- (void)saveContext;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
+@class UIStoryboardSegue;
+@class UIDatePicker;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC3esc6DateVC")
 @interface DateVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIDatePicker * __null_unspecified pickTime;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)setTimeTapped:(UIButton * __nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSDate;
 @class UIPickerView;
 
 SWIFT_CLASS("_TtC3esc10LocationVC")
 @interface LocationVC : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified pickLocation;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull pickLocationOptions;
+@property (nonatomic, copy) NSString * __nullable location;
+@property (nonatomic, strong) NSDate * __nullable time;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
 - (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (IBAction)setLocationTapped:(UIButton * __nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
-@class NSNotification;
-@class GIDSignInButton;
+@class NSTimer;
 @class UILabel;
 
+SWIFT_CLASS("_TtC3esc6MainVC")
+@interface MainVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified countdownLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified locationLabel;
+@property (nonatomic, copy) NSString * __nullable location;
+@property (nonatomic, strong) NSDate * __nullable time;
+@property (nonatomic, strong) NSTimer * __nullable timer;
+- (void)viewDidLoad;
+- (void)updateProfile;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC3esc14ViewController")
-@interface ViewController : UIViewController <GIDSignInUIDelegate>
-@property (nonatomic, weak) IBOutlet GIDSignInButton * __null_unspecified signInButton;
+@interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified signOutButton;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified eatButton;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified studyButton;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified chillButton;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified statusText;
 - (void)viewDidLoad;
-- (IBAction)didTapSignOut:(UIButton * __nonnull)sender;
-- (void)toggleAuthUI;
-- (UIStatusBarStyle)preferredStatusBarStyle;
-- (void)receiveToggleAuthUINotification:(NSNotification * __nonnull)notification;
 - (void)didReceiveMemoryWarning;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)eatTapped:(UIButton * __nonnull)sender;
+- (IBAction)studyTapped:(UIButton * __nonnull)sender;
+- (IBAction)chillTapped:(UIButton * __nonnull)sender;
+- (IBAction)signOutTapped:(UIButton * __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+
+SWIFT_CLASS("_TtC3esc7loginVC")
+@interface loginVC : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified email;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified password;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)signInTapped:(UIButton * __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC3esc8signupVC")
+@interface signupVC : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified email;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified password;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified confirmPassword;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)signUpTapped:(UIButton * __nonnull)sender;
+- (IBAction)gotoLogin:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

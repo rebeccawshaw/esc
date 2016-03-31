@@ -1,0 +1,324 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MainVC"
+provides-nominal:
+- "C3esc6MainVC"
+provides-member:
+- ["C3esc6MainVC", ""]
+provides-dynamic-lookup:
+- "locationLabel"
+- "viewDidLoad"
+- "time"
+- "timer"
+- "countdownLabel"
+- "location"
+- "updateProfile"
+depends-top-level:
+- !private "BooleanLiteralType"
+- "NSDate"
+- "UILabel"
+- "String"
+- "NSTimer"
+- !private ">"
+- "MainVC"
+- !private "StringLiteralType"
+- "UIViewController"
+depends-member:
+- !private ["PSs9AnyObject", "NSTimer"]
+- ["PSs9AnyObject", "countdownLabel"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "invalidate"]
+- ["PSs9AnyObject", "location"]
+- ["PSs9AnyObject", "locationLabel"]
+- !private ["PSs9AnyObject", "scheduledTimerWithTimeInterval"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", "time"]
+- !private ["PSs9AnyObject", "timeIntervalSinceNow"]
+- ["PSs9AnyObject", "timer"]
+- ["PSs9AnyObject", "updateProfile"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "NSTimer"]
+- ["PSs11CVarArgType", "countdownLabel"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "invalidate"]
+- ["PSs11CVarArgType", "location"]
+- ["PSs11CVarArgType", "locationLabel"]
+- !private ["PSs11CVarArgType", "scheduledTimerWithTimeInterval"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", "time"]
+- !private ["PSs11CVarArgType", "timeIntervalSinceNow"]
+- ["PSs11CVarArgType", "timer"]
+- ["PSs11CVarArgType", "updateProfile"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "NSTimer"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "countdownLabel"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "invalidate"]
+- ["PSs23CustomStringConvertible", "location"]
+- ["PSs23CustomStringConvertible", "locationLabel"]
+- !private ["PSs23CustomStringConvertible", "scheduledTimerWithTimeInterval"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", "time"]
+- !private ["PSs23CustomStringConvertible", "timeIntervalSinceNow"]
+- ["PSs23CustomStringConvertible", "timer"]
+- ["PSs23CustomStringConvertible", "updateProfile"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "NSTimer"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "countdownLabel"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "invalidate"]
+- ["PSs9Equatable", "location"]
+- ["PSs9Equatable", "locationLabel"]
+- !private ["PSs9Equatable", "scheduledTimerWithTimeInterval"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", "time"]
+- !private ["PSs9Equatable", "timeIntervalSinceNow"]
+- ["PSs9Equatable", "timer"]
+- ["PSs9Equatable", "updateProfile"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "NSTimer"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "countdownLabel"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "invalidate"]
+- ["PSs8Hashable", "location"]
+- ["PSs8Hashable", "locationLabel"]
+- !private ["PSs8Hashable", "scheduledTimerWithTimeInterval"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", "time"]
+- !private ["PSs8Hashable", "timeIntervalSinceNow"]
+- ["PSs8Hashable", "timer"]
+- ["PSs8Hashable", "updateProfile"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- ["C3esc6MainVC", "NSDate"]
+- ["C3esc6MainVC", "NSTimer"]
+- ["C3esc6MainVC", "String"]
+- ["C3esc6MainVC", "UILabel"]
+- ["C3esc6MainVC", "countdownLabel"]
+- ["C3esc6MainVC", "deinit"]
+- ["C3esc6MainVC", "init"]
+- ["C3esc6MainVC", "location"]
+- ["C3esc6MainVC", "locationLabel"]
+- ["C3esc6MainVC", "time"]
+- ["C3esc6MainVC", "timer"]
+- ["C3esc6MainVC", "updateProfile"]
+- ["C3esc6MainVC", "viewDidLoad"]
+- !private ["PSo8NSCoding", "NSTimer"]
+- ["PSo8NSCoding", "countdownLabel"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "location"]
+- ["PSo8NSCoding", "locationLabel"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "time"]
+- !private ["PSo8NSCoding", "timeIntervalSinceNow"]
+- ["PSo8NSCoding", "timer"]
+- ["PSo8NSCoding", "updateProfile"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "timeIntervalSinceNow"]
+- !private ["CSo6NSDate", "timeIntervalSinceNow"]
+- !private ["PSo26NSExtensionRequestHandling", "NSTimer"]
+- ["PSo26NSExtensionRequestHandling", "countdownLabel"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "location"]
+- ["PSo26NSExtensionRequestHandling", "locationLabel"]
+- ["PSo26NSExtensionRequestHandling", "time"]
+- ["PSo26NSExtensionRequestHandling", "timer"]
+- ["PSo26NSExtensionRequestHandling", "updateProfile"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "NSTimer"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "countdownLabel"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "invalidate"]
+- ["CSo8NSObject", "location"]
+- ["CSo8NSObject", "locationLabel"]
+- !private ["CSo8NSObject", "scheduledTimerWithTimeInterval"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "time"]
+- !private ["CSo8NSObject", "timeIntervalSinceNow"]
+- ["CSo8NSObject", "timer"]
+- ["CSo8NSObject", "updateProfile"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "NSTimer"]
+- ["PSo16NSObjectProtocol", "countdownLabel"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "invalidate"]
+- ["PSo16NSObjectProtocol", "location"]
+- ["PSo16NSObjectProtocol", "locationLabel"]
+- !private ["PSo16NSObjectProtocol", "scheduledTimerWithTimeInterval"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "time"]
+- !private ["PSo16NSObjectProtocol", "timeIntervalSinceNow"]
+- ["PSo16NSObjectProtocol", "timer"]
+- ["PSo16NSObjectProtocol", "updateProfile"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "timeIntervalSinceNow"]
+- !private ["CSo7NSTimer", "invalidate"]
+- !private ["CSo7NSTimer", "scheduledTimerWithTimeInterval"]
+- !private ["Sq", "deinit"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "NSTimer"]
+- ["PSo21UIAppearanceContainer", "countdownLabel"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "location"]
+- ["PSo21UIAppearanceContainer", "locationLabel"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "time"]
+- ["PSo21UIAppearanceContainer", "timer"]
+- ["PSo21UIAppearanceContainer", "updateProfile"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "NSTimer"]
+- ["PSo18UIContentContainer", "countdownLabel"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "location"]
+- ["PSo18UIContentContainer", "locationLabel"]
+- ["PSo18UIContentContainer", "time"]
+- ["PSo18UIContentContainer", "timer"]
+- ["PSo18UIContentContainer", "updateProfile"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "NSTimer"]
+- ["PSo18UIFocusEnvironment", "countdownLabel"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "location"]
+- ["PSo18UIFocusEnvironment", "locationLabel"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "time"]
+- ["PSo18UIFocusEnvironment", "timer"]
+- ["PSo18UIFocusEnvironment", "updateProfile"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "NSDate"]
+- ["CSo11UIResponder", "NSTimer"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "countdownLabel"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "location"]
+- ["CSo11UIResponder", "locationLabel"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "time"]
+- ["CSo11UIResponder", "timer"]
+- ["CSo11UIResponder", "updateProfile"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "NSTimer"]
+- ["PSo16UIStateRestoring", "countdownLabel"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "location"]
+- ["PSo16UIStateRestoring", "locationLabel"]
+- ["PSo16UIStateRestoring", "time"]
+- ["PSo16UIStateRestoring", "timer"]
+- ["PSo16UIStateRestoring", "updateProfile"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "NSTimer"]
+- ["PSo18UITraitEnvironment", "countdownLabel"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "location"]
+- ["PSo18UITraitEnvironment", "locationLabel"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "time"]
+- ["PSo18UITraitEnvironment", "timer"]
+- ["PSo18UITraitEnvironment", "updateProfile"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "NSDate"]
+- ["CSo16UIViewController", "NSTimer"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "countdownLabel"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "location"]
+- ["CSo16UIViewController", "locationLabel"]
+- ["CSo16UIViewController", "time"]
+- ["CSo16UIViewController", "timer"]
+- ["CSo16UIViewController", "updateProfile"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "text"]
+- !private ["PSs12_Reflectable", "timeIntervalSinceNow"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "C3esc6MainVC"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo7NSTimer"
+- !private "Sq"
+- !private "V10ObjectiveC8Selector"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/esc/esc-Bridging-Header.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/Firebase.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FQuery.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FEventType.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FDataSnapshot.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FirebaseApp.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FMutableData.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FTransactionResult.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FAuthData.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FAuthType.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FirebaseServerValue.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FConfig.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "5fc6b9e40d101182ebf288f41c22f22c"
