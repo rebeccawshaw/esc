@@ -6,194 +6,213 @@ provides-nominal:
 provides-member:
 - ["C3esc8signupVC", ""]
 provides-dynamic-lookup:
-- "confirmPassword"
-- "signUpTapped"
 - "viewDidLoad"
 - "password"
 - "email"
-- "didReceiveMemoryWarning"
+- "signUpTapped"
 - "gotoLogin"
+- "didReceiveMemoryWarning"
+- "confirmPassword"
 depends-top-level:
-- "signupVC"
 - "UIButton"
-- !private "UIAlertControllerStyle"
-- !private "String"
-- !private "&&"
 - "BooleanLiteralType"
-- !private "UIAlertController"
+- !private "UIAlertAction"
+- !private "&&"
+- "UITextField"
 - "UIViewController"
+- !private "UIAlertActionStyle"
+- !private "String"
+- !private "UIAlertController"
+- "signupVC"
+- !private "UIAlertControllerStyle"
+- !private "StringLiteralType"
 - !private "Firebase"
 - !private "!="
-- !private "UIAlertAction"
-- !private "StringLiteralType"
-- "UITextField"
-- !private "UIAlertActionStyle"
 depends-member:
-- !private ["PSs9AnyObject", "Firebase"]
-- !private ["PSs9AnyObject", "UIAlertAction"]
-- !private ["PSs9AnyObject", "UIAlertActionStyle"]
-- !private ["PSs9AnyObject", "UIAlertController"]
-- !private ["PSs9AnyObject", "UIAlertControllerStyle"]
-- !private ["PSs9AnyObject", "addAction"]
-- ["PSs9AnyObject", "confirmPassword"]
-- !private ["PSs9AnyObject", "createUser"]
-- ["PSs9AnyObject", "didReceiveMemoryWarning"]
-- !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
-- ["PSs9AnyObject", "email"]
-- ["PSs9AnyObject", "gotoLogin"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "password"]
-- !private ["PSs9AnyObject", "presentViewController"]
-- ["PSs9AnyObject", "signUpTapped"]
-- !private ["PSs9AnyObject", "text"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- ["PSs9AnyObject", ""]
-- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
-- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps9AnyObject", "Firebase"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertActionStyle"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UIAlertControllerStyle"]
+- !private ["Ps9AnyObject", "addAction"]
+- ["Ps9AnyObject", "confirmPassword"]
+- !private ["Ps9AnyObject", "createUser"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
+- ["Ps9AnyObject", "email"]
+- ["Ps9AnyObject", "gotoLogin"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "password"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- ["Ps9AnyObject", "signUpTapped"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11CVarArgType", "Firebase"]
-- !private ["PSs11CVarArgType", "IntegerLiteralType"]
-- !private ["PSs11CVarArgType", "UIAlertAction"]
-- !private ["PSs11CVarArgType", "UIAlertActionStyle"]
-- !private ["PSs11CVarArgType", "UIAlertController"]
-- !private ["PSs11CVarArgType", "UIAlertControllerStyle"]
-- !private ["PSs11CVarArgType", "addAction"]
-- ["PSs11CVarArgType", "confirmPassword"]
-- !private ["PSs11CVarArgType", "createUser"]
-- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
-- !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
-- ["PSs11CVarArgType", "email"]
-- ["PSs11CVarArgType", "gotoLogin"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "password"]
-- !private ["PSs11CVarArgType", "presentViewController"]
-- ["PSs11CVarArgType", "signUpTapped"]
-- !private ["PSs11CVarArgType", "text"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs14CollectionType", "Generator"]
-- !private ["PSs14CollectionType", "Index"]
-- !private ["PSs14CollectionType", "SubSequence"]
-- !private ["PSs14CollectionType", "_Element"]
-- !private ["PSs14CollectionType", "subscript"]
-- !private ["PSs10Comparable", "Distance"]
-- !private ["PSs10Comparable", "IntegerLiteralType"]
-- !private ["PSs10Comparable", "_DisabledRangeIndex"]
-- !private ["PSs28CustomDebugStringConvertible", "Generator"]
-- !private ["PSs28CustomDebugStringConvertible", "Index"]
-- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
-- !private ["PSs28CustomDebugStringConvertible", "_Element"]
-- !private ["PSs28CustomDebugStringConvertible", "subscript"]
-- !private ["PSs23CustomStringConvertible", "Firebase"]
-- !private ["PSs23CustomStringConvertible", "Generator"]
-- !private ["PSs23CustomStringConvertible", "Index"]
-- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "SubSequence"]
-- !private ["PSs23CustomStringConvertible", "UIAlertAction"]
-- !private ["PSs23CustomStringConvertible", "UIAlertActionStyle"]
-- !private ["PSs23CustomStringConvertible", "UIAlertController"]
-- !private ["PSs23CustomStringConvertible", "UIAlertControllerStyle"]
-- !private ["PSs23CustomStringConvertible", "_Element"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs23CustomStringConvertible", "addAction"]
-- ["PSs23CustomStringConvertible", "confirmPassword"]
-- !private ["PSs23CustomStringConvertible", "createUser"]
-- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
-- !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
-- ["PSs23CustomStringConvertible", "email"]
-- ["PSs23CustomStringConvertible", "gotoLogin"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "password"]
-- !private ["PSs23CustomStringConvertible", "presentViewController"]
-- ["PSs23CustomStringConvertible", "signUpTapped"]
-- !private ["PSs23CustomStringConvertible", "subscript"]
-- !private ["PSs23CustomStringConvertible", "text"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["VSs10Dictionary", "Generator"]
-- !private ["VSs10Dictionary", "Index"]
-- !private ["VSs10Dictionary", "SubSequence"]
-- !private ["VSs10Dictionary", "_Element"]
-- !private ["VSs10Dictionary", "deinit"]
-- !private ["VSs10Dictionary", "subscript"]
-- !private ["VSs15DictionaryIndex", "Distance"]
-- !private ["VSs15DictionaryIndex", "_DisabledRangeIndex"]
-- !private ["VSs15DictionaryIndex", "deinit"]
-- !private ["PSs28DictionaryLiteralConvertible", "Generator"]
-- !private ["PSs28DictionaryLiteralConvertible", "Index"]
-- !private ["PSs28DictionaryLiteralConvertible", "SubSequence"]
-- !private ["PSs28DictionaryLiteralConvertible", "_Element"]
-- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
-- !private ["PSs9Equatable", "Alert"]
-- !private ["PSs9Equatable", "Default"]
-- !private ["PSs9Equatable", "Distance"]
-- !private ["PSs9Equatable", "Firebase"]
-- !private ["PSs9Equatable", "IntegerLiteralType"]
-- !private ["PSs9Equatable", "UIAlertAction"]
-- !private ["PSs9Equatable", "UIAlertActionStyle"]
-- !private ["PSs9Equatable", "UIAlertController"]
-- !private ["PSs9Equatable", "UIAlertControllerStyle"]
-- !private ["PSs9Equatable", "_DisabledRangeIndex"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- !private ["PSs9Equatable", "addAction"]
-- ["PSs9Equatable", "confirmPassword"]
-- !private ["PSs9Equatable", "createUser"]
-- ["PSs9Equatable", "didReceiveMemoryWarning"]
-- !private ["PSs9Equatable", "dismissViewControllerAnimated"]
-- ["PSs9Equatable", "email"]
-- ["PSs9Equatable", "gotoLogin"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "password"]
-- !private ["PSs9Equatable", "presentViewController"]
-- ["PSs9Equatable", "signUpTapped"]
-- !private ["PSs9Equatable", "text"]
-- ["PSs9Equatable", "viewDidLoad"]
-- ["PSs9Equatable", ""]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Firebase"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "UIAlertAction"]
+- !private ["Ps11CVarArgType", "UIAlertActionStyle"]
+- !private ["Ps11CVarArgType", "UIAlertController"]
+- !private ["Ps11CVarArgType", "UIAlertControllerStyle"]
+- !private ["Ps11CVarArgType", "addAction"]
+- ["Ps11CVarArgType", "confirmPassword"]
+- !private ["Ps11CVarArgType", "createUser"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
+- ["Ps11CVarArgType", "email"]
+- ["Ps11CVarArgType", "gotoLogin"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "password"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- ["Ps11CVarArgType", "signUpTapped"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "Firebase"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertControllerStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- ["Ps28CustomDebugStringConvertible", "confirmPassword"]
+- !private ["Ps28CustomDebugStringConvertible", "createUser"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
+- ["Ps28CustomDebugStringConvertible", "email"]
+- ["Ps28CustomDebugStringConvertible", "gotoLogin"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "password"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- ["Ps28CustomDebugStringConvertible", "signUpTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Firebase"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UIAlertControllerStyle"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
+- ["Ps23CustomStringConvertible", "confirmPassword"]
+- !private ["Ps23CustomStringConvertible", "createUser"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
+- ["Ps23CustomStringConvertible", "email"]
+- ["Ps23CustomStringConvertible", "gotoLogin"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "password"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- ["Ps23CustomStringConvertible", "signUpTapped"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Generator"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "_Element"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Vs15DictionaryIndex", "Distance"]
+- !private ["Vs15DictionaryIndex", "_DisabledRangeIndex"]
+- !private ["Vs15DictionaryIndex", "deinit"]
+- !private ["Ps28DictionaryLiteralConvertible", "Generator"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
+- !private ["Ps28DictionaryLiteralConvertible", "_Element"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps9Equatable", "Alert"]
+- !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "Firebase"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertActionStyle"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UIAlertControllerStyle"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
+- ["Ps9Equatable", "confirmPassword"]
+- !private ["Ps9Equatable", "createUser"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "dismissViewControllerAnimated"]
+- ["Ps9Equatable", "email"]
+- ["Ps9Equatable", "gotoLogin"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "password"]
+- !private ["Ps9Equatable", "presentViewController"]
+- ["Ps9Equatable", "signUpTapped"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
 - !private ["CSo6FQuery", "createUser"]
 - !private ["CSo6FQuery", "init"]
 - !private ["CSo8Firebase", "createUser"]
 - !private ["CSo8Firebase", "init"]
-- !private ["PSs16ForwardIndexType", "Distance"]
-- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
-- !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
-- !private ["PSs13GeneratorType", "Element"]
-- !private ["PSs8Hashable", "Alert"]
-- !private ["PSs8Hashable", "Default"]
-- !private ["PSs8Hashable", "Firebase"]
-- !private ["PSs8Hashable", "IntegerLiteralType"]
-- !private ["PSs8Hashable", "UIAlertAction"]
-- !private ["PSs8Hashable", "UIAlertActionStyle"]
-- !private ["PSs8Hashable", "UIAlertController"]
-- !private ["PSs8Hashable", "UIAlertControllerStyle"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- !private ["PSs8Hashable", "addAction"]
-- ["PSs8Hashable", "confirmPassword"]
-- !private ["PSs8Hashable", "createUser"]
-- ["PSs8Hashable", "didReceiveMemoryWarning"]
-- !private ["PSs8Hashable", "dismissViewControllerAnimated"]
-- ["PSs8Hashable", "email"]
-- ["PSs8Hashable", "gotoLogin"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "password"]
-- !private ["PSs8Hashable", "presentViewController"]
-- ["PSs8Hashable", "signUpTapped"]
-- !private ["PSs8Hashable", "text"]
-- ["PSs8Hashable", "viewDidLoad"]
-- ["PSs8Hashable", ""]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Alert"]
+- !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "Firebase"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertActionStyle"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UIAlertControllerStyle"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
+- ["Ps8Hashable", "confirmPassword"]
+- !private ["Ps8Hashable", "createUser"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "dismissViewControllerAnimated"]
+- ["Ps8Hashable", "email"]
+- ["Ps8Hashable", "gotoLogin"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "password"]
+- !private ["Ps8Hashable", "presentViewController"]
+- ["Ps8Hashable", "signUpTapped"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
-- !private ["PSs9Indexable", "Generator"]
-- !private ["PSs9Indexable", "Index"]
-- !private ["PSs9Indexable", "SubSequence"]
-- !private ["PSs9Indexable", "_Element"]
-- !private ["PSs9Indexable", "subscript"]
-- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "IntegerLiteralType"]
-- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs11IntegerType", "IntegerLiteralType"]
-- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSo8NSCoding", "Firebase"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertActionStyle"]
@@ -273,23 +292,23 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["Sq", "deinit"]
-- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
-- !private ["VSs5Range", "deinit"]
-- !private ["PSs16RawRepresentable", "Alert"]
-- !private ["PSs16RawRepresentable", "Default"]
-- !private ["PSs12SequenceType", "Element"]
-- !private ["PSs12SequenceType", "Generator"]
-- !private ["PSs12SequenceType", "Index"]
-- !private ["PSs12SequenceType", "SubSequence"]
-- !private ["PSs12SequenceType", "_Element"]
-- !private ["PSs12SequenceType", "subscript"]
-- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
-- !private ["VSs5Slice", "Generator"]
-- !private ["VSs5Slice", "Index"]
-- !private ["VSs5Slice", "SubSequence"]
-- !private ["VSs5Slice", "_Element"]
-- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps16RawRepresentable", "Alert"]
+- !private ["Ps16RawRepresentable", "Default"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "Default"]
@@ -433,32 +452,31 @@ depends-member:
 - ["CSo16UIViewController", "signUpTapped"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs14_Incrementable", "Distance"]
-- !private ["PSs14_Incrementable", "IntegerLiteralType"]
-- !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
-- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs12_IntegerType", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
-- !private ["PSs21_ObjectiveCBridgeable", "Index"]
-- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "Generator"]
-- !private ["PSs12_Reflectable", "Index"]
-- !private ["PSs12_Reflectable", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "SubSequence"]
-- !private ["PSs12_Reflectable", "_Element"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "subscript"]
-- !private ["PSs12_Reflectable", "text"]
-- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["C3esc8signupVC", "Firebase"]
 - !private ["C3esc8signupVC", "String"]
 - !private ["C3esc8signupVC", "UIAlertAction"]
@@ -479,34 +497,34 @@ depends-member:
 - ["C3esc8signupVC", "signUpTapped"]
 - ["C3esc8signupVC", "viewDidLoad"]
 depends-nominal:
-- "PSs9AnyObject"
-- !private "PSs22BidirectionalIndexType"
-- !private "PSs21BitwiseOperationsType"
+- "Ps9AnyObject"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
-- "PSs11CVarArgType"
-- !private "PSs14CollectionType"
-- !private "PSs10Comparable"
-- !private "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "VSs15DictionaryIndex"
-- !private "PSs28DictionaryLiteralConvertible"
-- "PSs9Equatable"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Vs15DictionaryIndex"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
 - !private "CSo6FQuery"
 - !private "CSo8Firebase"
-- !private "PSs16ForwardIndexType"
-- !private "PSs13GeneratorType"
-- "PSs8Hashable"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
 - !private "SQ"
-- !private "PSs9Indexable"
-- !private "VSs17IndexingGenerator"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
 - !private "Si"
-- !private "PSs21IntegerArithmeticType"
-- !private "PSs25IntegerLiteralConvertible"
-- !private "PSs11IntegerType"
-- !private "PSs14MirrorPathType"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo7NSError"
@@ -514,14 +532,14 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "Sq"
-- !private "PSs21RandomAccessIndexType"
-- !private "VSs5Range"
-- !private "PSs16RawRepresentable"
-- !private "PSs12SequenceType"
-- !private "PSs17SignedIntegerType"
-- !private "PSs16SignedNumberType"
-- !private "VSs5Slice"
-- !private "PSs10Strideable"
+- !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Vs5Slice"
+- !private "Ps10Strideable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "CSo13UIAlertAction"
 - !private "OSC18UIAlertActionStyle"
@@ -543,17 +561,16 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs33_BuiltinIntegerLiteralConvertible"
-- !private "PSs14_Incrementable"
-- !private "PSs22_IntegerArithmeticType"
-- !private "PSs12_IntegerType"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "PSs22_RandomAccessAmbiguity"
-- !private "PSs12_Reflectable"
-- !private "PSs18_SignedIntegerType"
-- !private "PSs11_Strideable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 - "C3esc8signupVC"
 depends-dynamic-lookup:
 depends-external:

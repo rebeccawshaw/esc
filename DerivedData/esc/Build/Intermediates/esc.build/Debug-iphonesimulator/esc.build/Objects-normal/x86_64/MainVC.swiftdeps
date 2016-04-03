@@ -6,100 +6,114 @@ provides-nominal:
 provides-member:
 - ["C3esc6MainVC", ""]
 provides-dynamic-lookup:
-- "locationLabel"
-- "viewDidLoad"
-- "time"
-- "timer"
 - "countdownLabel"
 - "location"
+- "viewDidLoad"
 - "updateProfile"
+- "timer"
+- "time"
+- "locationLabel"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "NSDate"
 - "UILabel"
+- "NSDate"
+- !private "StringLiteralType"
+- !private ">"
+- "UIViewController"
+- "MainVC"
 - "String"
 - "NSTimer"
-- !private ">"
-- "MainVC"
-- !private "StringLiteralType"
-- "UIViewController"
+- !private "BooleanLiteralType"
 depends-member:
-- !private ["PSs9AnyObject", "NSTimer"]
-- ["PSs9AnyObject", "countdownLabel"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "invalidate"]
-- ["PSs9AnyObject", "location"]
-- ["PSs9AnyObject", "locationLabel"]
-- !private ["PSs9AnyObject", "scheduledTimerWithTimeInterval"]
-- !private ["PSs9AnyObject", "text"]
-- ["PSs9AnyObject", "time"]
-- !private ["PSs9AnyObject", "timeIntervalSinceNow"]
-- ["PSs9AnyObject", "timer"]
-- ["PSs9AnyObject", "updateProfile"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "NSTimer"]
+- ["Ps9AnyObject", "countdownLabel"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "invalidate"]
+- ["Ps9AnyObject", "location"]
+- ["Ps9AnyObject", "locationLabel"]
+- !private ["Ps9AnyObject", "scheduledTimerWithTimeInterval"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "time"]
+- !private ["Ps9AnyObject", "timeIntervalSinceNow"]
+- ["Ps9AnyObject", "timer"]
+- ["Ps9AnyObject", "updateProfile"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11CVarArgType", "NSTimer"]
-- ["PSs11CVarArgType", "countdownLabel"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "invalidate"]
-- ["PSs11CVarArgType", "location"]
-- ["PSs11CVarArgType", "locationLabel"]
-- !private ["PSs11CVarArgType", "scheduledTimerWithTimeInterval"]
-- !private ["PSs11CVarArgType", "text"]
-- ["PSs11CVarArgType", "time"]
-- !private ["PSs11CVarArgType", "timeIntervalSinceNow"]
-- ["PSs11CVarArgType", "timer"]
-- ["PSs11CVarArgType", "updateProfile"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs23CustomStringConvertible", "NSTimer"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["PSs23CustomStringConvertible", "countdownLabel"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "invalidate"]
-- ["PSs23CustomStringConvertible", "location"]
-- ["PSs23CustomStringConvertible", "locationLabel"]
-- !private ["PSs23CustomStringConvertible", "scheduledTimerWithTimeInterval"]
-- !private ["PSs23CustomStringConvertible", "text"]
-- ["PSs23CustomStringConvertible", "time"]
-- !private ["PSs23CustomStringConvertible", "timeIntervalSinceNow"]
-- ["PSs23CustomStringConvertible", "timer"]
-- ["PSs23CustomStringConvertible", "updateProfile"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "NSTimer"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- ["PSs9Equatable", "countdownLabel"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "invalidate"]
-- ["PSs9Equatable", "location"]
-- ["PSs9Equatable", "locationLabel"]
-- !private ["PSs9Equatable", "scheduledTimerWithTimeInterval"]
-- !private ["PSs9Equatable", "text"]
-- ["PSs9Equatable", "time"]
-- !private ["PSs9Equatable", "timeIntervalSinceNow"]
-- ["PSs9Equatable", "timer"]
-- ["PSs9Equatable", "updateProfile"]
-- ["PSs9Equatable", "viewDidLoad"]
-- ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "NSTimer"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- ["PSs8Hashable", "countdownLabel"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "invalidate"]
-- ["PSs8Hashable", "location"]
-- ["PSs8Hashable", "locationLabel"]
-- !private ["PSs8Hashable", "scheduledTimerWithTimeInterval"]
-- !private ["PSs8Hashable", "text"]
-- ["PSs8Hashable", "time"]
-- !private ["PSs8Hashable", "timeIntervalSinceNow"]
-- ["PSs8Hashable", "timer"]
-- ["PSs8Hashable", "updateProfile"]
-- ["PSs8Hashable", "viewDidLoad"]
-- ["PSs8Hashable", ""]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "NSTimer"]
+- ["Ps11CVarArgType", "countdownLabel"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "invalidate"]
+- ["Ps11CVarArgType", "location"]
+- ["Ps11CVarArgType", "locationLabel"]
+- !private ["Ps11CVarArgType", "scheduledTimerWithTimeInterval"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "time"]
+- !private ["Ps11CVarArgType", "timeIntervalSinceNow"]
+- ["Ps11CVarArgType", "timer"]
+- ["Ps11CVarArgType", "updateProfile"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "NSTimer"]
+- ["Ps28CustomDebugStringConvertible", "countdownLabel"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "invalidate"]
+- ["Ps28CustomDebugStringConvertible", "location"]
+- ["Ps28CustomDebugStringConvertible", "locationLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduledTimerWithTimeInterval"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "time"]
+- !private ["Ps28CustomDebugStringConvertible", "timeIntervalSinceNow"]
+- ["Ps28CustomDebugStringConvertible", "timer"]
+- ["Ps28CustomDebugStringConvertible", "updateProfile"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "NSTimer"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "countdownLabel"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "invalidate"]
+- ["Ps23CustomStringConvertible", "location"]
+- ["Ps23CustomStringConvertible", "locationLabel"]
+- !private ["Ps23CustomStringConvertible", "scheduledTimerWithTimeInterval"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "time"]
+- !private ["Ps23CustomStringConvertible", "timeIntervalSinceNow"]
+- ["Ps23CustomStringConvertible", "timer"]
+- ["Ps23CustomStringConvertible", "updateProfile"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "NSTimer"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "countdownLabel"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "invalidate"]
+- ["Ps9Equatable", "location"]
+- ["Ps9Equatable", "locationLabel"]
+- !private ["Ps9Equatable", "scheduledTimerWithTimeInterval"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "time"]
+- !private ["Ps9Equatable", "timeIntervalSinceNow"]
+- ["Ps9Equatable", "timer"]
+- ["Ps9Equatable", "updateProfile"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "NSTimer"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "countdownLabel"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "invalidate"]
+- ["Ps8Hashable", "location"]
+- ["Ps8Hashable", "locationLabel"]
+- !private ["Ps8Hashable", "scheduledTimerWithTimeInterval"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "time"]
+- !private ["Ps8Hashable", "timeIntervalSinceNow"]
+- ["Ps8Hashable", "timer"]
+- ["Ps8Hashable", "updateProfile"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
 - ["C3esc6MainVC", "NSDate"]
 - ["C3esc6MainVC", "NSTimer"]
 - ["C3esc6MainVC", "String"]
@@ -257,20 +271,21 @@ depends-member:
 - ["CSo16UIViewController", "updateProfile"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "text"]
-- !private ["PSs12_Reflectable", "timeIntervalSinceNow"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "timeIntervalSinceNow"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - "C3esc6MainVC"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -295,9 +310,9 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "PSs12_Reflectable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

@@ -6,105 +6,123 @@ provides-nominal:
 provides-member:
 - ["C3esc14ViewController", ""]
 provides-dynamic-lookup:
-- "studyTapped"
-- "eatButton"
-- "viewDidAppear"
-- "eatTapped"
-- "chillButton"
-- "signOutButton"
-- "studyButton"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "statusText"
+- "viewDidAppear"
 - "signOutTapped"
+- "chillButton"
 - "chillTapped"
+- "signOutButton"
+- "statusText"
+- "eatButton"
+- "studyButton"
+- "eatTapped"
+- "studyTapped"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "ViewController"
-- !private "Firebase"
-- !private "StringLiteralType"
-- "UIButton"
-- !private "!="
 - "UIViewController"
-- "UILabel"
 - "Bool"
+- !private "Firebase"
+- "UIButton"
+- !private "StringLiteralType"
+- "UILabel"
+- !private "!="
 depends-member:
-- !private ["PSs9AnyObject", "Firebase"]
-- ["PSs9AnyObject", "chillButton"]
-- ["PSs9AnyObject", "chillTapped"]
-- ["PSs9AnyObject", "didReceiveMemoryWarning"]
-- ["PSs9AnyObject", "eatButton"]
-- ["PSs9AnyObject", "eatTapped"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "observeAuthEventWithBlock"]
-- !private ["PSs9AnyObject", "performSegueWithIdentifier"]
-- ["PSs9AnyObject", "signOutButton"]
-- ["PSs9AnyObject", "signOutTapped"]
-- ["PSs9AnyObject", "statusText"]
-- ["PSs9AnyObject", "studyButton"]
-- ["PSs9AnyObject", "studyTapped"]
-- !private ["PSs9AnyObject", "unauth"]
-- ["PSs9AnyObject", "viewDidAppear"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "Firebase"]
+- ["Ps9AnyObject", "chillButton"]
+- ["Ps9AnyObject", "chillTapped"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "eatButton"]
+- ["Ps9AnyObject", "eatTapped"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "observeAuthEventWithBlock"]
+- !private ["Ps9AnyObject", "performSegueWithIdentifier"]
+- ["Ps9AnyObject", "signOutButton"]
+- ["Ps9AnyObject", "signOutTapped"]
+- ["Ps9AnyObject", "statusText"]
+- ["Ps9AnyObject", "studyButton"]
+- ["Ps9AnyObject", "studyTapped"]
+- !private ["Ps9AnyObject", "unauth"]
+- ["Ps9AnyObject", "viewDidAppear"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11CVarArgType", "Firebase"]
-- ["PSs11CVarArgType", "chillButton"]
-- ["PSs11CVarArgType", "chillTapped"]
-- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
-- ["PSs11CVarArgType", "eatButton"]
-- ["PSs11CVarArgType", "eatTapped"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "observeAuthEventWithBlock"]
-- !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
-- ["PSs11CVarArgType", "signOutButton"]
-- ["PSs11CVarArgType", "signOutTapped"]
-- ["PSs11CVarArgType", "statusText"]
-- ["PSs11CVarArgType", "studyButton"]
-- ["PSs11CVarArgType", "studyTapped"]
-- !private ["PSs11CVarArgType", "unauth"]
-- ["PSs11CVarArgType", "viewDidAppear"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs23CustomStringConvertible", "Firebase"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["PSs23CustomStringConvertible", "chillButton"]
-- ["PSs23CustomStringConvertible", "chillTapped"]
-- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
-- ["PSs23CustomStringConvertible", "eatButton"]
-- ["PSs23CustomStringConvertible", "eatTapped"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "observeAuthEventWithBlock"]
-- !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
-- ["PSs23CustomStringConvertible", "signOutButton"]
-- ["PSs23CustomStringConvertible", "signOutTapped"]
-- ["PSs23CustomStringConvertible", "statusText"]
-- ["PSs23CustomStringConvertible", "studyButton"]
-- ["PSs23CustomStringConvertible", "studyTapped"]
-- !private ["PSs23CustomStringConvertible", "unauth"]
-- ["PSs23CustomStringConvertible", "viewDidAppear"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "Firebase"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- ["PSs9Equatable", "chillButton"]
-- ["PSs9Equatable", "chillTapped"]
-- ["PSs9Equatable", "didReceiveMemoryWarning"]
-- ["PSs9Equatable", "eatButton"]
-- ["PSs9Equatable", "eatTapped"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "observeAuthEventWithBlock"]
-- !private ["PSs9Equatable", "performSegueWithIdentifier"]
-- ["PSs9Equatable", "signOutButton"]
-- ["PSs9Equatable", "signOutTapped"]
-- ["PSs9Equatable", "statusText"]
-- ["PSs9Equatable", "studyButton"]
-- ["PSs9Equatable", "studyTapped"]
-- !private ["PSs9Equatable", "unauth"]
-- ["PSs9Equatable", "viewDidAppear"]
-- ["PSs9Equatable", "viewDidLoad"]
-- ["PSs9Equatable", ""]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Firebase"]
+- ["Ps11CVarArgType", "chillButton"]
+- ["Ps11CVarArgType", "chillTapped"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "eatButton"]
+- ["Ps11CVarArgType", "eatTapped"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "observeAuthEventWithBlock"]
+- !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
+- ["Ps11CVarArgType", "signOutButton"]
+- ["Ps11CVarArgType", "signOutTapped"]
+- ["Ps11CVarArgType", "statusText"]
+- ["Ps11CVarArgType", "studyButton"]
+- ["Ps11CVarArgType", "studyTapped"]
+- !private ["Ps11CVarArgType", "unauth"]
+- ["Ps11CVarArgType", "viewDidAppear"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "Firebase"]
+- ["Ps28CustomDebugStringConvertible", "chillButton"]
+- ["Ps28CustomDebugStringConvertible", "chillTapped"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "eatButton"]
+- ["Ps28CustomDebugStringConvertible", "eatTapped"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "observeAuthEventWithBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "signOutButton"]
+- ["Ps28CustomDebugStringConvertible", "signOutTapped"]
+- ["Ps28CustomDebugStringConvertible", "statusText"]
+- ["Ps28CustomDebugStringConvertible", "studyButton"]
+- ["Ps28CustomDebugStringConvertible", "studyTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "unauth"]
+- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Firebase"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "chillButton"]
+- ["Ps23CustomStringConvertible", "chillTapped"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "eatButton"]
+- ["Ps23CustomStringConvertible", "eatTapped"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "observeAuthEventWithBlock"]
+- !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
+- ["Ps23CustomStringConvertible", "signOutButton"]
+- ["Ps23CustomStringConvertible", "signOutTapped"]
+- ["Ps23CustomStringConvertible", "statusText"]
+- ["Ps23CustomStringConvertible", "studyButton"]
+- ["Ps23CustomStringConvertible", "studyTapped"]
+- !private ["Ps23CustomStringConvertible", "unauth"]
+- ["Ps23CustomStringConvertible", "viewDidAppear"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Firebase"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "chillButton"]
+- ["Ps9Equatable", "chillTapped"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "eatButton"]
+- ["Ps9Equatable", "eatTapped"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "observeAuthEventWithBlock"]
+- !private ["Ps9Equatable", "performSegueWithIdentifier"]
+- ["Ps9Equatable", "signOutButton"]
+- ["Ps9Equatable", "signOutTapped"]
+- ["Ps9Equatable", "statusText"]
+- ["Ps9Equatable", "studyButton"]
+- ["Ps9Equatable", "studyTapped"]
+- !private ["Ps9Equatable", "unauth"]
+- ["Ps9Equatable", "viewDidAppear"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
 - !private ["CSo9FAuthData", "deinit"]
 - !private ["CSo6FQuery", "init"]
 - !private ["CSo6FQuery", "observeAuthEventWithBlock"]
@@ -112,25 +130,25 @@ depends-member:
 - !private ["CSo8Firebase", "init"]
 - !private ["CSo8Firebase", "observeAuthEventWithBlock"]
 - !private ["CSo8Firebase", "unauth"]
-- !private ["PSs8Hashable", "Firebase"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- ["PSs8Hashable", "chillButton"]
-- ["PSs8Hashable", "chillTapped"]
-- ["PSs8Hashable", "didReceiveMemoryWarning"]
-- ["PSs8Hashable", "eatButton"]
-- ["PSs8Hashable", "eatTapped"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "observeAuthEventWithBlock"]
-- !private ["PSs8Hashable", "performSegueWithIdentifier"]
-- ["PSs8Hashable", "signOutButton"]
-- ["PSs8Hashable", "signOutTapped"]
-- ["PSs8Hashable", "statusText"]
-- ["PSs8Hashable", "studyButton"]
-- ["PSs8Hashable", "studyTapped"]
-- !private ["PSs8Hashable", "unauth"]
-- ["PSs8Hashable", "viewDidAppear"]
-- ["PSs8Hashable", "viewDidLoad"]
-- ["PSs8Hashable", ""]
+- !private ["Ps8Hashable", "Firebase"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "chillButton"]
+- ["Ps8Hashable", "chillTapped"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "eatButton"]
+- ["Ps8Hashable", "eatTapped"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "observeAuthEventWithBlock"]
+- !private ["Ps8Hashable", "performSegueWithIdentifier"]
+- ["Ps8Hashable", "signOutButton"]
+- ["Ps8Hashable", "signOutTapped"]
+- ["Ps8Hashable", "statusText"]
+- ["Ps8Hashable", "studyButton"]
+- ["Ps8Hashable", "studyTapped"]
+- !private ["Ps8Hashable", "unauth"]
+- ["Ps8Hashable", "viewDidAppear"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
 - !private ["PSo8NSCoding", "Firebase"]
 - ["PSo8NSCoding", "chillButton"]
@@ -340,22 +358,23 @@ depends-member:
 - ["C3esc14ViewController", "studyTapped"]
 - ["C3esc14ViewController", "viewDidAppear"]
 - ["C3esc14ViewController", "viewDidLoad"]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
 - !private "CSo9FAuthData"
 - !private "CSo6FQuery"
 - !private "CSo8Firebase"
-- "PSs8Hashable"
+- "Ps8Hashable"
 - !private "SQ"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
@@ -370,10 +389,10 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo16UIViewController"
 - "C3esc14ViewController"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "PSs12_Reflectable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

@@ -6,62 +6,74 @@ provides-nominal:
 provides-member:
 - ["C3esc6DateVC", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
+- "setTimeTapped"
 - "prepareForSegue"
 - "pickTime"
-- "setTimeTapped"
 - "didReceiveMemoryWarning"
-- "viewDidLoad"
 depends-top-level:
-- !private "StringLiteralType"
+- "UIViewController"
+- "DateVC"
 - "UIButton"
 - "UIDatePicker"
-- !private "=="
-- "AnyObject"
-- !private "LocationVC"
 - "UIStoryboardSegue"
-- "DateVC"
-- "UIViewController"
+- !private "=="
+- !private "LocationVC"
+- !private "StringLiteralType"
+- "AnyObject"
 depends-member:
-- !private ["PSs9AnyObject", "date"]
-- !private ["PSs9AnyObject", "destinationViewController"]
-- ["PSs9AnyObject", "didReceiveMemoryWarning"]
-- !private ["PSs9AnyObject", "identifier"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "performSegueWithIdentifier"]
-- ["PSs9AnyObject", "pickTime"]
-- ["PSs9AnyObject", "prepareForSegue"]
-- ["PSs9AnyObject", "setTimeTapped"]
-- !private ["PSs9AnyObject", "time"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "date"]
+- !private ["Ps9AnyObject", "destinationViewController"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "identifier"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "performSegueWithIdentifier"]
+- ["Ps9AnyObject", "pickTime"]
+- ["Ps9AnyObject", "prepareForSegue"]
+- ["Ps9AnyObject", "setTimeTapped"]
+- !private ["Ps9AnyObject", "time"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11CVarArgType", "date"]
-- !private ["PSs11CVarArgType", "destinationViewController"]
-- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
-- !private ["PSs11CVarArgType", "identifier"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
-- ["PSs11CVarArgType", "pickTime"]
-- ["PSs11CVarArgType", "prepareForSegue"]
-- ["PSs11CVarArgType", "setTimeTapped"]
-- !private ["PSs11CVarArgType", "time"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs23CustomStringConvertible", "date"]
-- !private ["PSs23CustomStringConvertible", "destinationViewController"]
-- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
-- !private ["PSs23CustomStringConvertible", "identifier"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
-- ["PSs23CustomStringConvertible", "pickTime"]
-- ["PSs23CustomStringConvertible", "prepareForSegue"]
-- ["PSs23CustomStringConvertible", "setTimeTapped"]
-- !private ["PSs23CustomStringConvertible", "time"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- ["PSs23CustomStringConvertible", ""]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "date"]
+- !private ["Ps11CVarArgType", "destinationViewController"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "identifier"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
+- ["Ps11CVarArgType", "pickTime"]
+- ["Ps11CVarArgType", "prepareForSegue"]
+- ["Ps11CVarArgType", "setTimeTapped"]
+- !private ["Ps11CVarArgType", "time"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "date"]
+- !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "pickTime"]
+- ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
+- ["Ps28CustomDebugStringConvertible", "setTimeTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "time"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "date"]
+- !private ["Ps23CustomStringConvertible", "destinationViewController"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
+- ["Ps23CustomStringConvertible", "pickTime"]
+- ["Ps23CustomStringConvertible", "prepareForSegue"]
+- ["Ps23CustomStringConvertible", "setTimeTapped"]
+- !private ["Ps23CustomStringConvertible", "time"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
 - ["C3esc6DateVC", "AnyObject"]
 - !private ["C3esc6DateVC", "LocationVC"]
 - ["C3esc6DateVC", "UIButton"]
@@ -75,32 +87,32 @@ depends-member:
 - ["C3esc6DateVC", "prepareForSegue"]
 - ["C3esc6DateVC", "setTimeTapped"]
 - ["C3esc6DateVC", "viewDidLoad"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- !private ["PSs9Equatable", "date"]
-- !private ["PSs9Equatable", "destinationViewController"]
-- ["PSs9Equatable", "didReceiveMemoryWarning"]
-- !private ["PSs9Equatable", "identifier"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "performSegueWithIdentifier"]
-- ["PSs9Equatable", "pickTime"]
-- ["PSs9Equatable", "prepareForSegue"]
-- ["PSs9Equatable", "setTimeTapped"]
-- !private ["PSs9Equatable", "time"]
-- ["PSs9Equatable", "viewDidLoad"]
-- ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- !private ["PSs8Hashable", "date"]
-- !private ["PSs8Hashable", "destinationViewController"]
-- ["PSs8Hashable", "didReceiveMemoryWarning"]
-- !private ["PSs8Hashable", "identifier"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "performSegueWithIdentifier"]
-- ["PSs8Hashable", "pickTime"]
-- ["PSs8Hashable", "prepareForSegue"]
-- ["PSs8Hashable", "setTimeTapped"]
-- !private ["PSs8Hashable", "time"]
-- ["PSs8Hashable", "viewDidLoad"]
-- ["PSs8Hashable", ""]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "date"]
+- !private ["Ps9Equatable", "destinationViewController"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "identifier"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "performSegueWithIdentifier"]
+- ["Ps9Equatable", "pickTime"]
+- ["Ps9Equatable", "prepareForSegue"]
+- ["Ps9Equatable", "setTimeTapped"]
+- !private ["Ps9Equatable", "time"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "date"]
+- !private ["Ps8Hashable", "destinationViewController"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "identifier"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "performSegueWithIdentifier"]
+- ["Ps8Hashable", "pickTime"]
+- ["Ps8Hashable", "prepareForSegue"]
+- ["Ps8Hashable", "setTimeTapped"]
+- !private ["Ps8Hashable", "time"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
 - !private ["C3esc10LocationVC", "time"]
 - !private ["PSo8NSCoding", "date"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -238,21 +250,22 @@ depends-member:
 - !private ["CSo16UIViewController", "time"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "date"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "date"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
 - "C3esc6DateVC"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - !private "C3esc10LocationVC"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
@@ -276,10 +289,10 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "PSs12_Reflectable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
