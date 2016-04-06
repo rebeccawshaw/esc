@@ -1,0 +1,677 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "UTVC"
+provides-nominal:
+- "C3esc4UTVC"
+provides-member:
+- ["C3esc4UTVC", ""]
+provides-dynamic-lookup:
+- "timer"
+- "time"
+- "numberOfSectionsInTableView"
+- "loadUsers"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
+- "updateProfile"
+depends-top-level:
+- !private ">"
+- !private "StringLiteralType"
+- "UITableViewCell"
+- "NSDate"
+- "UTVC"
+- !private "String"
+- !private "NSDateFormatter"
+- "UITableViewController"
+- "NSIndexPath"
+- "Int"
+- "User"
+- "NSTimer"
+- !private "Firebase"
+- "UITableView"
+- !private "UserTableVC"
+depends-member:
+- !private ["Ps9AnyObject", "Firebase"]
+- !private ["Ps9AnyObject", "NSDateFormatter"]
+- !private ["Ps9AnyObject", "NSTimer"]
+- ["Ps9AnyObject", "User"]
+- !private ["Ps9AnyObject", "UserTableVC"]
+- !private ["Ps9AnyObject", "authData"]
+- !private ["Ps9AnyObject", "dateFormat"]
+- !private ["Ps9AnyObject", "dateFromString"]
+- !private ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "invalidate"]
+- ["Ps9AnyObject", "loadUsers"]
+- ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "objectForKey"]
+- !private ["Ps9AnyObject", "observeEventType"]
+- !private ["Ps9AnyObject", "row"]
+- !private ["Ps9AnyObject", "scheduledTimerWithTimeInterval"]
+- ["Ps9AnyObject", "tableView"]
+- ["Ps9AnyObject", "time"]
+- !private ["Ps9AnyObject", "timeIntervalSinceNow"]
+- ["Ps9AnyObject", "timer"]
+- !private ["Ps9AnyObject", "uid"]
+- ["Ps9AnyObject", "updateProfile"]
+- !private ["Ps9AnyObject", "users"]
+- !private ["Ps9AnyObject", "value"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Firebase"]
+- !private ["Ps11CVarArgType", "NSDateFormatter"]
+- !private ["Ps11CVarArgType", "NSTimer"]
+- ["Ps11CVarArgType", "User"]
+- !private ["Ps11CVarArgType", "UserTableVC"]
+- !private ["Ps11CVarArgType", "authData"]
+- !private ["Ps11CVarArgType", "dateFormat"]
+- !private ["Ps11CVarArgType", "dateFromString"]
+- !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "invalidate"]
+- ["Ps11CVarArgType", "loadUsers"]
+- ["Ps11CVarArgType", "numberOfSectionsInTableView"]
+- !private ["Ps11CVarArgType", "observeEventType"]
+- !private ["Ps11CVarArgType", "row"]
+- !private ["Ps11CVarArgType", "scheduledTimerWithTimeInterval"]
+- ["Ps11CVarArgType", "tableView"]
+- ["Ps11CVarArgType", "time"]
+- !private ["Ps11CVarArgType", "timeIntervalSinceNow"]
+- ["Ps11CVarArgType", "timer"]
+- !private ["Ps11CVarArgType", "uid"]
+- ["Ps11CVarArgType", "updateProfile"]
+- !private ["Ps11CVarArgType", "users"]
+- !private ["Ps11CVarArgType", "value"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Firebase"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDateFormatter"]
+- !private ["Ps28CustomDebugStringConvertible", "NSTimer"]
+- ["Ps28CustomDebugStringConvertible", "User"]
+- !private ["Ps28CustomDebugStringConvertible", "UserTableVC"]
+- !private ["Ps28CustomDebugStringConvertible", "authData"]
+- !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
+- !private ["Ps28CustomDebugStringConvertible", "dateFromString"]
+- !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "invalidate"]
+- ["Ps28CustomDebugStringConvertible", "loadUsers"]
+- ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "observeEventType"]
+- !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduledTimerWithTimeInterval"]
+- ["Ps28CustomDebugStringConvertible", "tableView"]
+- ["Ps28CustomDebugStringConvertible", "time"]
+- !private ["Ps28CustomDebugStringConvertible", "timeIntervalSinceNow"]
+- ["Ps28CustomDebugStringConvertible", "timer"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
+- ["Ps28CustomDebugStringConvertible", "updateProfile"]
+- !private ["Ps28CustomDebugStringConvertible", "users"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Firebase"]
+- !private ["Ps23CustomStringConvertible", "NSDateFormatter"]
+- !private ["Ps23CustomStringConvertible", "NSTimer"]
+- ["Ps23CustomStringConvertible", "User"]
+- !private ["Ps23CustomStringConvertible", "UserTableVC"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "authData"]
+- !private ["Ps23CustomStringConvertible", "dateFormat"]
+- !private ["Ps23CustomStringConvertible", "dateFromString"]
+- !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "invalidate"]
+- ["Ps23CustomStringConvertible", "loadUsers"]
+- ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "observeEventType"]
+- !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "scheduledTimerWithTimeInterval"]
+- ["Ps23CustomStringConvertible", "tableView"]
+- ["Ps23CustomStringConvertible", "time"]
+- !private ["Ps23CustomStringConvertible", "timeIntervalSinceNow"]
+- ["Ps23CustomStringConvertible", "timer"]
+- !private ["Ps23CustomStringConvertible", "uid"]
+- ["Ps23CustomStringConvertible", "updateProfile"]
+- !private ["Ps23CustomStringConvertible", "users"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Firebase"]
+- !private ["Ps9Equatable", "NSDateFormatter"]
+- !private ["Ps9Equatable", "NSTimer"]
+- ["Ps9Equatable", "User"]
+- !private ["Ps9Equatable", "UserTableVC"]
+- !private ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "authData"]
+- !private ["Ps9Equatable", "dateFormat"]
+- !private ["Ps9Equatable", "dateFromString"]
+- !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "invalidate"]
+- ["Ps9Equatable", "loadUsers"]
+- ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "observeEventType"]
+- !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "scheduledTimerWithTimeInterval"]
+- ["Ps9Equatable", "tableView"]
+- ["Ps9Equatable", "time"]
+- !private ["Ps9Equatable", "timeIntervalSinceNow"]
+- ["Ps9Equatable", "timer"]
+- !private ["Ps9Equatable", "uid"]
+- ["Ps9Equatable", "updateProfile"]
+- !private ["Ps9Equatable", "users"]
+- !private ["Ps9Equatable", "value"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo9FAuthData", "uid"]
+- !private ["CSo13FDataSnapshot", "value"]
+- !private ["OSC10FEventType", "Value"]
+- !private ["CSo6FQuery", "authData"]
+- !private ["CSo6FQuery", "init"]
+- !private ["CSo6FQuery", "observeEventType"]
+- !private ["CSo8Firebase", "authData"]
+- !private ["CSo8Firebase", "init"]
+- !private ["CSo8Firebase", "observeEventType"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "Firebase"]
+- !private ["Ps8Hashable", "NSDateFormatter"]
+- !private ["Ps8Hashable", "NSTimer"]
+- ["Ps8Hashable", "User"]
+- !private ["Ps8Hashable", "UserTableVC"]
+- !private ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "authData"]
+- !private ["Ps8Hashable", "dateFormat"]
+- !private ["Ps8Hashable", "dateFromString"]
+- !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "invalidate"]
+- ["Ps8Hashable", "loadUsers"]
+- ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "observeEventType"]
+- !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "scheduledTimerWithTimeInterval"]
+- ["Ps8Hashable", "tableView"]
+- ["Ps8Hashable", "time"]
+- !private ["Ps8Hashable", "timeIntervalSinceNow"]
+- ["Ps8Hashable", "timer"]
+- !private ["Ps8Hashable", "uid"]
+- ["Ps8Hashable", "updateProfile"]
+- !private ["Ps8Hashable", "users"]
+- !private ["Ps8Hashable", "value"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "Firebase"]
+- !private ["PSo8NSCoding", "NSDateFormatter"]
+- !private ["PSo8NSCoding", "NSTimer"]
+- ["PSo8NSCoding", "User"]
+- !private ["PSo8NSCoding", "UserTableVC"]
+- !private ["PSo8NSCoding", "dateFormat"]
+- !private ["PSo8NSCoding", "dateFromString"]
+- !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "loadUsers"]
+- ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "row"]
+- ["PSo8NSCoding", "tableView"]
+- ["PSo8NSCoding", "time"]
+- !private ["PSo8NSCoding", "timeIntervalSinceNow"]
+- ["PSo8NSCoding", "timer"]
+- ["PSo8NSCoding", "updateProfile"]
+- !private ["PSo8NSCoding", "users"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "dateFromString"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "row"]
+- !private ["PSo9NSCopying", "timeIntervalSinceNow"]
+- !private ["CSo6NSDate", "timeIntervalSinceNow"]
+- !private ["CSo15NSDateFormatter", "dateFormat"]
+- !private ["CSo15NSDateFormatter", "dateFromString"]
+- !private ["CSo15NSDateFormatter", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "Firebase"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDateFormatter"]
+- !private ["PSo26NSExtensionRequestHandling", "NSTimer"]
+- ["PSo26NSExtensionRequestHandling", "User"]
+- !private ["PSo26NSExtensionRequestHandling", "UserTableVC"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "loadUsers"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "time"]
+- ["PSo26NSExtensionRequestHandling", "timer"]
+- ["PSo26NSExtensionRequestHandling", "updateProfile"]
+- !private ["PSo26NSExtensionRequestHandling", "users"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSFormatter", "dateFormat"]
+- !private ["CSo11NSFormatter", "dateFromString"]
+- !private ["CSo11NSFormatter", "init"]
+- !private ["CSo11NSIndexPath", "row"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Firebase"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSDateFormatter"]
+- ["CSo8NSObject", "NSIndexPath"]
+- ["CSo8NSObject", "NSTimer"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "User"]
+- !private ["CSo8NSObject", "UserTableVC"]
+- !private ["CSo8NSObject", "authData"]
+- !private ["CSo8NSObject", "dateFormat"]
+- !private ["CSo8NSObject", "dateFromString"]
+- !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "invalidate"]
+- ["CSo8NSObject", "loadUsers"]
+- ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "observeEventType"]
+- !private ["CSo8NSObject", "row"]
+- !private ["CSo8NSObject", "scheduledTimerWithTimeInterval"]
+- ["CSo8NSObject", "tableView"]
+- ["CSo8NSObject", "time"]
+- !private ["CSo8NSObject", "timeIntervalSinceNow"]
+- ["CSo8NSObject", "timer"]
+- !private ["CSo8NSObject", "uid"]
+- ["CSo8NSObject", "updateProfile"]
+- !private ["CSo8NSObject", "users"]
+- !private ["CSo8NSObject", "value"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Firebase"]
+- !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
+- !private ["PSo16NSObjectProtocol", "NSTimer"]
+- ["PSo16NSObjectProtocol", "User"]
+- !private ["PSo16NSObjectProtocol", "UserTableVC"]
+- !private ["PSo16NSObjectProtocol", "authData"]
+- !private ["PSo16NSObjectProtocol", "dateFormat"]
+- !private ["PSo16NSObjectProtocol", "dateFromString"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "invalidate"]
+- ["PSo16NSObjectProtocol", "loadUsers"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "observeEventType"]
+- !private ["PSo16NSObjectProtocol", "row"]
+- !private ["PSo16NSObjectProtocol", "scheduledTimerWithTimeInterval"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- ["PSo16NSObjectProtocol", "time"]
+- !private ["PSo16NSObjectProtocol", "timeIntervalSinceNow"]
+- ["PSo16NSObjectProtocol", "timer"]
+- !private ["PSo16NSObjectProtocol", "uid"]
+- ["PSo16NSObjectProtocol", "updateProfile"]
+- !private ["PSo16NSObjectProtocol", "users"]
+- !private ["PSo16NSObjectProtocol", "value"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "row"]
+- !private ["PSo14NSSecureCoding", "timeIntervalSinceNow"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo7NSTimer", "invalidate"]
+- !private ["CSo7NSTimer", "scheduledTimerWithTimeInterval"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps16RawRepresentable", "Value"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "Firebase"]
+- !private ["PSo21UIAppearanceContainer", "NSDateFormatter"]
+- !private ["PSo21UIAppearanceContainer", "NSTimer"]
+- ["PSo21UIAppearanceContainer", "User"]
+- !private ["PSo21UIAppearanceContainer", "UserTableVC"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "loadUsers"]
+- ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- ["PSo21UIAppearanceContainer", "time"]
+- ["PSo21UIAppearanceContainer", "timer"]
+- ["PSo21UIAppearanceContainer", "updateProfile"]
+- !private ["PSo21UIAppearanceContainer", "users"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Firebase"]
+- !private ["PSo18UIContentContainer", "NSDateFormatter"]
+- !private ["PSo18UIContentContainer", "NSTimer"]
+- ["PSo18UIContentContainer", "User"]
+- !private ["PSo18UIContentContainer", "UserTableVC"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "loadUsers"]
+- ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "time"]
+- ["PSo18UIContentContainer", "timer"]
+- ["PSo18UIContentContainer", "updateProfile"]
+- !private ["PSo18UIContentContainer", "users"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "Firebase"]
+- !private ["PSo18UIFocusEnvironment", "NSDateFormatter"]
+- !private ["PSo18UIFocusEnvironment", "NSTimer"]
+- ["PSo18UIFocusEnvironment", "User"]
+- !private ["PSo18UIFocusEnvironment", "UserTableVC"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "loadUsers"]
+- ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UIFocusEnvironment", "tableView"]
+- ["PSo18UIFocusEnvironment", "time"]
+- ["PSo18UIFocusEnvironment", "timer"]
+- ["PSo18UIFocusEnvironment", "updateProfile"]
+- !private ["PSo18UIFocusEnvironment", "users"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "Firebase"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSDate"]
+- !private ["CSo11UIResponder", "NSDateFormatter"]
+- ["CSo11UIResponder", "NSIndexPath"]
+- ["CSo11UIResponder", "NSTimer"]
+- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "User"]
+- !private ["CSo11UIResponder", "UserTableVC"]
+- !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "loadUsers"]
+- ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- ["CSo11UIResponder", "tableView"]
+- ["CSo11UIResponder", "time"]
+- ["CSo11UIResponder", "timer"]
+- ["CSo11UIResponder", "updateProfile"]
+- !private ["CSo11UIResponder", "users"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo20UIScrollViewDelegate", "Firebase"]
+- !private ["PSo20UIScrollViewDelegate", "NSDateFormatter"]
+- !private ["PSo20UIScrollViewDelegate", "NSTimer"]
+- ["PSo20UIScrollViewDelegate", "User"]
+- !private ["PSo20UIScrollViewDelegate", "UserTableVC"]
+- ["PSo20UIScrollViewDelegate", "init"]
+- ["PSo20UIScrollViewDelegate", "loadUsers"]
+- ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- ["PSo20UIScrollViewDelegate", "tableView"]
+- ["PSo20UIScrollViewDelegate", "time"]
+- ["PSo20UIScrollViewDelegate", "timer"]
+- ["PSo20UIScrollViewDelegate", "updateProfile"]
+- !private ["PSo20UIScrollViewDelegate", "users"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "Firebase"]
+- !private ["PSo16UIStateRestoring", "NSDateFormatter"]
+- !private ["PSo16UIStateRestoring", "NSTimer"]
+- ["PSo16UIStateRestoring", "User"]
+- !private ["PSo16UIStateRestoring", "UserTableVC"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "loadUsers"]
+- ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "time"]
+- ["PSo16UIStateRestoring", "timer"]
+- ["PSo16UIStateRestoring", "updateProfile"]
+- !private ["PSo16UIStateRestoring", "users"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo21UITableViewController", "Firebase"]
+- ["CSo21UITableViewController", "Int"]
+- ["CSo21UITableViewController", "NSDate"]
+- !private ["CSo21UITableViewController", "NSDateFormatter"]
+- ["CSo21UITableViewController", "NSIndexPath"]
+- ["CSo21UITableViewController", "NSTimer"]
+- !private ["CSo21UITableViewController", "String"]
+- ["CSo21UITableViewController", "UITableView"]
+- ["CSo21UITableViewController", "UITableViewCell"]
+- ["CSo21UITableViewController", "User"]
+- !private ["CSo21UITableViewController", "UserTableVC"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "loadUsers"]
+- ["CSo21UITableViewController", "numberOfSectionsInTableView"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "time"]
+- ["CSo21UITableViewController", "timer"]
+- ["CSo21UITableViewController", "updateProfile"]
+- !private ["CSo21UITableViewController", "users"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "Firebase"]
+- !private ["PSo21UITableViewDataSource", "NSDateFormatter"]
+- !private ["PSo21UITableViewDataSource", "NSTimer"]
+- ["PSo21UITableViewDataSource", "User"]
+- !private ["PSo21UITableViewDataSource", "UserTableVC"]
+- ["PSo21UITableViewDataSource", "init"]
+- ["PSo21UITableViewDataSource", "loadUsers"]
+- ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", "time"]
+- ["PSo21UITableViewDataSource", "timer"]
+- ["PSo21UITableViewDataSource", "updateProfile"]
+- !private ["PSo21UITableViewDataSource", "users"]
+- ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "Firebase"]
+- !private ["PSo19UITableViewDelegate", "NSDateFormatter"]
+- !private ["PSo19UITableViewDelegate", "NSTimer"]
+- ["PSo19UITableViewDelegate", "User"]
+- !private ["PSo19UITableViewDelegate", "UserTableVC"]
+- ["PSo19UITableViewDelegate", "init"]
+- ["PSo19UITableViewDelegate", "loadUsers"]
+- ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- ["PSo19UITableViewDelegate", "tableView"]
+- ["PSo19UITableViewDelegate", "time"]
+- ["PSo19UITableViewDelegate", "timer"]
+- ["PSo19UITableViewDelegate", "updateProfile"]
+- !private ["PSo19UITableViewDelegate", "users"]
+- ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "Firebase"]
+- !private ["PSo18UITraitEnvironment", "NSDateFormatter"]
+- !private ["PSo18UITraitEnvironment", "NSTimer"]
+- ["PSo18UITraitEnvironment", "User"]
+- !private ["PSo18UITraitEnvironment", "UserTableVC"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "loadUsers"]
+- ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- ["PSo18UITraitEnvironment", "time"]
+- ["PSo18UITraitEnvironment", "timer"]
+- ["PSo18UITraitEnvironment", "updateProfile"]
+- !private ["PSo18UITraitEnvironment", "users"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo16UIViewController", "Firebase"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "NSDate"]
+- !private ["CSo16UIViewController", "NSDateFormatter"]
+- ["CSo16UIViewController", "NSIndexPath"]
+- ["CSo16UIViewController", "NSTimer"]
+- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "User"]
+- !private ["CSo16UIViewController", "UserTableVC"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "loadUsers"]
+- ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "time"]
+- ["CSo16UIViewController", "timer"]
+- ["CSo16UIViewController", "updateProfile"]
+- !private ["CSo16UIViewController", "users"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["C3esc4UTVC", "Firebase"]
+- ["C3esc4UTVC", "Int"]
+- ["C3esc4UTVC", "NSDate"]
+- !private ["C3esc4UTVC", "NSDateFormatter"]
+- ["C3esc4UTVC", "NSIndexPath"]
+- ["C3esc4UTVC", "NSTimer"]
+- !private ["C3esc4UTVC", "String"]
+- ["C3esc4UTVC", "UITableView"]
+- ["C3esc4UTVC", "UITableViewCell"]
+- ["C3esc4UTVC", "User"]
+- !private ["C3esc4UTVC", "UserTableVC"]
+- ["C3esc4UTVC", "deinit"]
+- ["C3esc4UTVC", "init"]
+- ["C3esc4UTVC", "loadUsers"]
+- ["C3esc4UTVC", "numberOfSectionsInTableView"]
+- ["C3esc4UTVC", "tableView"]
+- ["C3esc4UTVC", "time"]
+- ["C3esc4UTVC", "timer"]
+- ["C3esc4UTVC", "updateProfile"]
+- !private ["C3esc4UTVC", "users"]
+- ["C3esc4UTVC", "viewDidLoad"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "timeIntervalSinceNow"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo9FAuthData"
+- !private "CSo13FDataSnapshot"
+- !private "OSC10FEventType"
+- !private "CSo6FQuery"
+- !private "CSo8Firebase"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo15NSDateFormatter"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo11NSFormatter"
+- !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo7NSTimer"
+- !private "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps16RawRepresentable"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITableView"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- "C3esc4UTVC"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+- !private "objectForKey"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/esc/esc-Bridging-Header.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/Firebase.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FQuery.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FEventType.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FDataSnapshot.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FirebaseApp.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FMutableData.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FTransactionResult.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FAuthData.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FAuthType.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FirebaseServerValue.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FConfig.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "38f9609e86a79630516345b8b520e47e"

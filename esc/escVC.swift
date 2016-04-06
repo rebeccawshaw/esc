@@ -16,13 +16,15 @@ class escVC: UIViewController {
     @IBOutlet weak var chillButton: UIButton!
     @IBOutlet weak var statusText: UILabel!
     
-    let ref = Firebase(url: "https://escapp.firebaseio.com")
     var esc: NSString?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let email = ref.authData.provider
-        statusText.text = email
+        
+        // Retrieve new posts as they are added to your database
+        DataService.dataService.USER_REF.observeEventType(.Value, withBlock: { snapshot in
+            self.statusText.text = snapshot.value.objectForKey("email") as! String
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,16 +51,13 @@ class escVC: UIViewController {
         if segue.identifier == "goto_time" {
             // Create a new user dictionary accessing the user's info
             // provided by the authData parameter
-            let ref = Firebase(url: "https://escapp.firebaseio.com")
-            let uid = ref.authData.uid
-            let userRef = Firebase(url: "https://escapp.firebaseio.com/\(uid)")
             let obj: [String: AnyObject!] = ["esc": esc]
-            userRef.updateChildValues(obj)
+            DataService.dataService.DATA_REF.updateChildValues(obj)
         }
     }
     
     @IBAction func signOutTapped(sender: UIButton) {
-        ref.unauth()
+        DataService.dataService.BASE_REF.unauth()
         self.view.window?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 }

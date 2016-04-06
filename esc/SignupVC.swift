@@ -11,9 +11,9 @@ import UIKit
 
 class SignupVC: UIViewController {
 
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var confirmPassword: UITextField!
+    @IBOutlet weak var _email: UITextField!
+    @IBOutlet weak var _password: UITextField!
+    @IBOutlet weak var _confirmPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,44 +27,46 @@ class SignupVC: UIViewController {
     
     @IBAction func signUpTapped(sender: UIButton) {
         
-        let ref = Firebase(url: "https://escapp.firebaseio.com")
+        let email = _email.text
+        let password = _password.text
+        let confirmPassword = _confirmPassword.text
         
-        if (email.text != "" && password.text != "" && password.text == confirmPassword.text) {
-            ref.createUser(email.text, password: password.text) { (error: NSError!) in
+        if (email != "" && password != "" && password == confirmPassword) {     // check for valid input
+            
+            // create user
+            DataService.dataService.BASE_REF.createUser(email, password: password) { (error: NSError!) in
                 if error == nil {
-                    ref.authUser(self.email.text, password: self.password.text) {
+                    
+                    // authenticate user
+                    DataService.dataService.BASE_REF.authUser(email, password: password) {
                         error, authData in
                         if error != nil {
                             // Something went wrong. :(
-                            let alertController = UIAlertController(title: "auth user", message:
-                                "failed", preferredStyle: UIAlertControllerStyle.Alert)
-                            alertController.addAction(UIAlertAction(title: "try again", style: UIAlertActionStyle.Default,handler: nil))
+                            self.errorAlert("auth user", message: "failed", button: "try again")
                         } else {
                             // Authentication just completed successfully :)
-
-                            // Create a child path with a key set to the uid underneath the "users" node
-                            // This creates a URL path like the following:
-                            //  - https://<YOUR-FIREBASE-APP>.firebaseio.com/users/<uid>
-                            ref.childByAppendingPath(authData.uid)
+                            let emailDict = ["email": email!]
+                            DataService.dataService.createNewAccount(authData.uid, email: emailDict)
                         }
                     }
                     
                     self.view.window?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
                 } else {
-                    let alertController = UIAlertController(title: "create user", message:
-                        "failed", preferredStyle: UIAlertControllerStyle.Alert)
-                    alertController.addAction(UIAlertAction(title: "try again", style: UIAlertActionStyle.Default,handler: nil))
-                    
-                    self.presentViewController(alertController, animated: true, completion: nil)
+                    self.errorAlert("create user", message: "failed", button: "try again")
                 }
             }
         } else {
-            let alertController = UIAlertController(title: "sign up", message:
-                "failed", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "try again", style: UIAlertActionStyle.Default,handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
+            errorAlert("sign up", message: "failed", button: "try again")
         }
+    }
+    
+    // display error in signup
+    func errorAlert(title: String, message: String, button: String) {
+        let alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: button, style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     @IBAction func gotoLogin(sender: UIButton) {

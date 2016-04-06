@@ -6,39 +6,42 @@ provides-nominal:
 provides-member:
 - ["C3esc5escVC", ""]
 provides-dynamic-lookup:
-- "eatTapped"
-- "signOutButton"
-- "signOutTapped"
-- "studyTapped"
-- "prepareForSegue"
-- "didReceiveMemoryWarning"
 - "chillButton"
+- "eatTapped"
+- "prepareForSegue"
+- "esc"
+- "viewDidLoad"
+- "signOutButton"
+- "studyTapped"
+- "studyButton"
 - "chillTapped"
 - "eatButton"
-- "viewDidLoad"
 - "statusText"
-- "ref"
-- "studyButton"
-- "esc"
+- "didReceiveMemoryWarning"
+- "signOutTapped"
 depends-top-level:
 - !private "=="
-- "UIViewController"
-- "UIStoryboardSegue"
-- !private "String"
 - "UIButton"
-- "NSString"
-- "StringLiteralType"
-- "AnyObject"
-- "Firebase"
-- "escVC"
+- "UIStoryboardSegue"
 - !private "BooleanLiteralType"
+- "AnyObject"
+- !private "String"
+- "NSString"
+- !private "DataService"
+- "UIViewController"
 - !private "Dictionary"
+- !private "StringLiteralType"
 - "UILabel"
+- "escVC"
 depends-member:
-- ["Ps9AnyObject", "Firebase"]
-- !private ["Ps9AnyObject", "authData"]
+- !private ["Ps9AnyObject", "BASE_REF"]
+- !private ["Ps9AnyObject", "DATA_REF"]
+- !private ["Ps9AnyObject", "DataService"]
+- !private ["Ps9AnyObject", "USER_REF"]
 - ["Ps9AnyObject", "chillButton"]
 - ["Ps9AnyObject", "chillTapped"]
+- !private ["Ps9AnyObject", "dataService"]
+- !private ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
 - ["Ps9AnyObject", "eatButton"]
@@ -46,10 +49,10 @@ depends-member:
 - ["Ps9AnyObject", "esc"]
 - !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "objectForKey"]
+- !private ["Ps9AnyObject", "observeEventType"]
 - !private ["Ps9AnyObject", "performSegueWithIdentifier"]
 - ["Ps9AnyObject", "prepareForSegue"]
-- !private ["Ps9AnyObject", "provider"]
-- ["Ps9AnyObject", "ref"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - ["Ps9AnyObject", "signOutButton"]
 - ["Ps9AnyObject", "signOutTapped"]
@@ -57,19 +60,17 @@ depends-member:
 - ["Ps9AnyObject", "studyButton"]
 - ["Ps9AnyObject", "studyTapped"]
 - !private ["Ps9AnyObject", "text"]
-- !private ["Ps9AnyObject", "uid"]
 - !private ["Ps9AnyObject", "unauth"]
 - !private ["Ps9AnyObject", "updateChildValues"]
+- !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
-- ["Ps11CVarArgType", "Firebase"]
-- !private ["Ps11CVarArgType", "authData"]
+- !private ["Ps11CVarArgType", "DataService"]
 - ["Ps11CVarArgType", "chillButton"]
 - ["Ps11CVarArgType", "chillTapped"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -79,10 +80,9 @@ depends-member:
 - ["Ps11CVarArgType", "esc"]
 - !private ["Ps11CVarArgType", "identifier"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "observeEventType"]
 - !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
 - ["Ps11CVarArgType", "prepareForSegue"]
-- !private ["Ps11CVarArgType", "provider"]
-- ["Ps11CVarArgType", "ref"]
 - !private ["Ps11CVarArgType", "rootViewController"]
 - ["Ps11CVarArgType", "signOutButton"]
 - ["Ps11CVarArgType", "signOutTapped"]
@@ -90,21 +90,18 @@ depends-member:
 - ["Ps11CVarArgType", "studyButton"]
 - ["Ps11CVarArgType", "studyTapped"]
 - !private ["Ps11CVarArgType", "text"]
-- !private ["Ps11CVarArgType", "uid"]
 - !private ["Ps11CVarArgType", "unauth"]
 - !private ["Ps11CVarArgType", "updateChildValues"]
+- !private ["Ps11CVarArgType", "value"]
 - !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - !private ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
-- !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "Value"]
-- !private ["Ps10Comparable", "init"]
-- ["Ps28CustomDebugStringConvertible", "Firebase"]
+- !private ["Ps28CustomDebugStringConvertible", "DataService"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
-- !private ["Ps28CustomDebugStringConvertible", "authData"]
 - ["Ps28CustomDebugStringConvertible", "chillButton"]
 - ["Ps28CustomDebugStringConvertible", "chillTapped"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -114,10 +111,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "esc"]
 - !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "observeEventType"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
-- !private ["Ps28CustomDebugStringConvertible", "provider"]
-- ["Ps28CustomDebugStringConvertible", "ref"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - ["Ps28CustomDebugStringConvertible", "signOutButton"]
 - ["Ps28CustomDebugStringConvertible", "signOutTapped"]
@@ -125,18 +121,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "studyButton"]
 - ["Ps28CustomDebugStringConvertible", "studyTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
-- !private ["Ps28CustomDebugStringConvertible", "uid"]
 - !private ["Ps28CustomDebugStringConvertible", "unauth"]
 - !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- ["Ps23CustomStringConvertible", "Firebase"]
+- !private ["Ps23CustomStringConvertible", "DataService"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "authData"]
 - ["Ps23CustomStringConvertible", "chillButton"]
 - ["Ps23CustomStringConvertible", "chillTapped"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -146,10 +141,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "esc"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "observeEventType"]
 - !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
-- !private ["Ps23CustomStringConvertible", "provider"]
-- ["Ps23CustomStringConvertible", "ref"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - ["Ps23CustomStringConvertible", "signOutButton"]
 - ["Ps23CustomStringConvertible", "signOutTapped"]
@@ -157,21 +151,24 @@ depends-member:
 - ["Ps23CustomStringConvertible", "studyButton"]
 - ["Ps23CustomStringConvertible", "studyTapped"]
 - !private ["Ps23CustomStringConvertible", "text"]
-- !private ["Ps23CustomStringConvertible", "uid"]
 - !private ["Ps23CustomStringConvertible", "unauth"]
 - !private ["Ps23CustomStringConvertible", "updateChildValues"]
+- !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - !private ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["C3esc11DataService", "BASE_REF"]
+- !private ["C3esc11DataService", "DATA_REF"]
+- !private ["C3esc11DataService", "USER_REF"]
+- !private ["C3esc11DataService", "dataService"]
 - !private ["Vs10Dictionary", "Key"]
 - !private ["Vs10Dictionary", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
-- !private ["Sd", "deinit"]
-- ["Ps9Equatable", "Firebase"]
+- !private ["Ps9Equatable", "DataService"]
+- !private ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "authData"]
 - ["Ps9Equatable", "chillButton"]
 - ["Ps9Equatable", "chillTapped"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -181,10 +178,9 @@ depends-member:
 - ["Ps9Equatable", "esc"]
 - !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "observeEventType"]
 - !private ["Ps9Equatable", "performSegueWithIdentifier"]
 - ["Ps9Equatable", "prepareForSegue"]
-- !private ["Ps9Equatable", "provider"]
-- ["Ps9Equatable", "ref"]
 - !private ["Ps9Equatable", "rootViewController"]
 - ["Ps9Equatable", "signOutButton"]
 - ["Ps9Equatable", "signOutTapped"]
@@ -192,28 +188,24 @@ depends-member:
 - ["Ps9Equatable", "studyButton"]
 - ["Ps9Equatable", "studyTapped"]
 - !private ["Ps9Equatable", "text"]
-- !private ["Ps9Equatable", "uid"]
 - !private ["Ps9Equatable", "unauth"]
 - !private ["Ps9Equatable", "updateChildValues"]
+- !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["CSo9FAuthData", "provider"]
-- !private ["CSo9FAuthData", "uid"]
-- !private ["CSo6FQuery", "authData"]
-- ["CSo6FQuery", "init"]
+- !private ["CSo13FDataSnapshot", "value"]
+- !private ["OSC10FEventType", "Value"]
+- !private ["CSo6FQuery", "observeEventType"]
 - !private ["CSo6FQuery", "unauth"]
 - !private ["CSo6FQuery", "updateChildValues"]
-- !private ["CSo8Firebase", "authData"]
-- ["CSo8Firebase", "init"]
+- !private ["CSo8Firebase", "observeEventType"]
 - !private ["CSo8Firebase", "unauth"]
 - !private ["CSo8Firebase", "updateChildValues"]
-- !private ["Sf", "deinit"]
-- ["Ps8Hashable", "Firebase"]
+- !private ["Ps8Hashable", "DataService"]
+- !private ["Ps8Hashable", "Value"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "authData"]
 - ["Ps8Hashable", "chillButton"]
 - ["Ps8Hashable", "chillTapped"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -223,10 +215,9 @@ depends-member:
 - ["Ps8Hashable", "esc"]
 - !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "observeEventType"]
 - !private ["Ps8Hashable", "performSegueWithIdentifier"]
 - ["Ps8Hashable", "prepareForSegue"]
-- !private ["Ps8Hashable", "provider"]
-- ["Ps8Hashable", "ref"]
 - !private ["Ps8Hashable", "rootViewController"]
 - ["Ps8Hashable", "signOutButton"]
 - ["Ps8Hashable", "signOutTapped"]
@@ -234,23 +225,16 @@ depends-member:
 - ["Ps8Hashable", "studyButton"]
 - ["Ps8Hashable", "studyTapped"]
 - !private ["Ps8Hashable", "text"]
-- !private ["Ps8Hashable", "uid"]
 - !private ["Ps8Hashable", "unauth"]
 - !private ["Ps8Hashable", "updateChildValues"]
+- !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
-- ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
-- !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps14MirrorPathType", "init"]
-- ["PSo8NSCoding", "Firebase"]
+- !private ["PSo8NSCoding", "DataService"]
 - ["PSo8NSCoding", "chillButton"]
 - ["PSo8NSCoding", "chillTapped"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -261,7 +245,6 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "performSegueWithIdentifier"]
 - ["PSo8NSCoding", "prepareForSegue"]
-- ["PSo8NSCoding", "ref"]
 - !private ["PSo8NSCoding", "rootViewController"]
 - ["PSo8NSCoding", "signOutButton"]
 - ["PSo8NSCoding", "signOutTapped"]
@@ -273,8 +256,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - !private ["PSo8NSCoding", "window"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
-- ["PSo26NSExtensionRequestHandling", "Firebase"]
+- !private ["PSo26NSExtensionRequestHandling", "DataService"]
 - ["PSo26NSExtensionRequestHandling", "chillButton"]
 - ["PSo26NSExtensionRequestHandling", "chillTapped"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -285,7 +267,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
 - ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
-- ["PSo26NSExtensionRequestHandling", "ref"]
 - ["PSo26NSExtensionRequestHandling", "signOutButton"]
 - ["PSo26NSExtensionRequestHandling", "signOutTapped"]
 - ["PSo26NSExtensionRequestHandling", "statusText"]
@@ -294,15 +275,13 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
-- ["CSo8NSObject", "Firebase"]
+- !private ["CSo8NSObject", "DataService"]
 - ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
-- !private ["CSo8NSObject", "authData"]
 - ["CSo8NSObject", "chillButton"]
 - ["CSo8NSObject", "chillTapped"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -312,10 +291,9 @@ depends-member:
 - ["CSo8NSObject", "esc"]
 - !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "observeEventType"]
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - ["CSo8NSObject", "prepareForSegue"]
-- !private ["CSo8NSObject", "provider"]
-- ["CSo8NSObject", "ref"]
 - !private ["CSo8NSObject", "rootViewController"]
 - ["CSo8NSObject", "signOutButton"]
 - ["CSo8NSObject", "signOutTapped"]
@@ -323,14 +301,13 @@ depends-member:
 - ["CSo8NSObject", "studyButton"]
 - ["CSo8NSObject", "studyTapped"]
 - !private ["CSo8NSObject", "text"]
-- !private ["CSo8NSObject", "uid"]
 - !private ["CSo8NSObject", "unauth"]
 - !private ["CSo8NSObject", "updateChildValues"]
+- !private ["CSo8NSObject", "value"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "window"]
-- ["PSo16NSObjectProtocol", "Firebase"]
-- !private ["PSo16NSObjectProtocol", "authData"]
+- !private ["PSo16NSObjectProtocol", "DataService"]
 - ["PSo16NSObjectProtocol", "chillButton"]
 - ["PSo16NSObjectProtocol", "chillTapped"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -340,10 +317,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "esc"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "observeEventType"]
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
-- !private ["PSo16NSObjectProtocol", "provider"]
-- ["PSo16NSObjectProtocol", "ref"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - ["PSo16NSObjectProtocol", "signOutButton"]
 - ["PSo16NSObjectProtocol", "signOutTapped"]
@@ -351,31 +327,26 @@ depends-member:
 - ["PSo16NSObjectProtocol", "studyButton"]
 - ["PSo16NSObjectProtocol", "studyTapped"]
 - !private ["PSo16NSObjectProtocol", "text"]
-- !private ["PSo16NSObjectProtocol", "uid"]
 - !private ["PSo16NSObjectProtocol", "unauth"]
 - !private ["PSo16NSObjectProtocol", "updateChildValues"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "deinit"]
-- !private ["CSo8NSString", "init"]
 - !private ["Sq", "deinit"]
-- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps16RawRepresentable", "Value"]
 - !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "Value"]
-- !private ["Ps10Streamable", "init"]
-- !private ["SS", "init"]
-- !private ["Ps30StringInterpolationConvertible", "init"]
-- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["SS", "deinit"]
 - !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "window"]
 - !private ["PSo12UIAppearance", "rootViewController"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "window"]
-- ["PSo21UIAppearanceContainer", "Firebase"]
+- !private ["PSo21UIAppearanceContainer", "DataService"]
 - ["PSo21UIAppearanceContainer", "chillButton"]
 - ["PSo21UIAppearanceContainer", "chillTapped"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -386,7 +357,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "prepareForSegue"]
-- ["PSo21UIAppearanceContainer", "ref"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - ["PSo21UIAppearanceContainer", "signOutButton"]
 - ["PSo21UIAppearanceContainer", "signOutTapped"]
@@ -398,7 +368,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - !private ["PSo21UIAppearanceContainer", "window"]
 - ["PSo21UIAppearanceContainer", ""]
-- ["PSo18UIContentContainer", "Firebase"]
+- !private ["PSo18UIContentContainer", "DataService"]
 - ["PSo18UIContentContainer", "chillButton"]
 - ["PSo18UIContentContainer", "chillTapped"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -409,7 +379,6 @@ depends-member:
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
 - ["PSo18UIContentContainer", "prepareForSegue"]
-- ["PSo18UIContentContainer", "ref"]
 - ["PSo18UIContentContainer", "signOutButton"]
 - ["PSo18UIContentContainer", "signOutTapped"]
 - ["PSo18UIContentContainer", "statusText"]
@@ -424,7 +393,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "rootViewController"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "window"]
-- ["PSo18UIFocusEnvironment", "Firebase"]
+- !private ["PSo18UIFocusEnvironment", "DataService"]
 - ["PSo18UIFocusEnvironment", "chillButton"]
 - ["PSo18UIFocusEnvironment", "chillTapped"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -435,7 +404,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "prepareForSegue"]
-- ["PSo18UIFocusEnvironment", "ref"]
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - ["PSo18UIFocusEnvironment", "signOutButton"]
 - ["PSo18UIFocusEnvironment", "signOutTapped"]
@@ -449,7 +417,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
-- ["CSo11UIResponder", "Firebase"]
+- !private ["CSo11UIResponder", "DataService"]
 - ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
@@ -465,7 +433,6 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - ["CSo11UIResponder", "prepareForSegue"]
-- ["CSo11UIResponder", "ref"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - ["CSo11UIResponder", "signOutButton"]
 - ["CSo11UIResponder", "signOutTapped"]
@@ -476,7 +443,7 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo11UIResponder", "window"]
-- ["PSo16UIStateRestoring", "Firebase"]
+- !private ["PSo16UIStateRestoring", "DataService"]
 - ["PSo16UIStateRestoring", "chillButton"]
 - ["PSo16UIStateRestoring", "chillTapped"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -487,7 +454,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
 - ["PSo16UIStateRestoring", "prepareForSegue"]
-- ["PSo16UIStateRestoring", "ref"]
 - ["PSo16UIStateRestoring", "signOutButton"]
 - ["PSo16UIStateRestoring", "signOutTapped"]
 - ["PSo16UIStateRestoring", "statusText"]
@@ -497,7 +463,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
-- ["PSo18UITraitEnvironment", "Firebase"]
+- !private ["PSo18UITraitEnvironment", "DataService"]
 - ["PSo18UITraitEnvironment", "chillButton"]
 - ["PSo18UITraitEnvironment", "chillTapped"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -508,7 +474,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
 - ["PSo18UITraitEnvironment", "prepareForSegue"]
-- ["PSo18UITraitEnvironment", "ref"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
 - ["PSo18UITraitEnvironment", "signOutButton"]
 - ["PSo18UITraitEnvironment", "signOutTapped"]
@@ -524,7 +489,7 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "window"]
 - ["CSo16UIViewController", "AnyObject"]
-- ["CSo16UIViewController", "Firebase"]
+- !private ["CSo16UIViewController", "DataService"]
 - ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
@@ -540,7 +505,6 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "performSegueWithIdentifier"]
 - ["CSo16UIViewController", "prepareForSegue"]
-- ["CSo16UIViewController", "ref"]
 - ["CSo16UIViewController", "signOutButton"]
 - ["CSo16UIViewController", "signOutTapped"]
 - ["CSo16UIViewController", "statusText"]
@@ -550,32 +514,19 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["CSo8UIWindow", "rootViewController"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps12_Reflectable", "Key"]
 - !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "rootViewController"]
 - !private ["Ps12_Reflectable", "text"]
 - !private ["Ps12_Reflectable", "window"]
 - ["C3esc5escVC", "AnyObject"]
-- ["C3esc5escVC", "Firebase"]
+- !private ["C3esc5escVC", "DataService"]
 - ["C3esc5escVC", "NSString"]
 - !private ["C3esc5escVC", "String"]
 - ["C3esc5escVC", "UIButton"]
@@ -591,7 +542,6 @@ depends-member:
 - ["C3esc5escVC", "init"]
 - !private ["C3esc5escVC", "performSegueWithIdentifier"]
 - ["C3esc5escVC", "prepareForSegue"]
-- ["C3esc5escVC", "ref"]
 - ["C3esc5escVC", "signOutButton"]
 - ["C3esc5escVC", "signOutTapped"]
 - ["C3esc5escVC", "statusText"]
@@ -605,44 +555,28 @@ depends-nominal:
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - "Ps11CVarArgType"
-- !private "Vs9Character"
 - !private "Ps14CollectionType"
-- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "C3esc11DataService"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
-- !private "Sd"
 - "Ps9Equatable"
-- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
-- !private "CSo9FAuthData"
-- "CSo6FQuery"
-- "CSo8Firebase"
-- !private "Sf"
+- !private "CSo13FDataSnapshot"
+- !private "OSC10FEventType"
+- !private "CSo6FQuery"
+- !private "CSo8Firebase"
 - "Ps8Hashable"
-- "SQ"
 - !private "Ps9Indexable"
-- !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
-- !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
-- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "Sq"
-- !private "Ps16OutputStreamType"
+- !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
-- !private "Ps10Streamable"
 - !private "SS"
-- !private "Ps30StringInterpolationConvertible"
-- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -658,23 +592,13 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "CSo8UIWindow"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
-- !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
-- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- !private "Ps32_BuiltinStringLiteralConvertible"
-- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
-- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps12_Reflectable"
 - "C3esc5escVC"
 depends-dynamic-lookup:
+- !private "objectForKey"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Users/rebeccawshaw/Documents/Xcode/esc/esc/esc-Bridging-Header.h"
@@ -697,4 +621,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "59a2b6db5e7f01ebe431192f1f923460"
+interface-hash: "8dd6078e837fe7d3a5aed895b8971035"

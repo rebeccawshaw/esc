@@ -11,8 +11,8 @@ import UIKit
 
 class LoginVC: UIViewController {
     
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var _email: UITextField!
+    @IBOutlet weak var _password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +25,8 @@ class LoginVC: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let ref = Firebase(url: "https://escapp.firebaseio.com")
-        ref.observeAuthEventWithBlock({ authData in
+
+        DataService.dataService.BASE_REF.observeAuthEventWithBlock({ authData in
             if authData != nil {
                 // user authenticated
                 self.performSegueWithIdentifier("goto_esc", sender: nil)
@@ -38,9 +37,10 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func signinTapped(sender: UIButton)  {
-        let ref = Firebase(url: "https://escapp.firebaseio.com")
+        let email = _email.text
+        let password = _password.text
         
-        ref.authUser(email.text, password: password.text) {
+        DataService.dataService.BASE_REF.authUser(email, password: password) {
             error, authData in
             if error != nil {
                 // an error occured while attempting login
@@ -54,4 +54,5 @@ class LoginVC: UIViewController {
             }
         }
     }
+    
 }

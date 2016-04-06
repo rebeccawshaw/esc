@@ -12,7 +12,6 @@ import UIKit
 class TimeVC: UIViewController {
 
     @IBOutlet weak var pickTime: UIDatePicker!
-    var time: NSDate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +22,13 @@ class TimeVC: UIViewController {
     }
     
     @IBAction func setTimeTapped(sender: UIButton) {
+        let timeFormatter = NSDateFormatter()
+        timeFormatter.dateFormat = "hh:mm a"
+        let strTime = timeFormatter.stringFromDate(pickTime.date)
+        
+        let tm: [String: AnyObject!] = ["time": strTime]
+        DataService.dataService.DATA_REF.updateChildValues(tm)
+        
         self.performSegueWithIdentifier("goto_loc", sender: self)
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "goto_loc" {
-            let ref = Firebase(url: "https://escapp.firebaseio.com")
-            let uid = ref.authData.uid
-            let userRef = Firebase(url: "https://escapp.firebaseio.com/\(uid)")
-            let tm: [String: AnyObject!] = ["time": time]
-            userRef.updateChildValues(tm)
-            
-            var locationVC = segue.destinationViewController as! LocationVC
-            locationVC.time = pickTime.date
-        }
     }
 }

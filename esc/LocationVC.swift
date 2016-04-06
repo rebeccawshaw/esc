@@ -14,7 +14,6 @@ class LocationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     @IBOutlet weak var pickLocation: UIPickerView!
     
     var pickLocationOptions: [String] = [String]()
-    var time: NSDate?
     var location: NSString?
     
     override func viewDidLoad() {
@@ -55,19 +54,9 @@ class LocationVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     @IBAction func setLocationTapped(sender: UIButton) {
         // Create a new user dictionary accessing the user's info
         // provided by the authData parameter
-        let ref = Firebase(url: "https://escapp.firebaseio.com")
-        let uid = ref.authData.uid
-        let userRef = Firebase(url: "https://escapp.firebaseio.com/\(uid)")
         let loc: [String: AnyObject!] = ["location": location]
-        userRef.updateChildValues(loc)
+        DataService.dataService.DATA_REF.updateChildValues(loc)
         
         self.performSegueWithIdentifier("goto_main", sender: self)
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "goto_main" {
-            var mainVC = segue.destinationViewController as! MainVC
-            mainVC.time = time
-        }
     }
 }

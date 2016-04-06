@@ -113,32 +113,17 @@ SWIFT_CLASS("_TtC3esc11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
+@class UIPickerView;
 @class UIButton;
-@class UIStoryboardSegue;
-@class UIDatePicker;
 @class NSBundle;
 @class NSCoder;
-
-SWIFT_CLASS("_TtC3esc6DateVC")
-@interface DateVC : UIViewController
-@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified pickTime;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (IBAction)setTimeTapped:(UIButton * _Nonnull)sender;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSDate;
-@class UIPickerView;
 
 SWIFT_CLASS("_TtC3esc10LocationVC")
 @interface LocationVC : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified pickLocation;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull pickLocationOptions;
-@property (nonatomic, copy) NSString * _Nullable location;
-@property (nonatomic, strong) NSDate * _Nullable time;
+@property (nonatomic, strong) NSString * _Nullable location;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
@@ -146,62 +131,27 @@ SWIFT_CLASS("_TtC3esc10LocationVC")
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (IBAction)setLocationTapped:(UIButton * _Nonnull)sender;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSTimer;
-@class UILabel;
-
-SWIFT_CLASS("_TtC3esc6MainVC")
-@interface MainVC : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified countdownLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLabel;
-@property (nonatomic, copy) NSString * _Nullable location;
-@property (nonatomic, strong) NSDate * _Nullable time;
-@property (nonatomic, strong) NSTimer * _Nullable timer;
-- (void)viewDidLoad;
-- (void)updateProfile;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC3esc14ViewController")
-@interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signOutButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified eatButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified studyButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified chillButton;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusText;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (void)viewDidAppear:(BOOL)animated;
-- (IBAction)eatTapped:(UIButton * _Nonnull)sender;
-- (IBAction)studyTapped:(UIButton * _Nonnull)sender;
-- (IBAction)chillTapped:(UIButton * _Nonnull)sender;
-- (IBAction)signOutTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITextField;
 
-SWIFT_CLASS("_TtC3esc7loginVC")
-@interface loginVC : UIViewController
+SWIFT_CLASS("_TtC3esc7LoginVC")
+@interface LoginVC : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (IBAction)signInTapped:(UIButton * _Nonnull)sender;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)signinTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC3esc8signupVC")
-@interface signupVC : UIViewController
+SWIFT_CLASS("_TtC3esc8SignupVC")
+@interface SignupVC : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified confirmPassword;
@@ -209,6 +159,74 @@ SWIFT_CLASS("_TtC3esc8signupVC")
 - (void)didReceiveMemoryWarning;
 - (IBAction)signUpTapped:(UIButton * _Nonnull)sender;
 - (IBAction)gotoLogin:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIDatePicker;
+
+SWIFT_CLASS("_TtC3esc6TimeVC")
+@interface TimeVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified pickTime;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)setTimeTapped:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSTimer;
+@class NSDate;
+@class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+
+SWIFT_CLASS("_TtC3esc11UserTableVC")
+@interface UserTableVC : UITableViewController
+@property (nonatomic, strong) NSTimer * _Nullable timer;
+@property (nonatomic, strong) NSDate * _Nullable time;
+- (void)viewDidLoad;
+- (void)updateProfile;
+- (void)loadUsers;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC3esc17UserTableViewCell")
+@interface UserTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usrLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dataLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class Firebase;
+@class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC3esc5escVC")
+@interface escVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signOutButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified eatButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified studyButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified chillButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusText;
+@property (nonatomic, readonly, strong) Firebase * _Null_unspecified ref;
+@property (nonatomic, strong) NSString * _Nullable esc;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)eatTapped:(UIButton * _Nonnull)sender;
+- (IBAction)studyTapped:(UIButton * _Nonnull)sender;
+- (IBAction)chillTapped:(UIButton * _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)signOutTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

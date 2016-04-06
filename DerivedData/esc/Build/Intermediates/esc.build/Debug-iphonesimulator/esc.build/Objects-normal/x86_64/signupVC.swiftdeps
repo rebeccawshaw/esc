@@ -1,33 +1,37 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "signupVC"
+- "SignupVC"
 provides-nominal:
-- "C3esc8signupVC"
+- "C3esc8SignupVC"
 provides-member:
-- ["C3esc8signupVC", ""]
+- ["C3esc8SignupVC", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "password"
-- "email"
-- "signUpTapped"
 - "gotoLogin"
+- "password"
 - "didReceiveMemoryWarning"
+- "email"
+- "viewDidLoad"
+- "signUpTapped"
 - "confirmPassword"
 depends-top-level:
-- "UIButton"
-- "BooleanLiteralType"
-- !private "UIAlertAction"
-- !private "&&"
-- "UITextField"
-- "UIViewController"
-- !private "UIAlertActionStyle"
-- !private "String"
-- !private "UIAlertController"
-- "signupVC"
-- !private "UIAlertControllerStyle"
 - !private "StringLiteralType"
+- "Dictionary"
+- "UIButton"
+- !private "UIAlertController"
+- !private "UIAlertControllerStyle"
 - !private "Firebase"
+- "UIViewController"
+- !private "=="
+- !private "String"
+- !private "&&"
+- !private "UIAlertActionStyle"
+- "BooleanLiteralType"
+- "SignupVC"
+- !private "NSError"
+- !private "UIAlertAction"
+- "UITextField"
 - !private "!="
+- !private "AnyObject"
 depends-member:
 - !private ["Ps9AnyObject", "Firebase"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
@@ -35,6 +39,8 @@ depends-member:
 - !private ["Ps9AnyObject", "UIAlertController"]
 - !private ["Ps9AnyObject", "UIAlertControllerStyle"]
 - !private ["Ps9AnyObject", "addAction"]
+- !private ["Ps9AnyObject", "authUser"]
+- !private ["Ps9AnyObject", "childByAppendingPath"]
 - ["Ps9AnyObject", "confirmPassword"]
 - !private ["Ps9AnyObject", "createUser"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -44,22 +50,27 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "password"]
 - !private ["Ps9AnyObject", "presentViewController"]
+- !private ["Ps9AnyObject", "rootViewController"]
 - ["Ps9AnyObject", "signUpTapped"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "uid"]
+- !private ["Ps9AnyObject", "updateChildValues"]
+- !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
-- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
-- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["Ps11CVarArgType", "Firebase"]
-- !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertActionStyle"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
 - !private ["Ps11CVarArgType", "UIAlertControllerStyle"]
 - !private ["Ps11CVarArgType", "addAction"]
+- !private ["Ps11CVarArgType", "authUser"]
+- !private ["Ps11CVarArgType", "childByAppendingPath"]
 - ["Ps11CVarArgType", "confirmPassword"]
 - !private ["Ps11CVarArgType", "createUser"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -69,28 +80,29 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "password"]
 - !private ["Ps11CVarArgType", "presentViewController"]
+- !private ["Ps11CVarArgType", "rootViewController"]
 - ["Ps11CVarArgType", "signUpTapped"]
 - !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "uid"]
+- !private ["Ps11CVarArgType", "updateChildValues"]
+- !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
+- !private ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
-- !private ["Ps14CollectionType", "Generator"]
-- !private ["Ps14CollectionType", "Index"]
-- !private ["Ps14CollectionType", "SubSequence"]
-- !private ["Ps14CollectionType", "_Element"]
-- !private ["Ps14CollectionType", "subscript"]
-- !private ["Ps10Comparable", "Distance"]
-- !private ["Ps10Comparable", "IntegerLiteralType"]
-- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Firebase"]
-- !private ["Ps28CustomDebugStringConvertible", "Generator"]
-- !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertControllerStyle"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- !private ["Ps28CustomDebugStringConvertible", "authUser"]
+- !private ["Ps28CustomDebugStringConvertible", "childByAppendingPath"]
 - ["Ps28CustomDebugStringConvertible", "confirmPassword"]
 - !private ["Ps28CustomDebugStringConvertible", "createUser"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -100,23 +112,26 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "password"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - ["Ps28CustomDebugStringConvertible", "signUpTapped"]
-- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
+- !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "Firebase"]
-- !private ["Ps23CustomStringConvertible", "Generator"]
-- !private ["Ps23CustomStringConvertible", "Index"]
-- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - !private ["Ps23CustomStringConvertible", "UIAlertControllerStyle"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
+- !private ["Ps23CustomStringConvertible", "authUser"]
+- !private ["Ps23CustomStringConvertible", "childByAppendingPath"]
 - ["Ps23CustomStringConvertible", "confirmPassword"]
 - !private ["Ps23CustomStringConvertible", "createUser"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -126,37 +141,31 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "password"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
+- !private ["Ps23CustomStringConvertible", "rootViewController"]
 - ["Ps23CustomStringConvertible", "signUpTapped"]
-- !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "uid"]
+- !private ["Ps23CustomStringConvertible", "updateChildValues"]
+- !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Vs10Dictionary", "Generator"]
-- !private ["Vs10Dictionary", "Index"]
-- !private ["Vs10Dictionary", "SubSequence"]
-- !private ["Vs10Dictionary", "_Element"]
-- !private ["Vs10Dictionary", "deinit"]
-- !private ["Vs10Dictionary", "subscript"]
-- !private ["Vs15DictionaryIndex", "Distance"]
-- !private ["Vs15DictionaryIndex", "_DisabledRangeIndex"]
-- !private ["Vs15DictionaryIndex", "deinit"]
-- !private ["Ps28DictionaryLiteralConvertible", "Generator"]
-- !private ["Ps28DictionaryLiteralConvertible", "Index"]
-- !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
-- !private ["Ps28DictionaryLiteralConvertible", "_Element"]
-- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "Alert"]
 - !private ["Ps9Equatable", "Default"]
-- !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Firebase"]
-- !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertActionStyle"]
 - !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "UIAlertControllerStyle"]
-- !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
+- !private ["Ps9Equatable", "authUser"]
+- !private ["Ps9Equatable", "childByAppendingPath"]
 - ["Ps9Equatable", "confirmPassword"]
 - !private ["Ps9Equatable", "createUser"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -166,28 +175,39 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "password"]
 - !private ["Ps9Equatable", "presentViewController"]
+- !private ["Ps9Equatable", "rootViewController"]
 - ["Ps9Equatable", "signUpTapped"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "uid"]
+- !private ["Ps9Equatable", "updateChildValues"]
+- !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo9FAuthData", "uid"]
+- !private ["CSo6FQuery", "authUser"]
+- !private ["CSo6FQuery", "childByAppendingPath"]
 - !private ["CSo6FQuery", "createUser"]
 - !private ["CSo6FQuery", "init"]
+- !private ["CSo6FQuery", "updateChildValues"]
+- !private ["CSo8Firebase", "authUser"]
+- !private ["CSo8Firebase", "childByAppendingPath"]
 - !private ["CSo8Firebase", "createUser"]
 - !private ["CSo8Firebase", "init"]
-- !private ["Ps16ForwardIndexType", "Distance"]
-- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
-- !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
-- !private ["Ps13GeneratorType", "Element"]
+- !private ["CSo8Firebase", "updateChildValues"]
+- !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "Alert"]
 - !private ["Ps8Hashable", "Default"]
 - !private ["Ps8Hashable", "Firebase"]
-- !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertActionStyle"]
 - !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "UIAlertControllerStyle"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
+- !private ["Ps8Hashable", "authUser"]
+- !private ["Ps8Hashable", "childByAppendingPath"]
 - ["Ps8Hashable", "confirmPassword"]
 - !private ["Ps8Hashable", "createUser"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -197,22 +217,24 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "password"]
 - !private ["Ps8Hashable", "presentViewController"]
+- !private ["Ps8Hashable", "rootViewController"]
 - ["Ps8Hashable", "signUpTapped"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "uid"]
+- !private ["Ps8Hashable", "updateChildValues"]
+- !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Generator"]
-- !private ["Ps9Indexable", "Index"]
-- !private ["Ps9Indexable", "SubSequence"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "subscript"]
-- !private ["Vs17IndexingGenerator", "Element"]
-- !private ["Si", "IntegerLiteralType"]
-- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["Ps11IntegerType", "IntegerLiteralType"]
-- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "Firebase"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertActionStyle"]
@@ -227,9 +249,12 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "password"]
 - !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "rootViewController"]
 - ["PSo8NSCoding", "signUpTapped"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "window"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["CSo7NSError", "deinit"]
@@ -248,9 +273,13 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "password"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - ["PSo26NSExtensionRequestHandling", "signUpTapped"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "Firebase"]
+- !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertActionStyle"]
@@ -259,6 +288,8 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "authUser"]
+- !private ["CSo8NSObject", "childByAppendingPath"]
 - ["CSo8NSObject", "confirmPassword"]
 - !private ["CSo8NSObject", "createUser"]
 - !private ["CSo8NSObject", "deinit"]
@@ -269,15 +300,22 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "password"]
 - !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "rootViewController"]
 - ["CSo8NSObject", "signUpTapped"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "uid"]
+- !private ["CSo8NSObject", "updateChildValues"]
+- !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "Firebase"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "authUser"]
+- !private ["PSo16NSObjectProtocol", "childByAppendingPath"]
 - ["PSo16NSObjectProtocol", "confirmPassword"]
 - !private ["PSo16NSObjectProtocol", "createUser"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -287,35 +325,61 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "password"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
 - ["PSo16NSObjectProtocol", "signUpTapped"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "uid"]
+- !private ["PSo16NSObjectProtocol", "updateChildValues"]
+- !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
 - !private ["Sq", "deinit"]
-- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
-- !private ["Vs5Range", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps16RawRepresentable", "Alert"]
 - !private ["Ps16RawRepresentable", "Default"]
-- !private ["Ps12SequenceType", "Element"]
-- !private ["Ps12SequenceType", "Generator"]
-- !private ["Ps12SequenceType", "Index"]
-- !private ["Ps12SequenceType", "SubSequence"]
-- !private ["Ps12SequenceType", "_Element"]
-- !private ["Ps12SequenceType", "subscript"]
-- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
-- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
-- !private ["Vs5Slice", "Generator"]
-- !private ["Vs5Slice", "Index"]
-- !private ["Vs5Slice", "SubSequence"]
-- !private ["Vs5Slice", "_Element"]
-- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["C3esc8SignupVC", "AnyObject"]
+- !private ["C3esc8SignupVC", "Firebase"]
+- !private ["C3esc8SignupVC", "NSError"]
+- !private ["C3esc8SignupVC", "String"]
+- !private ["C3esc8SignupVC", "UIAlertAction"]
+- !private ["C3esc8SignupVC", "UIAlertActionStyle"]
+- !private ["C3esc8SignupVC", "UIAlertController"]
+- !private ["C3esc8SignupVC", "UIAlertControllerStyle"]
+- ["C3esc8SignupVC", "UIButton"]
+- ["C3esc8SignupVC", "UITextField"]
+- ["C3esc8SignupVC", "confirmPassword"]
+- ["C3esc8SignupVC", "deinit"]
+- ["C3esc8SignupVC", "didReceiveMemoryWarning"]
+- !private ["C3esc8SignupVC", "dismissViewControllerAnimated"]
+- ["C3esc8SignupVC", "email"]
+- ["C3esc8SignupVC", "gotoLogin"]
+- ["C3esc8SignupVC", "init"]
+- ["C3esc8SignupVC", "password"]
+- !private ["C3esc8SignupVC", "presentViewController"]
+- ["C3esc8SignupVC", "signUpTapped"]
+- !private ["C3esc8SignupVC", "view"]
+- ["C3esc8SignupVC", "viewDidLoad"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "window"]
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "Default"]
 - !private ["CSo17UIAlertController", "addAction"]
 - !private ["CSo17UIAlertController", "init"]
 - !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo12UIAppearance", "rootViewController"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "window"]
 - !private ["PSo21UIAppearanceContainer", "Firebase"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
@@ -330,9 +394,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "password"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - ["PSo21UIAppearanceContainer", "signUpTapped"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "window"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "Firebase"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
@@ -349,11 +416,16 @@ depends-member:
 - ["PSo18UIContentContainer", "password"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - ["PSo18UIContentContainer", "signUpTapped"]
+- !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "window"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "window"]
 - !private ["PSo18UIFocusEnvironment", "Firebase"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
@@ -368,12 +440,17 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "password"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - ["PSo18UIFocusEnvironment", "signUpTapped"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- !private ["PSo18UIFocusEnvironment", "window"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "Firebase"]
+- !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertActionStyle"]
@@ -390,9 +467,12 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "password"]
 - !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "rootViewController"]
 - ["CSo11UIResponder", "signUpTapped"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo11UIResponder", "window"]
 - !private ["PSo16UIStateRestoring", "Firebase"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
@@ -408,6 +488,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "password"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - ["PSo16UIStateRestoring", "signUpTapped"]
+- !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "text"]
@@ -427,12 +508,19 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "password"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
 - ["PSo18UITraitEnvironment", "signUpTapped"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
+- !private ["PSo18UITraitEnvironment", "window"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "window"]
+- !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "Firebase"]
+- !private ["CSo16UIViewController", "NSError"]
 - !private ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertActionStyle"]
@@ -450,96 +538,81 @@ depends-member:
 - ["CSo16UIViewController", "password"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - ["CSo16UIViewController", "signUpTapped"]
+- !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["CSo8UIWindow", "rootViewController"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["Ps14_Incrementable", "Distance"]
-- !private ["Ps14_Incrementable", "IntegerLiteralType"]
-- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
-- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["Ps12_IntegerType", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
-- !private ["Ps12_Reflectable", "Generator"]
-- !private ["Ps12_Reflectable", "Index"]
-- !private ["Ps12_Reflectable", "IntegerLiteralType"]
-- !private ["Ps12_Reflectable", "SubSequence"]
-- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "rootViewController"]
 - !private ["Ps12_Reflectable", "text"]
-- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
-- !private ["C3esc8signupVC", "Firebase"]
-- !private ["C3esc8signupVC", "String"]
-- !private ["C3esc8signupVC", "UIAlertAction"]
-- !private ["C3esc8signupVC", "UIAlertActionStyle"]
-- !private ["C3esc8signupVC", "UIAlertController"]
-- !private ["C3esc8signupVC", "UIAlertControllerStyle"]
-- ["C3esc8signupVC", "UIButton"]
-- ["C3esc8signupVC", "UITextField"]
-- ["C3esc8signupVC", "confirmPassword"]
-- ["C3esc8signupVC", "deinit"]
-- ["C3esc8signupVC", "didReceiveMemoryWarning"]
-- !private ["C3esc8signupVC", "dismissViewControllerAnimated"]
-- ["C3esc8signupVC", "email"]
-- ["C3esc8signupVC", "gotoLogin"]
-- ["C3esc8signupVC", "init"]
-- ["C3esc8signupVC", "password"]
-- !private ["C3esc8signupVC", "presentViewController"]
-- ["C3esc8signupVC", "signUpTapped"]
-- ["C3esc8signupVC", "viewDidLoad"]
+- !private ["Ps12_Reflectable", "window"]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Ps22BidirectionalIndexType"
-- !private "Ps21BitwiseOperationsType"
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - !private "Vs10Dictionary"
-- !private "Vs15DictionaryIndex"
 - !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo9FAuthData"
 - !private "CSo6FQuery"
 - !private "CSo8Firebase"
-- !private "Ps16ForwardIndexType"
-- !private "Ps13GeneratorType"
+- !private "Sf"
 - "Ps8Hashable"
 - !private "SQ"
 - !private "Ps9Indexable"
-- !private "Vs17IndexingGenerator"
 - !private "Si"
-- !private "Ps21IntegerArithmeticType"
-- !private "Ps25IntegerLiteralConvertible"
-- !private "Ps11IntegerType"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo7NSError"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "Sq"
-- !private "Ps21RandomAccessIndexType"
-- !private "Vs5Range"
+- !private "Ps16OutputStreamType"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
-- !private "Ps17SignedIntegerType"
-- !private "Ps16SignedNumberType"
-- !private "Vs5Slice"
-- !private "Ps10Strideable"
+- "C3esc8SignupVC"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "CSo13UIAlertAction"
 - !private "OSC18UIAlertActionStyle"
@@ -561,17 +634,22 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "CSo8UIWindow"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
-- !private "Ps33_BuiltinIntegerLiteralConvertible"
-- !private "Ps14_Incrementable"
-- !private "Ps22_IntegerArithmeticType"
-- !private "Ps12_IntegerType"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
-- !private "Ps22_RandomAccessAmbiguity"
 - !private "Ps12_Reflectable"
-- !private "Ps18_SignedIntegerType"
-- "C3esc8signupVC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -595,4 +673,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "90a72161fe86964013b085b28b8f2a77"
+interface-hash: "80c9d39dd797e0da60e7af103f2d8f6d"
