@@ -82,3 +82,14 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-escTests/Firebase.framework"
+  install_framework "Pods-escTests/JSQMessagesViewController.framework"
+  install_framework "Pods-escTests/JSQSystemSoundPlayer.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-escTests/Firebase.framework"
+  install_framework "Pods-escTests/JSQMessagesViewController.framework"
+  install_framework "Pods-escTests/JSQSystemSoundPlayer.framework"
+fi

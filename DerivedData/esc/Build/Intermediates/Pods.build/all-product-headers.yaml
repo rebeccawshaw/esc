@@ -1,0 +1,426 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Firebase.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FAuthData.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FAuthData.h"
+        },
+        {
+          'type': 'file',
+          'name': "FAuthType.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FAuthType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FConfig.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "FDataSnapshot.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FDataSnapshot.h"
+        },
+        {
+          'type': 'file',
+          'name': "FEventType.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FEventType.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMutableData.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FMutableData.h"
+        },
+        {
+          'type': 'file',
+          'name': "FQuery.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "FTransactionResult.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FTransactionResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "Firebase-Swift.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Firebase.framework/Headers/Firebase-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Firebase-umbrella.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Target Support Files/Firebase/Firebase-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Firebase.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/Firebase.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseApp.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FirebaseApp.h"
+        },
+        {
+          'type': 'file',
+          'name': "FirebaseServerValue.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Firebase/FirebaseServerValue.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Firebase.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Intermediates/Pods.build/Debug-iphoneos/Firebase.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/JSQMessagesViewController.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "JSQLocationMediaItem.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQLocationMediaItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMediaItem.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMediaItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessage.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessage.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessageAvatarImageDataSource.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessageAvatarImageDataSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessageBubbleImageDataSource.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessageBubbleImageDataSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessageData.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessageData.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessageMediaData.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessageMediaData.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessages.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/JSQMessages.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesAvatarImage.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesAvatarImage.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesAvatarImageFactory.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Factories/JSQMessagesAvatarImageFactory.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesBubbleImage.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesBubbleImage.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesBubbleImageFactory.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Factories/JSQMessagesBubbleImageFactory.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesBubbleSizeCalculating.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Layout/JSQMessagesBubbleSizeCalculating.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesBubblesSizeCalculator.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Layout/JSQMessagesBubblesSizeCalculator.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCellTextView.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCellTextView.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionView.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionView.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionViewCell.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCell.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionViewCellIncoming.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionViewCellOutgoing.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionViewDataSource.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesCollectionViewDataSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionViewDelegateFlowLayout.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesCollectionViewDelegateFlowLayout.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionViewFlowLayout.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Layout/JSQMessagesCollectionViewFlowLayout.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionViewFlowLayoutInvalidationContext.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Layout/JSQMessagesCollectionViewFlowLayoutInvalidationContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesCollectionViewLayoutAttributes.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Layout/JSQMessagesCollectionViewLayoutAttributes.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesComposerTextView.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesComposerTextView.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesInputToolbar.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesInputToolbar.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesKeyboardController.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesKeyboardController.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesLabel.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesLabel.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesLoadEarlierHeaderView.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesMediaPlaceholderView.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesMediaPlaceholderView.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesMediaViewBubbleImageMasker.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Factories/JSQMessagesMediaViewBubbleImageMasker.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesTimestampFormatter.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Factories/JSQMessagesTimestampFormatter.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesToolbarButtonFactory.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Factories/JSQMessagesToolbarButtonFactory.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesToolbarContentView.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesToolbarContentView.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesTypingIndicatorFooterView.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesViewController-Swift.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/JSQMessagesViewController.framework/Headers/JSQMessagesViewController-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesViewController-umbrella.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Target Support Files/JSQMessagesViewController/JSQMessagesViewController-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQMessagesViewController.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQPhotoMediaItem.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQPhotoMediaItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQSystemSoundPlayer+JSQMessages.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Categories/JSQSystemSoundPlayer+JSQMessages.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQVideoMediaItem.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Model/JSQVideoMediaItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSBundle+JSQMessages.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Categories/NSBundle+JSQMessages.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+JSQMessages.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Categories/NSString+JSQMessages.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+JSQMessages.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Categories/UIColor+JSQMessages.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIDevice+JSQMessages.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Categories/UIDevice+JSQMessages.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+JSQMessages.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Categories/UIImage+JSQMessages.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+JSQMessages.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQMessagesViewController/JSQMessagesViewController/Categories/UIView+JSQMessages.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/JSQMessagesViewController.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Intermediates/Pods.build/Debug-iphoneos/JSQMessagesViewController.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/JSQSystemSoundPlayer.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "JSQSystemSoundPlayer-Swift.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/JSQSystemSoundPlayer.framework/Headers/JSQSystemSoundPlayer-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQSystemSoundPlayer-umbrella.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Target Support Files/JSQSystemSoundPlayer/JSQSystemSoundPlayer-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSQSystemSoundPlayer.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/JSQSystemSoundPlayer/JSQSystemSoundPlayer/Classes/JSQSystemSoundPlayer.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/JSQSystemSoundPlayer.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Intermediates/Pods.build/Debug-iphoneos/JSQSystemSoundPlayer.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Pods.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Swift.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Pods.framework/Headers/Pods-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods-umbrella.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Target Support Files/Pods/Pods-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Pods.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Pods_esc.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-esc-umbrella.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Target Support Files/Pods-esc/Pods-esc-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_esc-Swift.h",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Pods_esc.framework/Headers/Pods_esc-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/Pods_esc.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-esc.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

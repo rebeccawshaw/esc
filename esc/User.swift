@@ -11,13 +11,13 @@ import UIKit
 class User {
     // MARK: Properties
     
-    private var _email: String
+    private var _username: String
     private var _esc: String
     private var _time: String
     private var _loc: String
     
-    var email: String {
-        return _email
+    var username: String {
+        return _username
     }
     
     var esc: String {
@@ -34,16 +34,16 @@ class User {
     
     // MARK: Initialization
     
-    init?(email: String, esc: String, time: String, loc: String) {
+    init?(username: String, esc: String, time: String, loc: String) {
         
         // Initialize stored properties.
-        self._email = email
+        self._username = username
         self._esc = esc
         self._time = time
         self._loc = loc
         
         // Initialization should fail if there is no email
-        if email.isEmpty {
+        if username.isEmpty {
             return nil
         }
     }

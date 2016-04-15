@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import JSQMessagesViewController;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -113,34 +114,44 @@ SWIFT_CLASS("_TtC3esc11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
-@class UIPickerView;
-@class UIButton;
+@class JSQMessage;
+@class JSQMessagesBubbleImage;
+@class JSQMessagesCollectionView;
+@class NSIndexPath;
+@protocol JSQMessageData;
+@class UICollectionView;
+@protocol JSQMessageBubbleImageDataSource;
+@protocol JSQMessageAvatarImageDataSource;
+@class UICollectionViewCell;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC3esc10LocationVC")
-@interface LocationVC : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
-@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified pickLocation;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull pickLocationOptions;
-@property (nonatomic, strong) NSString * _Nullable location;
+SWIFT_CLASS("_TtC3esc6ChatVC")
+@interface ChatVC : JSQMessagesViewController
+@property (nonatomic, copy) NSArray<JSQMessage *> * _Nonnull messages;
+@property (nonatomic, strong) JSQMessagesBubbleImage * _Null_unspecified outgoingBubbleImageView;
+@property (nonatomic, strong) JSQMessagesBubbleImage * _Null_unspecified incomingBubbleImageView;
 - (void)viewDidLoad;
+- (void)addMessage:(NSString * _Nonnull)id text:(NSString * _Nonnull)text;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
-- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
-- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
-- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
-- (IBAction)setLocationTapped:(UIButton * _Nonnull)sender;
+- (id <JSQMessageData> _Null_unspecified)collectionView:(JSQMessagesCollectionView * _Null_unspecified)collectionView messageDataForItemAtIndexPath:(NSIndexPath * _Null_unspecified)indexPath;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (id <JSQMessageBubbleImageDataSource> _Null_unspecified)collectionView:(JSQMessagesCollectionView * _Null_unspecified)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath * _Null_unspecified)indexPath;
+- (id <JSQMessageAvatarImageDataSource> _Null_unspecified)collectionView:(JSQMessagesCollectionView * _Null_unspecified)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath * _Null_unspecified)indexPath;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 @class UITextField;
 
 SWIFT_CLASS("_TtC3esc7LoginVC")
 @interface LoginVC : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified _email;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified _password;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewDidAppear:(BOOL)animated;
@@ -152,25 +163,15 @@ SWIFT_CLASS("_TtC3esc7LoginVC")
 
 SWIFT_CLASS("_TtC3esc8SignupVC")
 @interface SignupVC : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified confirmPassword;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified _email;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified _username;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified _password;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified _confirmPassword;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)signUpTapped:(UIButton * _Nonnull)sender;
+- (void)errorAlert:(NSString * _Nonnull)title message:(NSString * _Nonnull)message button:(NSString * _Nonnull)button;
 - (IBAction)gotoLogin:(UIButton * _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIDatePicker;
-
-SWIFT_CLASS("_TtC3esc6TimeVC")
-@interface TimeVC : UIViewController
-@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified pickTime;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (IBAction)setTimeTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -178,8 +179,9 @@ SWIFT_CLASS("_TtC3esc6TimeVC")
 @class NSTimer;
 @class NSDate;
 @class UITableView;
-@class NSIndexPath;
 @class UITableViewCell;
+@class UIStoryboardSegue;
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC3esc11UserTableVC")
 @interface UserTableVC : UITableViewController
@@ -191,6 +193,8 @@ SWIFT_CLASS("_TtC3esc11UserTableVC")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)unwindToESC:(UIStoryboardSegue * _Nonnull)sender;
+- (IBAction)signOutTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -208,25 +212,30 @@ SWIFT_CLASS("_TtC3esc17UserTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class Firebase;
-@class UIStoryboardSegue;
+@class NSString;
+@class UIPickerView;
+@class UIDatePicker;
 
 SWIFT_CLASS("_TtC3esc5escVC")
-@interface escVC : UIViewController
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified signOutButton;
+@interface escVC : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified eatButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified studyButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified chillButton;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusText;
-@property (nonatomic, readonly, strong) Firebase * _Null_unspecified ref;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified pickTime;
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified pickLocation;
 @property (nonatomic, strong) NSString * _Nullable esc;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull pickLocationOptions;
+@property (nonatomic, strong) NSString * _Nullable location;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)eatTapped:(UIButton * _Nonnull)sender;
 - (IBAction)studyTapped:(UIButton * _Nonnull)sender;
 - (IBAction)chillTapped:(UIButton * _Nonnull)sender;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (IBAction)signOutTapped:(UIButton * _Nonnull)sender;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

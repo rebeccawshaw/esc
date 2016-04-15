@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class DataService {
     static let dataService = DataService()
@@ -19,16 +20,31 @@ class DataService {
     
     var USER_REF: Firebase {
         let uid = BASE_REF.authData.uid
-        return BASE_REF.childByAppendingPath("users/\(uid)")
+        return BASE_REF.childByAppendingPath("\(uid)")
     }
     
     var DATA_REF: Firebase {
-        return USER_REF.childByAppendingPath("data")
+        return USER_REF.childByAppendingPath("esc")
+    }
+    
+    var FRIEND_REF: Firebase {
+        return USER_REF.childByAppendingPath("friends")
+    }
+    
+    var MESSAGE_REF: Firebase {
+        return USER_REF.childByAppendingPath("messages")
     }
 
-    func createNewAccount(uid: String, email: Dictionary<String, String>) {
+    func createNewAccount(uid: String, email: Dictionary<String, String>, username: String) {
         
-        // A User is born.
-        USER_REF.setValue(email)
+        // A User is born
+        BASE_REF.updateChildValues([username: uid])
+        USER_REF.updateChildValues(email)
+        
+        let usern: [String: AnyObject!] = ["username": username]
+        USER_REF.updateChildValues(usern)
+        
+        let obj: [String: AnyObject!] = ["esc": "", "time": "", "location": ""]
+        DATA_REF.updateChildValues(obj)
     }
 }

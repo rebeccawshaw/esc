@@ -12,12 +12,12 @@ import UIKit
 class SignupVC: UIViewController {
 
     @IBOutlet weak var _email: UITextField!
+    @IBOutlet weak var _username: UITextField!
     @IBOutlet weak var _password: UITextField!
     @IBOutlet weak var _confirmPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,10 +28,12 @@ class SignupVC: UIViewController {
     @IBAction func signUpTapped(sender: UIButton) {
         
         let email = _email.text
+        let username = _username.text
         let password = _password.text
         let confirmPassword = _confirmPassword.text
         
-        if (email != "" && password != "" && password == confirmPassword) {     // check for valid input
+        // check for valid input
+        if (email != "" && username != "" && password != "" && password == confirmPassword) {
             
             // create user
             DataService.dataService.BASE_REF.createUser(email, password: password) { (error: NSError!) in
@@ -46,7 +48,7 @@ class SignupVC: UIViewController {
                         } else {
                             // Authentication just completed successfully :)
                             let emailDict = ["email": email!]
-                            DataService.dataService.createNewAccount(authData.uid, email: emailDict)
+                            DataService.dataService.createNewAccount(authData.uid, email: emailDict, username: username!)
                         }
                     }
                     

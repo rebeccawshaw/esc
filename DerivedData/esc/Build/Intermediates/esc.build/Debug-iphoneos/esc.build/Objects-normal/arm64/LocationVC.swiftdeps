@@ -6,31 +6,31 @@ provides-nominal:
 provides-member:
 - ["C3esc10LocationVC", ""]
 provides-dynamic-lookup:
+- "pickLocation"
 - "viewDidLoad"
 - "numberOfComponentsInPickerView"
-- "setLocationTapped"
+- "location"
 - "didReceiveMemoryWarning"
 - "pickLocationOptions"
 - "pickerView"
 - "pickerView"
 - "pickerView"
-- "pickLocation"
-- "location"
+- "setLocationTapped"
 depends-top-level:
 - "Int"
-- "UIPickerViewDelegate"
-- "NSString"
-- "UIPickerView"
-- "LocationVC"
-- !private "Dictionary"
-- !private "AnyObject"
-- "UIButton"
 - !private "Array"
-- !private "DataService"
+- "UIPickerViewDataSource"
+- "UIButton"
 - "UIViewController"
 - "String"
+- "LocationVC"
 - !private "StringLiteralType"
-- "UIPickerViewDataSource"
+- !private "Dictionary"
+- "UIPickerView"
+- !private "AnyObject"
+- "NSString"
+- "UIPickerViewDelegate"
+- !private "DataService"
 depends-member:
 - !private ["Ps9AnyObject", "DATA_REF"]
 - !private ["Ps9AnyObject", "DataService"]
@@ -329,6 +329,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "updateChildValues"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["CSo8NSString", "deinit"]
 - !private ["Sq", "deinit"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -590,6 +591,7 @@ depends-nominal:
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "CSo8NSString"
 - !private "Sq"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"

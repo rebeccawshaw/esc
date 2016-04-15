@@ -1,14 +1,13 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
-options: "3bc9409c08ff05295a81df8d1689f7c9"
-build_time: [513147788, 960288000]
+options: "94d43f4e1228f57adf9372288c498dec"
+build_time: [513999045, 793552000]
 inputs:
-  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/escVC.swift": [513146181, 0]
-  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/UserTableVC.swift": [513147787, 0]
-  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/DataService.swift": [513146138, 0]
-  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/SignupVC.swift": [513143776, 0]
-  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/LoginVC.swift": [513140323, 0]
-  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/TimeVC.swift": [513146138, 0]
+  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/escVC.swift": [513998157, 0]
+  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/UserTableVC.swift": [513999036, 0]
+  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/DataService.swift": [513999035, 0]
+  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/SignupVC.swift": [513890366, 0]
+  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/LoginVC.swift": [513911105, 0]
+  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/ChatVC.swift": [513999035, 0]
   "/Users/rebeccawshaw/Documents/Xcode/esc/esc/AppDelegate.swift": [512847561, 0]
-  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/LocationVC.swift": [513146138, 0]
   "/Users/rebeccawshaw/Documents/Xcode/esc/esc/UserTableViewCell.swift": [513076722, 0]
-  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/User.swift": [513136971, 0]
+  "/Users/rebeccawshaw/Documents/Xcode/esc/esc/User.swift": [513910158, 0]

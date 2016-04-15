@@ -1,0 +1,347 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TimeVC"
+provides-nominal:
+- "C3esc6TimeVC"
+provides-member:
+- ["C3esc6TimeVC", ""]
+provides-dynamic-lookup:
+- "setTimeTapped"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "pickTime"
+depends-top-level:
+- "UIDatePicker"
+- !private "AnyObject"
+- !private "Dictionary"
+- "TimeVC"
+- !private "String"
+- "UIButton"
+- !private "NSDateFormatter"
+- !private "DataService"
+- "UIViewController"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "DATA_REF"]
+- !private ["Ps9AnyObject", "DataService"]
+- !private ["Ps9AnyObject", "NSDateFormatter"]
+- !private ["Ps9AnyObject", "dataService"]
+- !private ["Ps9AnyObject", "date"]
+- !private ["Ps9AnyObject", "dateFormat"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "performSegueWithIdentifier"]
+- ["Ps9AnyObject", "pickTime"]
+- ["Ps9AnyObject", "setTimeTapped"]
+- !private ["Ps9AnyObject", "stringFromDate"]
+- !private ["Ps9AnyObject", "updateChildValues"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "DataService"]
+- !private ["Ps11CVarArgType", "NSDateFormatter"]
+- !private ["Ps11CVarArgType", "date"]
+- !private ["Ps11CVarArgType", "dateFormat"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
+- ["Ps11CVarArgType", "pickTime"]
+- ["Ps11CVarArgType", "setTimeTapped"]
+- !private ["Ps11CVarArgType", "stringFromDate"]
+- !private ["Ps11CVarArgType", "updateChildValues"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "DataService"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDateFormatter"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "date"]
+- !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "pickTime"]
+- ["Ps28CustomDebugStringConvertible", "setTimeTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "stringFromDate"]
+- !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "DataService"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSDateFormatter"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "date"]
+- !private ["Ps23CustomStringConvertible", "dateFormat"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
+- ["Ps23CustomStringConvertible", "pickTime"]
+- ["Ps23CustomStringConvertible", "setTimeTapped"]
+- !private ["Ps23CustomStringConvertible", "stringFromDate"]
+- !private ["Ps23CustomStringConvertible", "updateChildValues"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C3esc11DataService", "DATA_REF"]
+- !private ["C3esc11DataService", "dataService"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps9Equatable", "DataService"]
+- !private ["Ps9Equatable", "NSDateFormatter"]
+- !private ["Ps9Equatable", "date"]
+- !private ["Ps9Equatable", "dateFormat"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "performSegueWithIdentifier"]
+- ["Ps9Equatable", "pickTime"]
+- ["Ps9Equatable", "setTimeTapped"]
+- !private ["Ps9Equatable", "stringFromDate"]
+- !private ["Ps9Equatable", "updateChildValues"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["CSo6FQuery", "updateChildValues"]
+- !private ["CSo8Firebase", "updateChildValues"]
+- !private ["Ps8Hashable", "DataService"]
+- !private ["Ps8Hashable", "NSDateFormatter"]
+- !private ["Ps8Hashable", "date"]
+- !private ["Ps8Hashable", "dateFormat"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "performSegueWithIdentifier"]
+- ["Ps8Hashable", "pickTime"]
+- ["Ps8Hashable", "setTimeTapped"]
+- !private ["Ps8Hashable", "stringFromDate"]
+- !private ["Ps8Hashable", "updateChildValues"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["PSo8NSCoding", "DataService"]
+- !private ["PSo8NSCoding", "NSDateFormatter"]
+- !private ["PSo8NSCoding", "date"]
+- !private ["PSo8NSCoding", "dateFormat"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- ["PSo8NSCoding", "pickTime"]
+- ["PSo8NSCoding", "setTimeTapped"]
+- !private ["PSo8NSCoding", "stringFromDate"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "stringFromDate"]
+- !private ["CSo15NSDateFormatter", "dateFormat"]
+- !private ["CSo15NSDateFormatter", "init"]
+- !private ["CSo15NSDateFormatter", "stringFromDate"]
+- !private ["PSo26NSExtensionRequestHandling", "DataService"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDateFormatter"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- ["PSo26NSExtensionRequestHandling", "pickTime"]
+- ["PSo26NSExtensionRequestHandling", "setTimeTapped"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSFormatter", "dateFormat"]
+- !private ["CSo11NSFormatter", "init"]
+- !private ["CSo11NSFormatter", "stringFromDate"]
+- !private ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "DataService"]
+- !private ["CSo8NSObject", "NSDateFormatter"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIDatePicker"]
+- !private ["CSo8NSObject", "date"]
+- !private ["CSo8NSObject", "dateFormat"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- ["CSo8NSObject", "pickTime"]
+- ["CSo8NSObject", "setTimeTapped"]
+- !private ["CSo8NSObject", "stringFromDate"]
+- !private ["CSo8NSObject", "updateChildValues"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "DataService"]
+- !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
+- !private ["PSo16NSObjectProtocol", "date"]
+- !private ["PSo16NSObjectProtocol", "dateFormat"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- ["PSo16NSObjectProtocol", "pickTime"]
+- ["PSo16NSObjectProtocol", "setTimeTapped"]
+- !private ["PSo16NSObjectProtocol", "stringFromDate"]
+- !private ["PSo16NSObjectProtocol", "updateChildValues"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["SS", "deinit"]
+- !private ["C3esc6TimeVC", "AnyObject"]
+- !private ["C3esc6TimeVC", "DataService"]
+- !private ["C3esc6TimeVC", "NSDateFormatter"]
+- !private ["C3esc6TimeVC", "String"]
+- ["C3esc6TimeVC", "UIButton"]
+- ["C3esc6TimeVC", "UIDatePicker"]
+- ["C3esc6TimeVC", "deinit"]
+- ["C3esc6TimeVC", "didReceiveMemoryWarning"]
+- ["C3esc6TimeVC", "init"]
+- !private ["C3esc6TimeVC", "performSegueWithIdentifier"]
+- ["C3esc6TimeVC", "pickTime"]
+- ["C3esc6TimeVC", "setTimeTapped"]
+- ["C3esc6TimeVC", "viewDidLoad"]
+- !private ["PSo29UIAccessibilityIdentification", "date"]
+- !private ["PSo12UIAppearance", "date"]
+- !private ["PSo21UIAppearanceContainer", "DataService"]
+- !private ["PSo21UIAppearanceContainer", "NSDateFormatter"]
+- !private ["PSo21UIAppearanceContainer", "date"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "pickTime"]
+- ["PSo21UIAppearanceContainer", "setTimeTapped"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "DataService"]
+- !private ["PSo18UIContentContainer", "NSDateFormatter"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- ["PSo18UIContentContainer", "pickTime"]
+- ["PSo18UIContentContainer", "setTimeTapped"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "date"]
+- !private ["PSo17UICoordinateSpace", "date"]
+- !private ["CSo12UIDatePicker", "date"]
+- !private ["PSo13UIDynamicItem", "date"]
+- !private ["PSo18UIFocusEnvironment", "DataService"]
+- !private ["PSo18UIFocusEnvironment", "NSDateFormatter"]
+- !private ["PSo18UIFocusEnvironment", "date"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
+- ["PSo18UIFocusEnvironment", "pickTime"]
+- ["PSo18UIFocusEnvironment", "setTimeTapped"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "DataService"]
+- !private ["CSo11UIResponder", "NSDateFormatter"]
+- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIDatePicker"]
+- !private ["CSo11UIResponder", "date"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- ["CSo11UIResponder", "pickTime"]
+- ["CSo11UIResponder", "setTimeTapped"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "DataService"]
+- !private ["PSo16UIStateRestoring", "NSDateFormatter"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- ["PSo16UIStateRestoring", "pickTime"]
+- ["PSo16UIStateRestoring", "setTimeTapped"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "DataService"]
+- !private ["PSo18UITraitEnvironment", "NSDateFormatter"]
+- !private ["PSo18UITraitEnvironment", "date"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- ["PSo18UITraitEnvironment", "pickTime"]
+- ["PSo18UITraitEnvironment", "setTimeTapped"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "date"]
+- !private ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "DataService"]
+- !private ["CSo16UIViewController", "NSDateFormatter"]
+- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIDatePicker"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- ["CSo16UIViewController", "pickTime"]
+- ["CSo16UIViewController", "setTimeTapped"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "date"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "C3esc11DataService"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- !private "CSo6FQuery"
+- !private "CSo8Firebase"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "Ps9Indexable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo15NSDateFormatter"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo11NSFormatter"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps12SequenceType"
+- !private "SS"
+- "C3esc6TimeVC"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "CSo12UIDatePicker"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/esc/esc-Bridging-Header.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/Firebase.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FQuery.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FEventType.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FDataSnapshot.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FirebaseApp.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FMutableData.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FTransactionResult.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FAuthData.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FAuthType.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FirebaseServerValue.h"
+- "/Users/rebeccawshaw/Documents/Xcode/esc/Pods/Headers/Public/Firebase/FConfig.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+interface-hash: "64e697cfdf0791c7442b63e356977db0"

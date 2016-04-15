@@ -8,57 +8,84 @@
 
 import UIKit
 
-class escVC: UIViewController {
+class escVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    @IBOutlet weak var signOutButton: UIButton!
     @IBOutlet weak var eatButton: UIButton!
     @IBOutlet weak var studyButton: UIButton!
     @IBOutlet weak var chillButton: UIButton!
-    @IBOutlet weak var statusText: UILabel!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var pickTime: UIDatePicker!
+    @IBOutlet weak var pickLocation: UIPickerView!
     
     var esc: NSString?
+    var pickLocationOptions: [String] = [String]()
+    var location: NSString?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Retrieve new posts as they are added to your database
-        DataService.dataService.USER_REF.observeEventType(.Value, withBlock: { snapshot in
-            self.statusText.text = snapshot.value.objectForKey("email") as! String
+        self.pickLocation.delegate = self
+        self.pickLocation.dataSource = self
+        
+        // default value for esc - gets existing data
+        DataService.dataService.DATA_REF.observeEventType(.Value, withBlock: { snapshot in
+            self.esc = snapshot.value.objectForKey("esc") as! String
         })
+        
+        // sets items for location selection
+        pickLocationOptions = ["Commons", "Featheringill", "Rand", "Buttrick", "Stevenson"]
+        
+        // default value for location - first item on picker view
+        location = pickLocationOptions[0]
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    // esc buttons to tap
     @IBAction func eatTapped(sender: UIButton) {
         esc = "eat"
-        self.performSegueWithIdentifier("goto_time", sender: self)
+        eatButton.backgroundColor = UIColor.grayColor()
+        studyButton.backgroundColor = UIColor.blackColor()
+        chillButton.backgroundColor = UIColor.blackColor()
     }
     
     @IBAction func studyTapped(sender: UIButton) {
         esc = "study"
-        self.performSegueWithIdentifier("goto_time", sender:self)
+        eatButton.backgroundColor = UIColor.blackColor()
+        studyButton.backgroundColor = UIColor.grayColor()
+        chillButton.backgroundColor = UIColor.blackColor()
     }
     
     @IBAction func chillTapped(sender: UIButton) {
         esc = "chill"
-        self.performSegueWithIdentifier("goto_time", sender:self)
+        eatButton.backgroundColor = UIColor.blackColor()
+        studyButton.backgroundColor = UIColor.blackColor()
+        chillButton.backgroundColor = UIColor.grayColor()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "goto_time" {
-            // Create a new user dictionary accessing the user's info
-            // provided by the authData parameter
-            let obj: [String: AnyObject!] = ["esc": esc]
-            DataService.dataService.DATA_REF.updateChildValues(obj)
-        }
+    // The number of columns of data
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
     }
     
-    @IBAction func signOutTapped(sender: UIButton) {
-        DataService.dataService.BASE_REF.unauth()
-        self.view.window?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
+    // The number of rows of data
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickLocationOptions.count
+    }
+    
+    // The data to return for the row and component (column) that's being passed in
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickLocationOptions[row]
+    }
+    
+    // Catpure the picker view selection
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+        location = pickLocationOptions[row]
     }
 }
 
