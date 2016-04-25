@@ -6,47 +6,52 @@ provides-nominal:
 provides-member:
 - ["C3esc6ChatVC", ""]
 provides-dynamic-lookup:
-- "outgoingBubbleImageView"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
 - "messages"
-- "incomingBubbleImageView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "friendName"
+- "viewDidLoad"
 - "addMessage"
-- "didPressSendButton"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
+- "recUsr"
 - "viewDidAppear"
+- "incomingBubbleImageView"
+- "cancelTapped"
+- "outgoingBubbleImageView"
+- "didPressSendButton"
 depends-top-level:
-- "NSDate"
-- "UICollectionView"
-- !private "StringLiteralType"
-- "JSQMessagesBubbleImage"
-- !private "FDataSnapshot"
-- !private "JSQMessagesCollectionViewCell"
-- !private "Dictionary"
-- !private "JSQSystemSoundPlayer"
-- !private "CGSizeZero"
-- "NSIndexPath"
-- "JSQMessagesCollectionView"
+- !private "BooleanLiteralType"
 - !private "JSQMessagesBubbleImageFactory"
 - !private "UIColor"
+- "JSQMessageData"
+- "UICollectionView"
 - "JSQMessageBubbleImageDataSource"
 - "UIButton"
-- "UICollectionViewCell"
+- !private "JSQMessagesCollectionViewCell"
 - "Bool"
-- "JSQMessage"
-- !private "=="
-- !private "DataService"
-- "ChatVC"
-- "JSQMessageData"
-- "JSQMessagesViewController"
-- "Int"
-- "JSQMessageAvatarImageDataSource"
+- !private "Dictionary"
+- !private "JSQSystemSoundPlayer"
 - "String"
+- "NSIndexPath"
+- !private "FDataSnapshot"
+- "JSQMessageAvatarImageDataSource"
+- !private "DataService"
+- "AnyObject"
+- "JSQMessagesViewController"
+- "JSQMessagesBubbleImage"
+- "Int"
+- "NSDate"
+- "UICollectionViewCell"
+- "JSQMessagesCollectionView"
+- !private "=="
+- !private "StringLiteralType"
+- "ChatVC"
+- !private "CGSizeZero"
+- "JSQMessage"
 depends-member:
+- !private ["Ps9AnyObject", "BASE_REF"]
 - !private ["Ps9AnyObject", "CGSizeZero"]
 - !private ["Ps9AnyObject", "DataService"]
 - ["Ps9AnyObject", "JSQMessage"]
@@ -56,13 +61,17 @@ depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - ["Ps9AnyObject", "addMessage"]
 - !private ["Ps9AnyObject", "blackColor"]
+- ["Ps9AnyObject", "cancelTapped"]
+- !private ["Ps9AnyObject", "childByAppendingPath"]
+- !private ["Ps9AnyObject", "childByAutoId"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "collectionViewLayout"]
 - !private ["Ps9AnyObject", "dataService"]
 - ["Ps9AnyObject", "didPressSendButton"]
-- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
 - !private ["Ps9AnyObject", "finishReceivingMessage"]
 - !private ["Ps9AnyObject", "finishSendingMessage"]
+- ["Ps9AnyObject", "friendName"]
 - !private ["Ps9AnyObject", "incomingAvatarViewSize"]
 - ["Ps9AnyObject", "incomingBubbleImageView"]
 - !private ["Ps9AnyObject", "incomingMessagesBubbleImageWithColor"]
@@ -72,12 +81,15 @@ depends-member:
 - !private ["Ps9AnyObject", "jsq_messageBubbleLightGrayColor"]
 - !private ["Ps9AnyObject", "jsq_playMessageSentSound"]
 - ["Ps9AnyObject", "messages"]
+- !private ["Ps9AnyObject", "objectForKey"]
 - !private ["Ps9AnyObject", "observeEventType"]
 - ["Ps9AnyObject", "observeMessages"]
+- !private ["Ps9AnyObject", "observeSingleEventOfType"]
 - !private ["Ps9AnyObject", "outgoingAvatarViewSize"]
 - ["Ps9AnyObject", "outgoingBubbleImageView"]
 - !private ["Ps9AnyObject", "outgoingMessagesBubbleImageWithColor"]
 - !private ["Ps9AnyObject", "queryLimitedToLast"]
+- ["Ps9AnyObject", "recUsr"]
 - !private ["Ps9AnyObject", "senderId"]
 - !private ["Ps9AnyObject", "setValue"]
 - ["Ps9AnyObject", "setupBubbles"]
@@ -114,6 +126,7 @@ depends-member:
 - ["Ps21BitwiseOperationsType", "Distance"]
 - ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["Ps11CVarArgType", "CGSizeZero"]
@@ -126,12 +139,16 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIColor"]
 - ["Ps11CVarArgType", "addMessage"]
 - !private ["Ps11CVarArgType", "blackColor"]
+- ["Ps11CVarArgType", "cancelTapped"]
+- !private ["Ps11CVarArgType", "childByAppendingPath"]
+- !private ["Ps11CVarArgType", "childByAutoId"]
 - ["Ps11CVarArgType", "collectionView"]
 - !private ["Ps11CVarArgType", "collectionViewLayout"]
 - ["Ps11CVarArgType", "didPressSendButton"]
-- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
 - !private ["Ps11CVarArgType", "finishReceivingMessage"]
 - !private ["Ps11CVarArgType", "finishSendingMessage"]
+- ["Ps11CVarArgType", "friendName"]
 - !private ["Ps11CVarArgType", "incomingAvatarViewSize"]
 - ["Ps11CVarArgType", "incomingBubbleImageView"]
 - !private ["Ps11CVarArgType", "incomingMessagesBubbleImageWithColor"]
@@ -143,10 +160,12 @@ depends-member:
 - ["Ps11CVarArgType", "messages"]
 - !private ["Ps11CVarArgType", "observeEventType"]
 - ["Ps11CVarArgType", "observeMessages"]
+- !private ["Ps11CVarArgType", "observeSingleEventOfType"]
 - !private ["Ps11CVarArgType", "outgoingAvatarViewSize"]
 - ["Ps11CVarArgType", "outgoingBubbleImageView"]
 - !private ["Ps11CVarArgType", "outgoingMessagesBubbleImageWithColor"]
 - !private ["Ps11CVarArgType", "queryLimitedToLast"]
+- ["Ps11CVarArgType", "recUsr"]
 - !private ["Ps11CVarArgType", "senderId"]
 - !private ["Ps11CVarArgType", "setValue"]
 - ["Ps11CVarArgType", "setupBubbles"]
@@ -158,6 +177,8 @@ depends-member:
 - ["Ps11CVarArgType", "viewDidLoad"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- ["C3esc6ChatVC", "AnyObject"]
 - ["C3esc6ChatVC", "Bool"]
 - !private ["C3esc6ChatVC", "CGSizeZero"]
 - !private ["C3esc6ChatVC", "DataService"]
@@ -180,17 +201,20 @@ depends-member:
 - ["C3esc6ChatVC", "UICollectionViewCell"]
 - !private ["C3esc6ChatVC", "UIColor"]
 - ["C3esc6ChatVC", "addMessage"]
+- ["C3esc6ChatVC", "cancelTapped"]
 - ["C3esc6ChatVC", "collectionView"]
 - ["C3esc6ChatVC", "deinit"]
 - ["C3esc6ChatVC", "didPressSendButton"]
-- ["C3esc6ChatVC", "didReceiveMemoryWarning"]
+- !private ["C3esc6ChatVC", "dismissViewControllerAnimated"]
 - !private ["C3esc6ChatVC", "finishReceivingMessage"]
 - !private ["C3esc6ChatVC", "finishSendingMessage"]
+- ["C3esc6ChatVC", "friendName"]
 - ["C3esc6ChatVC", "incomingBubbleImageView"]
 - ["C3esc6ChatVC", "init"]
 - ["C3esc6ChatVC", "messages"]
 - !private ["C3esc6ChatVC", "observeMessages"]
 - ["C3esc6ChatVC", "outgoingBubbleImageView"]
+- ["C3esc6ChatVC", "recUsr"]
 - !private ["C3esc6ChatVC", "senderId"]
 - !private ["C3esc6ChatVC", "setupBubbles"]
 - !private ["C3esc6ChatVC", "title"]
@@ -208,6 +232,7 @@ depends-member:
 - !private ["Ps14CollectionType", "subscript"]
 - ["Ps10Comparable", "Distance"]
 - ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSizeZero"]
 - !private ["Ps28CustomDebugStringConvertible", "DataService"]
 - ["Ps28CustomDebugStringConvertible", "Generator"]
@@ -223,13 +248,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "addMessage"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "blackColor"]
+- ["Ps28CustomDebugStringConvertible", "cancelTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "childByAppendingPath"]
+- !private ["Ps28CustomDebugStringConvertible", "childByAutoId"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "collectionViewLayout"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "didPressSendButton"]
-- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps28CustomDebugStringConvertible", "finishReceivingMessage"]
 - !private ["Ps28CustomDebugStringConvertible", "finishSendingMessage"]
+- ["Ps28CustomDebugStringConvertible", "friendName"]
 - !private ["Ps28CustomDebugStringConvertible", "incomingAvatarViewSize"]
 - ["Ps28CustomDebugStringConvertible", "incomingBubbleImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "incomingMessagesBubbleImageWithColor"]
@@ -241,10 +270,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "messages"]
 - !private ["Ps28CustomDebugStringConvertible", "observeEventType"]
 - ["Ps28CustomDebugStringConvertible", "observeMessages"]
+- !private ["Ps28CustomDebugStringConvertible", "observeSingleEventOfType"]
 - !private ["Ps28CustomDebugStringConvertible", "outgoingAvatarViewSize"]
 - ["Ps28CustomDebugStringConvertible", "outgoingBubbleImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "outgoingMessagesBubbleImageWithColor"]
 - !private ["Ps28CustomDebugStringConvertible", "queryLimitedToLast"]
+- ["Ps28CustomDebugStringConvertible", "recUsr"]
 - !private ["Ps28CustomDebugStringConvertible", "senderId"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - ["Ps28CustomDebugStringConvertible", "setupBubbles"]
@@ -275,13 +306,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "addMessage"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "blackColor"]
+- ["Ps23CustomStringConvertible", "cancelTapped"]
+- !private ["Ps23CustomStringConvertible", "childByAppendingPath"]
+- !private ["Ps23CustomStringConvertible", "childByAutoId"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "collectionViewLayout"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "didPressSendButton"]
-- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps23CustomStringConvertible", "finishReceivingMessage"]
 - !private ["Ps23CustomStringConvertible", "finishSendingMessage"]
+- ["Ps23CustomStringConvertible", "friendName"]
 - !private ["Ps23CustomStringConvertible", "incomingAvatarViewSize"]
 - ["Ps23CustomStringConvertible", "incomingBubbleImageView"]
 - !private ["Ps23CustomStringConvertible", "incomingMessagesBubbleImageWithColor"]
@@ -293,10 +328,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "messages"]
 - !private ["Ps23CustomStringConvertible", "observeEventType"]
 - ["Ps23CustomStringConvertible", "observeMessages"]
+- !private ["Ps23CustomStringConvertible", "observeSingleEventOfType"]
 - !private ["Ps23CustomStringConvertible", "outgoingAvatarViewSize"]
 - ["Ps23CustomStringConvertible", "outgoingBubbleImageView"]
 - !private ["Ps23CustomStringConvertible", "outgoingMessagesBubbleImageWithColor"]
 - !private ["Ps23CustomStringConvertible", "queryLimitedToLast"]
+- ["Ps23CustomStringConvertible", "recUsr"]
 - !private ["Ps23CustomStringConvertible", "senderId"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - ["Ps23CustomStringConvertible", "setupBubbles"]
@@ -309,6 +346,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["C3esc11DataService", "BASE_REF"]
 - !private ["C3esc11DataService", "MESSAGE_REF"]
 - !private ["C3esc11DataService", "dataService"]
 - !private ["Vs10Dictionary", "Key"]
@@ -316,6 +354,7 @@ depends-member:
 - !private ["Vs10Dictionary", "deinit"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGSizeZero"]
 - !private ["Ps9Equatable", "ChildAdded"]
 - !private ["Ps9Equatable", "DataService"]
@@ -325,15 +364,20 @@ depends-member:
 - !private ["Ps9Equatable", "JSQMessagesBubbleImageFactory"]
 - !private ["Ps9Equatable", "JSQSystemSoundPlayer"]
 - !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "addMessage"]
 - !private ["Ps9Equatable", "blackColor"]
+- ["Ps9Equatable", "cancelTapped"]
+- !private ["Ps9Equatable", "childByAppendingPath"]
+- !private ["Ps9Equatable", "childByAutoId"]
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "collectionViewLayout"]
 - ["Ps9Equatable", "didPressSendButton"]
-- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "dismissViewControllerAnimated"]
 - !private ["Ps9Equatable", "finishReceivingMessage"]
 - !private ["Ps9Equatable", "finishSendingMessage"]
+- ["Ps9Equatable", "friendName"]
 - !private ["Ps9Equatable", "incomingAvatarViewSize"]
 - ["Ps9Equatable", "incomingBubbleImageView"]
 - !private ["Ps9Equatable", "incomingMessagesBubbleImageWithColor"]
@@ -345,10 +389,12 @@ depends-member:
 - ["Ps9Equatable", "messages"]
 - !private ["Ps9Equatable", "observeEventType"]
 - ["Ps9Equatable", "observeMessages"]
+- !private ["Ps9Equatable", "observeSingleEventOfType"]
 - !private ["Ps9Equatable", "outgoingAvatarViewSize"]
 - ["Ps9Equatable", "outgoingBubbleImageView"]
 - !private ["Ps9Equatable", "outgoingMessagesBubbleImageWithColor"]
 - !private ["Ps9Equatable", "queryLimitedToLast"]
+- ["Ps9Equatable", "recUsr"]
 - !private ["Ps9Equatable", "senderId"]
 - !private ["Ps9Equatable", "setValue"]
 - ["Ps9Equatable", "setupBubbles"]
@@ -360,13 +406,22 @@ depends-member:
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "whiteColor"]
 - ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["CSo13FDataSnapshot", "value"]
 - !private ["OSC10FEventType", "ChildAdded"]
+- !private ["OSC10FEventType", "Value"]
+- !private ["CSo6FQuery", "childByAppendingPath"]
+- !private ["CSo6FQuery", "childByAutoId"]
 - !private ["CSo6FQuery", "observeEventType"]
+- !private ["CSo6FQuery", "observeSingleEventOfType"]
 - !private ["CSo6FQuery", "queryLimitedToLast"]
 - !private ["CSo6FQuery", "setValue"]
+- !private ["CSo8Firebase", "childByAppendingPath"]
+- !private ["CSo8Firebase", "childByAutoId"]
+- !private ["CSo8Firebase", "observeSingleEventOfType"]
 - !private ["CSo8Firebase", "queryLimitedToLast"]
 - !private ["CSo8Firebase", "setValue"]
+- !private ["Sf", "deinit"]
 - ["Ps16ForwardIndexType", "Distance"]
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - ["Ps13GeneratorType", "Element"]
@@ -379,15 +434,20 @@ depends-member:
 - !private ["Ps8Hashable", "JSQMessagesBubbleImageFactory"]
 - !private ["Ps8Hashable", "JSQSystemSoundPlayer"]
 - !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "Value"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "addMessage"]
 - !private ["Ps8Hashable", "blackColor"]
+- ["Ps8Hashable", "cancelTapped"]
+- !private ["Ps8Hashable", "childByAppendingPath"]
+- !private ["Ps8Hashable", "childByAutoId"]
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "collectionViewLayout"]
 - ["Ps8Hashable", "didPressSendButton"]
-- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "dismissViewControllerAnimated"]
 - !private ["Ps8Hashable", "finishReceivingMessage"]
 - !private ["Ps8Hashable", "finishSendingMessage"]
+- ["Ps8Hashable", "friendName"]
 - !private ["Ps8Hashable", "incomingAvatarViewSize"]
 - ["Ps8Hashable", "incomingBubbleImageView"]
 - !private ["Ps8Hashable", "incomingMessagesBubbleImageWithColor"]
@@ -399,10 +459,12 @@ depends-member:
 - ["Ps8Hashable", "messages"]
 - !private ["Ps8Hashable", "observeEventType"]
 - ["Ps8Hashable", "observeMessages"]
+- !private ["Ps8Hashable", "observeSingleEventOfType"]
 - !private ["Ps8Hashable", "outgoingAvatarViewSize"]
 - ["Ps8Hashable", "outgoingBubbleImageView"]
 - !private ["Ps8Hashable", "outgoingMessagesBubbleImageWithColor"]
 - !private ["Ps8Hashable", "queryLimitedToLast"]
+- ["Ps8Hashable", "recUsr"]
 - !private ["Ps8Hashable", "senderId"]
 - !private ["Ps8Hashable", "setValue"]
 - ["Ps8Hashable", "setupBubbles"]
@@ -429,6 +491,10 @@ depends-member:
 - ["Si", "Distance"]
 - ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
 - ["Ps21IntegerArithmeticType", "Distance"]
 - ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - ["Ps25IntegerLiteralConvertible", "Distance"]
@@ -453,16 +519,19 @@ depends-member:
 - !private ["PSo35JSQMessagesCollectionViewDataSource", "JSQSystemSoundPlayer"]
 - !private ["PSo35JSQMessagesCollectionViewDataSource", "UIColor"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "addMessage"]
+- ["PSo35JSQMessagesCollectionViewDataSource", "cancelTapped"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "collectionView"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "didPressSendButton"]
-- ["PSo35JSQMessagesCollectionViewDataSource", "didReceiveMemoryWarning"]
+- !private ["PSo35JSQMessagesCollectionViewDataSource", "dismissViewControllerAnimated"]
 - !private ["PSo35JSQMessagesCollectionViewDataSource", "finishReceivingMessage"]
 - !private ["PSo35JSQMessagesCollectionViewDataSource", "finishSendingMessage"]
+- ["PSo35JSQMessagesCollectionViewDataSource", "friendName"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "incomingBubbleImageView"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "init"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "messages"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "observeMessages"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "outgoingBubbleImageView"]
+- ["PSo35JSQMessagesCollectionViewDataSource", "recUsr"]
 - !private ["PSo35JSQMessagesCollectionViewDataSource", "senderId"]
 - ["PSo35JSQMessagesCollectionViewDataSource", "setupBubbles"]
 - !private ["PSo35JSQMessagesCollectionViewDataSource", "title"]
@@ -476,16 +545,19 @@ depends-member:
 - !private ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "JSQSystemSoundPlayer"]
 - !private ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "UIColor"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "addMessage"]
+- ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "cancelTapped"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "collectionView"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "didPressSendButton"]
-- ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "didReceiveMemoryWarning"]
+- !private ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "dismissViewControllerAnimated"]
 - !private ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "finishReceivingMessage"]
 - !private ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "finishSendingMessage"]
+- ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "friendName"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "incomingBubbleImageView"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "init"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "messages"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "observeMessages"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "outgoingBubbleImageView"]
+- ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "recUsr"]
 - !private ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "senderId"]
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "setupBubbles"]
 - !private ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", "title"]
@@ -494,6 +566,7 @@ depends-member:
 - ["PSo43JSQMessagesCollectionViewDelegateFlowLayout", ""]
 - !private ["CSo35JSQMessagesCollectionViewFlowLayout", "incomingAvatarViewSize"]
 - !private ["CSo35JSQMessagesCollectionViewFlowLayout", "outgoingAvatarViewSize"]
+- ["CSo25JSQMessagesViewController", "AnyObject"]
 - ["CSo25JSQMessagesViewController", "Bool"]
 - !private ["CSo25JSQMessagesViewController", "CGSizeZero"]
 - !private ["CSo25JSQMessagesViewController", "DataService"]
@@ -516,16 +589,19 @@ depends-member:
 - ["CSo25JSQMessagesViewController", "UICollectionViewCell"]
 - !private ["CSo25JSQMessagesViewController", "UIColor"]
 - ["CSo25JSQMessagesViewController", "addMessage"]
+- ["CSo25JSQMessagesViewController", "cancelTapped"]
 - ["CSo25JSQMessagesViewController", "collectionView"]
 - ["CSo25JSQMessagesViewController", "didPressSendButton"]
-- ["CSo25JSQMessagesViewController", "didReceiveMemoryWarning"]
+- !private ["CSo25JSQMessagesViewController", "dismissViewControllerAnimated"]
 - !private ["CSo25JSQMessagesViewController", "finishReceivingMessage"]
 - !private ["CSo25JSQMessagesViewController", "finishSendingMessage"]
+- ["CSo25JSQMessagesViewController", "friendName"]
 - ["CSo25JSQMessagesViewController", "incomingBubbleImageView"]
 - ["CSo25JSQMessagesViewController", "init"]
 - ["CSo25JSQMessagesViewController", "messages"]
 - ["CSo25JSQMessagesViewController", "observeMessages"]
 - ["CSo25JSQMessagesViewController", "outgoingBubbleImageView"]
+- ["CSo25JSQMessagesViewController", "recUsr"]
 - !private ["CSo25JSQMessagesViewController", "senderId"]
 - ["CSo25JSQMessagesViewController", "setupBubbles"]
 - !private ["CSo25JSQMessagesViewController", "title"]
@@ -535,6 +611,7 @@ depends-member:
 - !private ["CSo20JSQSystemSoundPlayer", "jsq_playMessageSentSound"]
 - ["Ps14MirrorPathType", "Distance"]
 - ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
 - ["Ps21MutableCollectionType", "Generator"]
 - ["Ps21MutableCollectionType", "Index"]
 - ["Ps21MutableCollectionType", "SubSequence"]
@@ -567,12 +644,14 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - ["PSo8NSCoding", "addMessage"]
 - !private ["PSo8NSCoding", "blackColor"]
+- ["PSo8NSCoding", "cancelTapped"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "collectionViewLayout"]
 - ["PSo8NSCoding", "didPressSendButton"]
-- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - !private ["PSo8NSCoding", "finishReceivingMessage"]
 - !private ["PSo8NSCoding", "finishSendingMessage"]
+- ["PSo8NSCoding", "friendName"]
 - !private ["PSo8NSCoding", "incomingAvatarViewSize"]
 - ["PSo8NSCoding", "incomingBubbleImageView"]
 - ["PSo8NSCoding", "init"]
@@ -583,6 +662,7 @@ depends-member:
 - ["PSo8NSCoding", "observeMessages"]
 - !private ["PSo8NSCoding", "outgoingAvatarViewSize"]
 - ["PSo8NSCoding", "outgoingBubbleImageView"]
+- ["PSo8NSCoding", "recUsr"]
 - !private ["PSo8NSCoding", "senderId"]
 - ["PSo8NSCoding", "setupBubbles"]
 - !private ["PSo8NSCoding", "textColor"]
@@ -607,16 +687,19 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "JSQSystemSoundPlayer"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "addMessage"]
+- ["PSo26NSExtensionRequestHandling", "cancelTapped"]
 - ["PSo26NSExtensionRequestHandling", "collectionView"]
 - ["PSo26NSExtensionRequestHandling", "didPressSendButton"]
-- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - !private ["PSo26NSExtensionRequestHandling", "finishReceivingMessage"]
 - !private ["PSo26NSExtensionRequestHandling", "finishSendingMessage"]
+- ["PSo26NSExtensionRequestHandling", "friendName"]
 - ["PSo26NSExtensionRequestHandling", "incomingBubbleImageView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "messages"]
 - ["PSo26NSExtensionRequestHandling", "observeMessages"]
 - ["PSo26NSExtensionRequestHandling", "outgoingBubbleImageView"]
+- ["PSo26NSExtensionRequestHandling", "recUsr"]
 - !private ["PSo26NSExtensionRequestHandling", "senderId"]
 - ["PSo26NSExtensionRequestHandling", "setupBubbles"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
@@ -624,6 +707,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "item"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGSizeZero"]
 - !private ["CSo8NSObject", "DataService"]
@@ -647,12 +732,16 @@ depends-member:
 - !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "addMessage"]
 - !private ["CSo8NSObject", "blackColor"]
+- ["CSo8NSObject", "cancelTapped"]
+- !private ["CSo8NSObject", "childByAppendingPath"]
+- !private ["CSo8NSObject", "childByAutoId"]
 - ["CSo8NSObject", "collectionView"]
 - !private ["CSo8NSObject", "collectionViewLayout"]
 - ["CSo8NSObject", "didPressSendButton"]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - !private ["CSo8NSObject", "finishReceivingMessage"]
 - !private ["CSo8NSObject", "finishSendingMessage"]
+- ["CSo8NSObject", "friendName"]
 - !private ["CSo8NSObject", "incomingAvatarViewSize"]
 - ["CSo8NSObject", "incomingBubbleImageView"]
 - !private ["CSo8NSObject", "incomingMessagesBubbleImageWithColor"]
@@ -664,10 +753,12 @@ depends-member:
 - ["CSo8NSObject", "messages"]
 - !private ["CSo8NSObject", "observeEventType"]
 - ["CSo8NSObject", "observeMessages"]
+- !private ["CSo8NSObject", "observeSingleEventOfType"]
 - !private ["CSo8NSObject", "outgoingAvatarViewSize"]
 - ["CSo8NSObject", "outgoingBubbleImageView"]
 - !private ["CSo8NSObject", "outgoingMessagesBubbleImageWithColor"]
 - !private ["CSo8NSObject", "queryLimitedToLast"]
+- ["CSo8NSObject", "recUsr"]
 - !private ["CSo8NSObject", "senderId"]
 - !private ["CSo8NSObject", "setValue"]
 - ["CSo8NSObject", "setupBubbles"]
@@ -686,12 +777,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - ["PSo16NSObjectProtocol", "addMessage"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
+- ["PSo16NSObjectProtocol", "cancelTapped"]
+- !private ["PSo16NSObjectProtocol", "childByAppendingPath"]
+- !private ["PSo16NSObjectProtocol", "childByAutoId"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "collectionViewLayout"]
 - ["PSo16NSObjectProtocol", "didPressSendButton"]
-- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "finishReceivingMessage"]
 - !private ["PSo16NSObjectProtocol", "finishSendingMessage"]
+- ["PSo16NSObjectProtocol", "friendName"]
 - !private ["PSo16NSObjectProtocol", "incomingAvatarViewSize"]
 - ["PSo16NSObjectProtocol", "incomingBubbleImageView"]
 - !private ["PSo16NSObjectProtocol", "incomingMessagesBubbleImageWithColor"]
@@ -703,10 +798,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "messages"]
 - !private ["PSo16NSObjectProtocol", "observeEventType"]
 - ["PSo16NSObjectProtocol", "observeMessages"]
+- !private ["PSo16NSObjectProtocol", "observeSingleEventOfType"]
 - !private ["PSo16NSObjectProtocol", "outgoingAvatarViewSize"]
 - ["PSo16NSObjectProtocol", "outgoingBubbleImageView"]
 - !private ["PSo16NSObjectProtocol", "outgoingMessagesBubbleImageWithColor"]
 - !private ["PSo16NSObjectProtocol", "queryLimitedToLast"]
+- ["PSo16NSObjectProtocol", "recUsr"]
 - !private ["PSo16NSObjectProtocol", "senderId"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - ["PSo16NSObjectProtocol", "setupBubbles"]
@@ -719,11 +816,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "blackColor"]
+- !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "item"]
 - !private ["PSo14NSSecureCoding", "jsq_messageBubbleBlueColor"]
 - !private ["PSo14NSSecureCoding", "jsq_messageBubbleLightGrayColor"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["CSo8NSString", "init"]
 - !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - ["Ps30RangeReplaceableCollectionType", "Generator"]
@@ -735,6 +835,7 @@ depends-member:
 - ["Ps30RangeReplaceableCollectionType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "ChildAdded"]
+- !private ["Ps16RawRepresentable", "Value"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
@@ -754,9 +855,13 @@ depends-member:
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Streamable", "init"]
 - ["Ps10Strideable", "Distance"]
 - ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "collectionViewLayout"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "textView"]
@@ -770,17 +875,20 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "JSQSystemSoundPlayer"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - ["PSo21UIAppearanceContainer", "addMessage"]
+- ["PSo21UIAppearanceContainer", "cancelTapped"]
 - ["PSo21UIAppearanceContainer", "collectionView"]
 - !private ["PSo21UIAppearanceContainer", "collectionViewLayout"]
 - ["PSo21UIAppearanceContainer", "didPressSendButton"]
-- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - !private ["PSo21UIAppearanceContainer", "finishReceivingMessage"]
 - !private ["PSo21UIAppearanceContainer", "finishSendingMessage"]
+- ["PSo21UIAppearanceContainer", "friendName"]
 - ["PSo21UIAppearanceContainer", "incomingBubbleImageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "messages"]
 - ["PSo21UIAppearanceContainer", "observeMessages"]
 - ["PSo21UIAppearanceContainer", "outgoingBubbleImageView"]
+- ["PSo21UIAppearanceContainer", "recUsr"]
 - !private ["PSo21UIAppearanceContainer", "senderId"]
 - ["PSo21UIAppearanceContainer", "setupBubbles"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
@@ -800,16 +908,19 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "JSQSystemSoundPlayer"]
 - !private ["PSo26UICollectionViewDataSource", "UIColor"]
 - ["PSo26UICollectionViewDataSource", "addMessage"]
+- ["PSo26UICollectionViewDataSource", "cancelTapped"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
 - ["PSo26UICollectionViewDataSource", "didPressSendButton"]
-- ["PSo26UICollectionViewDataSource", "didReceiveMemoryWarning"]
+- !private ["PSo26UICollectionViewDataSource", "dismissViewControllerAnimated"]
 - !private ["PSo26UICollectionViewDataSource", "finishReceivingMessage"]
 - !private ["PSo26UICollectionViewDataSource", "finishSendingMessage"]
+- ["PSo26UICollectionViewDataSource", "friendName"]
 - ["PSo26UICollectionViewDataSource", "incomingBubbleImageView"]
 - ["PSo26UICollectionViewDataSource", "init"]
 - ["PSo26UICollectionViewDataSource", "messages"]
 - ["PSo26UICollectionViewDataSource", "observeMessages"]
 - ["PSo26UICollectionViewDataSource", "outgoingBubbleImageView"]
+- ["PSo26UICollectionViewDataSource", "recUsr"]
 - !private ["PSo26UICollectionViewDataSource", "senderId"]
 - ["PSo26UICollectionViewDataSource", "setupBubbles"]
 - !private ["PSo26UICollectionViewDataSource", "title"]
@@ -823,16 +934,19 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "JSQSystemSoundPlayer"]
 - !private ["PSo24UICollectionViewDelegate", "UIColor"]
 - ["PSo24UICollectionViewDelegate", "addMessage"]
+- ["PSo24UICollectionViewDelegate", "cancelTapped"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - ["PSo24UICollectionViewDelegate", "didPressSendButton"]
-- ["PSo24UICollectionViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo24UICollectionViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo24UICollectionViewDelegate", "finishReceivingMessage"]
 - !private ["PSo24UICollectionViewDelegate", "finishSendingMessage"]
+- ["PSo24UICollectionViewDelegate", "friendName"]
 - ["PSo24UICollectionViewDelegate", "incomingBubbleImageView"]
 - ["PSo24UICollectionViewDelegate", "init"]
 - ["PSo24UICollectionViewDelegate", "messages"]
 - ["PSo24UICollectionViewDelegate", "observeMessages"]
 - ["PSo24UICollectionViewDelegate", "outgoingBubbleImageView"]
+- ["PSo24UICollectionViewDelegate", "recUsr"]
 - !private ["PSo24UICollectionViewDelegate", "senderId"]
 - ["PSo24UICollectionViewDelegate", "setupBubbles"]
 - !private ["PSo24UICollectionViewDelegate", "title"]
@@ -846,16 +960,19 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "JSQSystemSoundPlayer"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIColor"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "addMessage"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "cancelTapped"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "didPressSendButton"]
-- ["PSo34UICollectionViewDelegateFlowLayout", "didReceiveMemoryWarning"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "dismissViewControllerAnimated"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "finishReceivingMessage"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "finishSendingMessage"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "friendName"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "incomingBubbleImageView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "init"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "messages"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "observeMessages"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "outgoingBubbleImageView"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "recUsr"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "senderId"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "setupBubbles"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "title"]
@@ -877,16 +994,19 @@ depends-member:
 - !private ["PSo18UIContentContainer", "JSQSystemSoundPlayer"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "addMessage"]
+- ["PSo18UIContentContainer", "cancelTapped"]
 - ["PSo18UIContentContainer", "collectionView"]
 - ["PSo18UIContentContainer", "didPressSendButton"]
-- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - !private ["PSo18UIContentContainer", "finishReceivingMessage"]
 - !private ["PSo18UIContentContainer", "finishSendingMessage"]
+- ["PSo18UIContentContainer", "friendName"]
 - ["PSo18UIContentContainer", "incomingBubbleImageView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "messages"]
 - ["PSo18UIContentContainer", "observeMessages"]
 - ["PSo18UIContentContainer", "outgoingBubbleImageView"]
+- ["PSo18UIContentContainer", "recUsr"]
 - !private ["PSo18UIContentContainer", "senderId"]
 - ["PSo18UIContentContainer", "setupBubbles"]
 - !private ["PSo18UIContentContainer", "title"]
@@ -906,17 +1026,20 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "JSQSystemSoundPlayer"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - ["PSo18UIFocusEnvironment", "addMessage"]
+- ["PSo18UIFocusEnvironment", "cancelTapped"]
 - ["PSo18UIFocusEnvironment", "collectionView"]
 - !private ["PSo18UIFocusEnvironment", "collectionViewLayout"]
 - ["PSo18UIFocusEnvironment", "didPressSendButton"]
-- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
 - !private ["PSo18UIFocusEnvironment", "finishReceivingMessage"]
 - !private ["PSo18UIFocusEnvironment", "finishSendingMessage"]
+- ["PSo18UIFocusEnvironment", "friendName"]
 - ["PSo18UIFocusEnvironment", "incomingBubbleImageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "messages"]
 - ["PSo18UIFocusEnvironment", "observeMessages"]
 - ["PSo18UIFocusEnvironment", "outgoingBubbleImageView"]
+- ["PSo18UIFocusEnvironment", "recUsr"]
 - !private ["PSo18UIFocusEnvironment", "senderId"]
 - ["PSo18UIFocusEnvironment", "setupBubbles"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
@@ -926,6 +1049,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo10UIKeyInput", "textColor"]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGSizeZero"]
 - !private ["CSo11UIResponder", "DataService"]
@@ -948,17 +1072,20 @@ depends-member:
 - ["CSo11UIResponder", "UICollectionViewCell"]
 - !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "addMessage"]
+- ["CSo11UIResponder", "cancelTapped"]
 - ["CSo11UIResponder", "collectionView"]
 - !private ["CSo11UIResponder", "collectionViewLayout"]
 - ["CSo11UIResponder", "didPressSendButton"]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
 - !private ["CSo11UIResponder", "finishReceivingMessage"]
 - !private ["CSo11UIResponder", "finishSendingMessage"]
+- ["CSo11UIResponder", "friendName"]
 - ["CSo11UIResponder", "incomingBubbleImageView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "messages"]
 - ["CSo11UIResponder", "observeMessages"]
 - ["CSo11UIResponder", "outgoingBubbleImageView"]
+- ["CSo11UIResponder", "recUsr"]
 - !private ["CSo11UIResponder", "senderId"]
 - ["CSo11UIResponder", "setupBubbles"]
 - !private ["CSo11UIResponder", "textColor"]
@@ -975,16 +1102,19 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "JSQSystemSoundPlayer"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - ["PSo20UIScrollViewDelegate", "addMessage"]
+- ["PSo20UIScrollViewDelegate", "cancelTapped"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - ["PSo20UIScrollViewDelegate", "didPressSendButton"]
-- ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo20UIScrollViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo20UIScrollViewDelegate", "finishReceivingMessage"]
 - !private ["PSo20UIScrollViewDelegate", "finishSendingMessage"]
+- ["PSo20UIScrollViewDelegate", "friendName"]
 - ["PSo20UIScrollViewDelegate", "incomingBubbleImageView"]
 - ["PSo20UIScrollViewDelegate", "init"]
 - ["PSo20UIScrollViewDelegate", "messages"]
 - ["PSo20UIScrollViewDelegate", "observeMessages"]
 - ["PSo20UIScrollViewDelegate", "outgoingBubbleImageView"]
+- ["PSo20UIScrollViewDelegate", "recUsr"]
 - !private ["PSo20UIScrollViewDelegate", "senderId"]
 - ["PSo20UIScrollViewDelegate", "setupBubbles"]
 - !private ["PSo20UIScrollViewDelegate", "title"]
@@ -998,16 +1128,19 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "JSQSystemSoundPlayer"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - ["PSo16UIStateRestoring", "addMessage"]
+- ["PSo16UIStateRestoring", "cancelTapped"]
 - ["PSo16UIStateRestoring", "collectionView"]
 - ["PSo16UIStateRestoring", "didPressSendButton"]
-- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - !private ["PSo16UIStateRestoring", "finishReceivingMessage"]
 - !private ["PSo16UIStateRestoring", "finishSendingMessage"]
+- ["PSo16UIStateRestoring", "friendName"]
 - ["PSo16UIStateRestoring", "incomingBubbleImageView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "messages"]
 - ["PSo16UIStateRestoring", "observeMessages"]
 - ["PSo16UIStateRestoring", "outgoingBubbleImageView"]
+- ["PSo16UIStateRestoring", "recUsr"]
 - !private ["PSo16UIStateRestoring", "senderId"]
 - ["PSo16UIStateRestoring", "setupBubbles"]
 - !private ["PSo16UIStateRestoring", "title"]
@@ -1024,16 +1157,19 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "JSQSystemSoundPlayer"]
 - !private ["PSo18UITextViewDelegate", "UIColor"]
 - ["PSo18UITextViewDelegate", "addMessage"]
+- ["PSo18UITextViewDelegate", "cancelTapped"]
 - ["PSo18UITextViewDelegate", "collectionView"]
 - ["PSo18UITextViewDelegate", "didPressSendButton"]
-- ["PSo18UITextViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo18UITextViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo18UITextViewDelegate", "finishReceivingMessage"]
 - !private ["PSo18UITextViewDelegate", "finishSendingMessage"]
+- ["PSo18UITextViewDelegate", "friendName"]
 - ["PSo18UITextViewDelegate", "incomingBubbleImageView"]
 - ["PSo18UITextViewDelegate", "init"]
 - ["PSo18UITextViewDelegate", "messages"]
 - ["PSo18UITextViewDelegate", "observeMessages"]
 - ["PSo18UITextViewDelegate", "outgoingBubbleImageView"]
+- ["PSo18UITextViewDelegate", "recUsr"]
 - !private ["PSo18UITextViewDelegate", "senderId"]
 - ["PSo18UITextViewDelegate", "setupBubbles"]
 - !private ["PSo18UITextViewDelegate", "title"]
@@ -1047,17 +1183,20 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "JSQSystemSoundPlayer"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - ["PSo18UITraitEnvironment", "addMessage"]
+- ["PSo18UITraitEnvironment", "cancelTapped"]
 - ["PSo18UITraitEnvironment", "collectionView"]
 - !private ["PSo18UITraitEnvironment", "collectionViewLayout"]
 - ["PSo18UITraitEnvironment", "didPressSendButton"]
-- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - !private ["PSo18UITraitEnvironment", "finishReceivingMessage"]
 - !private ["PSo18UITraitEnvironment", "finishSendingMessage"]
+- ["PSo18UITraitEnvironment", "friendName"]
 - ["PSo18UITraitEnvironment", "incomingBubbleImageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "messages"]
 - ["PSo18UITraitEnvironment", "observeMessages"]
 - ["PSo18UITraitEnvironment", "outgoingBubbleImageView"]
+- ["PSo18UITraitEnvironment", "recUsr"]
 - !private ["PSo18UITraitEnvironment", "senderId"]
 - ["PSo18UITraitEnvironment", "setupBubbles"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
@@ -1069,6 +1208,7 @@ depends-member:
 - !private ["CSo6UIView", "collectionViewLayout"]
 - !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "textView"]
+- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGSizeZero"]
 - !private ["CSo16UIViewController", "DataService"]
@@ -1091,21 +1231,31 @@ depends-member:
 - ["CSo16UIViewController", "UICollectionViewCell"]
 - !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "addMessage"]
+- ["CSo16UIViewController", "cancelTapped"]
 - ["CSo16UIViewController", "collectionView"]
 - ["CSo16UIViewController", "didPressSendButton"]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
 - !private ["CSo16UIViewController", "finishReceivingMessage"]
 - !private ["CSo16UIViewController", "finishSendingMessage"]
+- ["CSo16UIViewController", "friendName"]
 - ["CSo16UIViewController", "incomingBubbleImageView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "messages"]
 - ["CSo16UIViewController", "observeMessages"]
 - ["CSo16UIViewController", "outgoingBubbleImageView"]
+- ["CSo16UIViewController", "recUsr"]
 - !private ["CSo16UIViewController", "senderId"]
 - ["CSo16UIViewController", "setupBubbles"]
 - !private ["CSo16UIViewController", "title"]
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - ["Ps10_ArrayType", "Generator"]
 - ["Ps10_ArrayType", "Index"]
 - ["Ps10_ArrayType", "SubSequence"]
@@ -1115,8 +1265,12 @@ depends-member:
 - ["Ps10_ArrayType", "init"]
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "blackColor"]
 - !private ["Ps24_ColorLiteralConvertible", "jsq_messageBubbleBlueColor"]
 - !private ["Ps24_ColorLiteralConvertible", "jsq_messageBubbleLightGrayColor"]
@@ -1179,6 +1333,7 @@ depends-nominal:
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
 - "C3esc6ChatVC"
 - "Ps14CollectionType"
 - "Ps10Comparable"
@@ -1187,11 +1342,14 @@ depends-nominal:
 - !private "C3esc11DataService"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "CSo13FDataSnapshot"
 - !private "OSC10FEventType"
 - !private "CSo6FQuery"
 - !private "CSo8Firebase"
+- !private "Sf"
 - "Ps16ForwardIndexType"
 - "Ps13GeneratorType"
 - "Ps8Hashable"
@@ -1199,6 +1357,10 @@ depends-nominal:
 - "Ps9Indexable"
 - "Vs17IndexingGenerator"
 - "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - "Ps21IntegerArithmeticType"
 - "Ps25IntegerLiteralConvertible"
 - "Ps11IntegerType"
@@ -1222,10 +1384,13 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "Sq"
+- !private "Ps16OutputStreamType"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
@@ -1233,8 +1398,11 @@ depends-nominal:
 - "Ps17SignedIntegerType"
 - "Ps16SignedNumberType"
 - !private "Vs5Slice"
+- !private "Ps10Streamable"
 - "Ps10Strideable"
 - !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1263,9 +1431,20 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_ColorLiteralConvertible"
 - "Ps24_DestructorSafeContainer"
 - "Ps14_Incrementable"
@@ -1276,6 +1455,7 @@ depends-nominal:
 - "Ps12_Reflectable"
 - "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
+- !private "objectForKey"
 - !private "subscript"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -1352,4 +1532,4 @@ depends-external:
 - "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/JSQMessagesViewController.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "159c35ad8997aa3ff984605ec04c46f4"
+interface-hash: "1ff6d8e1c302416dedf950b076fa0fa0"

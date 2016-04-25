@@ -14,6 +14,8 @@ class ChatVC: JSQMessagesViewController {
     
     // MARK: Properties
     var messages = [JSQMessage]()
+    var friendName: String?
+    var recUsr: String?
     
     // message bubble colors
     var outgoingBubbleImageView: JSQMessagesBubbleImage!
@@ -21,7 +23,7 @@ class ChatVC: JSQMessagesViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "chat"
+        title = recUsr
         setupBubbles()
         
         // No avatars
@@ -39,7 +41,7 @@ class ChatVC: JSQMessagesViewController {
                                      senderDisplayName: String!, date: NSDate!) {
         
         // Using childByAutoId(), you create a child reference with a unique key.
-        let itemRef = DataService.dataService.MESSAGE_REF.childByAutoId()
+        let itemRef = DataService.dataService.MESSAGE_REF.childByAppendingPath(recUsr).childByAutoId()
         
         // Create a dictionary to represent the message. A [String: AnyObject] works as a JSON-like object.
         let messageItem = [
@@ -50,11 +52,23 @@ class ChatVC: JSQMessagesViewController {
         // Save the value at the new child location.
         itemRef.setValue(messageItem)
         
+        // Save the value at the recieving location
+        DataService.dataService.BASE_REF.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            let uidRec = snapshot.value.objectForKey(self.recUsr) as! String
+            let itemRefRec = DataService.dataService.BASE_REF.childByAppendingPath("\(uidRec)/messages/\(senderDisplayName)").childByAutoId()
+            itemRefRec.setValue(messageItem)
+        })
+        
         // Play the canonical “message sent” sound.
         JSQSystemSoundPlayer.jsq_playMessageSentSound()
 
         // Complete the “send” action and reset the input toolbar to empty.
         finishSendingMessage()
+    }
+    
+    // returns to main screen
+    @IBAction func cancelTapped(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     // creates a new JSQMessage with a blank displayName and adds it to the data source.
@@ -67,7 +81,7 @@ class ChatVC: JSQMessagesViewController {
     private func observeMessages() {
         
         // creating a query that limits the synchronization to the last 25 messages.
-        let messagesQuery = DataService.dataService.MESSAGE_REF.queryLimitedToLast(25)
+        let messagesQuery = DataService.dataService.MESSAGE_REF.childByAppendingPath(recUsr).queryLimitedToLast(25)
         
         // Use the .ChildAdded event to observe for every child item that has been added, and will be added, at the messages location.
         messagesQuery.observeEventType(.ChildAdded) { (snapshot: FDataSnapshot!) in

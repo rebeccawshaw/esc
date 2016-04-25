@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C3esc17UserTableViewCell", ""]
 provides-dynamic-lookup:
-- "setSelected"
 - "dataLabel"
 - "awakeFromNib"
+- "setSelected"
 - "usrLabel"
 depends-top-level:
-- "UITableViewCell"
-- "UserTableViewCell"
-- "Bool"
 - "UILabel"
+- "UITableViewCell"
+- "Bool"
+- "UserTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "dataLabel"]

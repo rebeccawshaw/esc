@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C3esc7LoginVC", ""]
 provides-dynamic-lookup:
-- "signinTapped"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
-- "_email"
-- "viewDidAppear"
 - "_password"
+- "_email"
+- "signinTapped"
+- "viewDidLoad"
+- "viewDidAppear"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "BooleanLiteralType"
+- !private "UIAlertAction"
+- "StringLiteralType"
+- "UIViewController"
+- !private "!="
 - !private "UIAlertController"
 - "UITextField"
-- !private "UIAlertControllerStyle"
-- !private "!="
-- "StringLiteralType"
-- !private "DataService"
-- "UIButton"
-- "UIViewController"
-- "Bool"
-- !private "UIAlertActionStyle"
 - "LoginVC"
-- !private "UIAlertAction"
+- !private "UIAlertActionStyle"
+- "UIButton"
+- !private "UIAlertControllerStyle"
+- "BooleanLiteralType"
+- !private "DataService"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "BASE_REF"]
 - !private ["Ps9AnyObject", "DataService"]

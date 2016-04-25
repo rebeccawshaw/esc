@@ -12,21 +12,35 @@ class UserTableVC: UITableViewController {
 
     //MARK: properties
     var users = [User]()
+    var friendName: String?
 
     var timer: NSTimer?
     var time: NSDate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
         loadUsers()
+        
+        // gets time
+        DataService.dataService.DATA_REF.observeEventType(.Value, withBlock: { snapshot in
+            // formats time from stored string
+            let strTime = snapshot.value.objectForKey("time") as! String
+            let timeFormatter = NSDateFormatter()
+            timeFormatter.dateFormat = "hh:mm a"
+            self.time = timeFormatter.dateFromString(strTime)
+        })
         
         // expires user input settings to meet up
         // timer is set to call updateProfile() every second
         timer = NSTimer.scheduledTimerWithTimeInterval(1, target:self, selector: #selector(UserTableVC.updateProfile), userInfo: nil, repeats: true)
     }
     
-    // helper function to take action once timer is up
+    // helper function to take action once timer is up - doesn't reset information
     func updateProfile () {
         if (time?.timeIntervalSinceNow > 0) {
             //valid
@@ -35,55 +49,33 @@ class UserTableVC: UITableViewController {
             timer?.invalidate()
             
             // if current time is greater then set time, then set all values to empty so user goes offline
-            let obj: [String: AnyObject!] = ["esc": "", "time": "", "location": ""]
-            DataService.dataService.DATA_REF.updateChildValues(obj)
-
+//            let obj: [String: AnyObject!] = ["esc": "", "time": "", "location": ""]
+//            DataService.dataService.DATA_REF.updateChildValues(obj)
         }
     }
     
     // load data from users
     // own information gets put in first cell, connected friends get put in subsequent cells
     func loadUsers() {
+        users = [User]()
         
         // retrieve own data & put it in first row
         loadData(DataService.dataService.BASE_REF.authData.uid)
-        // Retrieve new posts as they are added to your database
-            
-        // retrieve data from friends
-        DataService.dataService.FRIEND_REF.observeEventType(.ChildChanged, withBlock: { snapshot in
+        
+        // retrieve data from friends & add in successive rows
+        DataService.dataService.FRIEND_REF.observeEventType(.Value, withBlock: { snapshot in
             for child in snapshot.children {
                 self.loadData(child.value)
             }
         })
     }
     
-    // helper function for loadUsers, loads data from username passed in as parameter
+    // helper function for loadUsers, loads data from userID
+    // pass in uid of user to get their information for the cells
     func loadData(uid: String) {
         DataService.dataService.BASE_REF.childByAppendingPath(uid).observeEventType(.Value, withBlock: { snapshot in
-            
-            var newUsers = [User]()
-            
-            let strName = snapshot.value.objectForKey("username") as! String
-            
-            DataService.dataService.BASE_REF.childByAppendingPath("\(uid)/esc").observeEventType(.Value, withBlock: {
-                snapshot in
-                
-                let stresc = snapshot.value.objectForKey("esc") as! String
-                let strTime = snapshot.value.objectForKey("time") as! String
-                let strLoc = snapshot.value.objectForKey("location") as! String
-                
-                let usr = User(username: strName, esc: stresc, time: strTime, loc: strLoc)!
-                
-                newUsers.append(usr)
-                
-                //format time
-                let timeFormatter = NSDateFormatter()
-                timeFormatter.dateFormat = "hh:mm a"
-                self.time = timeFormatter.dateFromString(strTime)
-                
-                self.users = newUsers
-                self.tableView.reloadData()
-            })
+            self.users.append(User(snapshot: snapshot))
+            self.tableView.reloadData()
         })
     }
     
@@ -140,19 +132,28 @@ class UserTableVC: UITableViewController {
     // exeutes whenever segue is performed
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
-        if segue.identifier == "change_esc" {   // go to change esc settings
-            // nothing
-        } else {    // go to chat
+        if segue.identifier == "goto_chat" {    // go to chat
+            
+            let indexPath = self.tableView.indexPathForSelectedRow!
+                
+            // get the cell associated with the indexPath selected.
+            let cell = self.tableView.cellForRowAtIndexPath(indexPath) as! UserTableViewCell!
+            
+            // get the label text to pass to destinationController
+            let recUserName = cell.usrLabel.text
+
             // Retrieve the destination view controller from segue and cast it to a UINavigationController.
             let navVC = segue.destinationViewController as! UINavigationController
             // Cast the first view controller of the UINavigationController as ChatViewController.
             let chatVC = navVC.viewControllers.first as! ChatVC
+            
             // Assign the local user’s ID to chatVc.senderId; this is the local ID that JSQMessagesViewController uses to coordinate messages.
             chatVC.senderId = DataService.dataService.BASE_REF.authData.uid
             // Make chatVc.senderDisplayName the username
             DataService.dataService.USER_REF.observeEventType(.Value, withBlock: { snapshot in
                 chatVC.senderDisplayName = snapshot.value.objectForKey("username") as! String
             })
+            chatVC.recUsr = recUserName
         }
     }
     

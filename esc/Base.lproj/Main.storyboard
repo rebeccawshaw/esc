@@ -72,7 +72,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="esc" id="pbv-53-99a">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Jak-Pu-VLS"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Jak-Pu-VLS">
+                            <connections>
+                                <action selector="cancelTapped:" destination="BYZ-38-t0r" id="srQ-zM-wfg"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="5jW-JK-meM">
                             <connections>
                                 <segue destination="AU5-9U-zFK" kind="unwind" unwindAction="unwindToESC:" id="Pt9-4Y-xJp"/>
@@ -209,7 +213,7 @@
                                 <connections>
                                     <outlet property="dataLabel" destination="yAC-g6-8w5" id="jdv-ix-Evj"/>
                                     <outlet property="usrLabel" destination="fwX-nV-xrJ" id="nU6-5B-OPe"/>
-                                    <segue destination="2GY-5x-4y6" kind="presentation" id="Tz1-Eo-WJF"/>
+                                    <segue destination="2GY-5x-4y6" kind="presentation" identifier="goto_chat" id="Tz1-Eo-WJF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -354,7 +358,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ed5-Fg-Uh5"/>
+                    <navigationItem key="navigationItem" id="ed5-Fg-Uh5">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HdJ-vM-V5l">
+                            <connections>
+                                <action selector="cancelTapped:" destination="tV8-iu-tWN" id="teo-m1-Pme"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tew-it-EsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

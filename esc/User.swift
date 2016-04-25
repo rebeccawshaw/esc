@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class User {
     // MARK: Properties
@@ -35,17 +36,17 @@ class User {
     // MARK: Initialization
     
     init?(username: String, esc: String, time: String, loc: String) {
-        
-        // Initialize stored properties.
         self._username = username
         self._esc = esc
         self._time = time
         self._loc = loc
-        
-        // Initialization should fail if there is no email
-        if username.isEmpty {
-            return nil
-        }
+    }
+    
+    init(snapshot: FDataSnapshot) {
+        _username = snapshot.value.objectForKey("username") as! String
+        _esc = snapshot.childSnapshotForPath("esc").value.objectForKey("esc") as! String
+        _time = snapshot.childSnapshotForPath("esc").value.objectForKey("time") as! String
+        _loc = snapshot.childSnapshotForPath("esc").value.objectForKey("location") as! String
     }
 }
     

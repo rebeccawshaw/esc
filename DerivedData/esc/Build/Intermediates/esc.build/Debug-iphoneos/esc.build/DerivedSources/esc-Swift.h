@@ -131,15 +131,17 @@ SWIFT_CLASS("_TtC3esc11AppDelegate")
 SWIFT_CLASS("_TtC3esc6ChatVC")
 @interface ChatVC : JSQMessagesViewController
 @property (nonatomic, copy) NSArray<JSQMessage *> * _Nonnull messages;
+@property (nonatomic, copy) NSString * _Nullable friendName;
+@property (nonatomic, copy) NSString * _Nullable recUsr;
 @property (nonatomic, strong) JSQMessagesBubbleImage * _Null_unspecified outgoingBubbleImageView;
 @property (nonatomic, strong) JSQMessagesBubbleImage * _Null_unspecified incomingBubbleImageView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didPressSendButton:(UIButton * _Null_unspecified)button withMessageText:(NSString * _Null_unspecified)text senderId:(NSString * _Null_unspecified)senderId senderDisplayName:(NSString * _Null_unspecified)senderDisplayName date:(NSDate * _Null_unspecified)date;
+- (IBAction)cancelTapped:(id _Nonnull)sender;
 - (void)addMessage:(NSString * _Nonnull)id text:(NSString * _Nonnull)text;
 - (id <JSQMessageData> _Null_unspecified)collectionView:(JSQMessagesCollectionView * _Null_unspecified)collectionView messageDataForItemAtIndexPath:(NSIndexPath * _Null_unspecified)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
-- (void)didReceiveMemoryWarning;
 - (id <JSQMessageBubbleImageDataSource> _Null_unspecified)collectionView:(JSQMessagesCollectionView * _Null_unspecified)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath * _Null_unspecified)indexPath;
 - (id <JSQMessageAvatarImageDataSource> _Null_unspecified)collectionView:(JSQMessagesCollectionView * _Null_unspecified)collectionView avatarImageDataForItemAtIndexPath:(NSIndexPath * _Null_unspecified)indexPath;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -185,9 +187,11 @@ SWIFT_CLASS("_TtC3esc8SignupVC")
 
 SWIFT_CLASS("_TtC3esc11UserTableVC")
 @interface UserTableVC : UITableViewController
+@property (nonatomic, copy) NSString * _Nullable friendName;
 @property (nonatomic, strong) NSTimer * _Nullable timer;
 @property (nonatomic, strong) NSDate * _Nullable time;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)updateProfile;
 - (void)loadUsers;
 - (void)loadData:(NSString * _Nonnull)uid;
@@ -223,14 +227,14 @@ SWIFT_CLASS("_TtC3esc5escVC")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified eatButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified studyButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified chillButton;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified pickTime;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified pickLocation;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
 @property (nonatomic, strong) NSString * _Nullable esc;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull pickLocationOptions;
 @property (nonatomic, strong) NSString * _Nullable location;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (IBAction)cancelTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)eatTapped:(UIButton * _Nonnull)sender;
 - (IBAction)studyTapped:(UIButton * _Nonnull)sender;
 - (IBAction)chillTapped:(UIButton * _Nonnull)sender;

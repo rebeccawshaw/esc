@@ -7,12 +7,12 @@ provides-member:
 - ["C3esc11DataService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Firebase"
-- "StringLiteralType"
 - "Dictionary"
 - "DataService"
-- !private "AnyObject"
 - "String"
+- !private "AnyObject"
+- "StringLiteralType"
+- "Firebase"
 depends-member:
 - !private ["Ps9AnyObject", "BASE_REF"]
 - !private ["Ps9AnyObject", "DATA_REF"]

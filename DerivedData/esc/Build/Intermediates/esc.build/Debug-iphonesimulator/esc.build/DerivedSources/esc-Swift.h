@@ -116,6 +116,8 @@ SWIFT_CLASS("_TtC3esc11AppDelegate")
 
 @class JSQMessage;
 @class JSQMessagesBubbleImage;
+@class UIButton;
+@class NSDate;
 @class JSQMessagesCollectionView;
 @class NSIndexPath;
 @protocol JSQMessageData;
@@ -129,13 +131,14 @@ SWIFT_CLASS("_TtC3esc11AppDelegate")
 SWIFT_CLASS("_TtC3esc6ChatVC")
 @interface ChatVC : JSQMessagesViewController
 @property (nonatomic, copy) NSArray<JSQMessage *> * _Nonnull messages;
+@property (nonatomic, copy) NSString * _Nullable friendName;
 @property (nonatomic, strong) JSQMessagesBubbleImage * _Null_unspecified outgoingBubbleImageView;
 @property (nonatomic, strong) JSQMessagesBubbleImage * _Null_unspecified incomingBubbleImageView;
 - (void)viewDidLoad;
-- (void)addMessage:(NSString * _Nonnull)id text:(NSString * _Nonnull)text;
 - (void)viewDidAppear:(BOOL)animated;
-- (void)viewDidDisappear:(BOOL)animated;
-- (void)didReceiveMemoryWarning;
+- (void)didPressSendButton:(UIButton * _Null_unspecified)button withMessageText:(NSString * _Null_unspecified)text senderId:(NSString * _Null_unspecified)senderId senderDisplayName:(NSString * _Null_unspecified)senderDisplayName date:(NSDate * _Null_unspecified)date;
+- (IBAction)cancelTapped:(id _Nonnull)sender;
+- (void)addMessage:(NSString * _Nonnull)id text:(NSString * _Nonnull)text;
 - (id <JSQMessageData> _Null_unspecified)collectionView:(JSQMessagesCollectionView * _Null_unspecified)collectionView messageDataForItemAtIndexPath:(NSIndexPath * _Null_unspecified)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (id <JSQMessageBubbleImageDataSource> _Null_unspecified)collectionView:(JSQMessagesCollectionView * _Null_unspecified)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath * _Null_unspecified)indexPath;
@@ -145,7 +148,6 @@ SWIFT_CLASS("_TtC3esc6ChatVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 @class UITextField;
 
 SWIFT_CLASS("_TtC3esc7LoginVC")
@@ -177,7 +179,6 @@ SWIFT_CLASS("_TtC3esc8SignupVC")
 @end
 
 @class NSTimer;
-@class NSDate;
 @class UITableView;
 @class UITableViewCell;
 @class UIStoryboardSegue;
@@ -185,15 +186,18 @@ SWIFT_CLASS("_TtC3esc8SignupVC")
 
 SWIFT_CLASS("_TtC3esc11UserTableVC")
 @interface UserTableVC : UITableViewController
+@property (nonatomic, copy) NSString * _Nullable friendName;
 @property (nonatomic, strong) NSTimer * _Nullable timer;
 @property (nonatomic, strong) NSDate * _Nullable time;
 - (void)viewDidLoad;
 - (void)updateProfile;
 - (void)loadUsers;
+- (void)loadData:(NSString * _Nonnull)uid;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (IBAction)unwindToESC:(UIStoryboardSegue * _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)signOutTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -221,14 +225,14 @@ SWIFT_CLASS("_TtC3esc5escVC")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified eatButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified studyButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified chillButton;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
 @property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified pickTime;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified pickLocation;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
 @property (nonatomic, strong) NSString * _Nullable esc;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull pickLocationOptions;
 @property (nonatomic, strong) NSString * _Nullable location;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (IBAction)cancelTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)eatTapped:(UIButton * _Nonnull)sender;
 - (IBAction)studyTapped:(UIButton * _Nonnull)sender;
 - (IBAction)chillTapped:(UIButton * _Nonnull)sender;

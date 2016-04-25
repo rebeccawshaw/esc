@@ -10,12 +10,15 @@ import UIKit
 
 class escVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    // MARK: Properties
     @IBOutlet weak var eatButton: UIButton!
     @IBOutlet weak var studyButton: UIButton!
     @IBOutlet weak var chillButton: UIButton!
-    @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var pickTime: UIDatePicker!
     @IBOutlet weak var pickLocation: UIPickerView!
+    
+    // MARK: Navigation
+    @IBOutlet weak var saveButton: UIBarButtonItem!    
     
     var esc: NSString?
     var pickLocationOptions: [String] = [String]()
@@ -24,13 +27,11 @@ class escVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // disables save button initially
+        saveButton.enabled = false
+        
         self.pickLocation.delegate = self
         self.pickLocation.dataSource = self
-        
-        // default value for esc - gets existing data
-        DataService.dataService.DATA_REF.observeEventType(.Value, withBlock: { snapshot in
-            self.esc = snapshot.value.objectForKey("esc") as! String
-        })
         
         // sets items for location selection
         pickLocationOptions = ["Commons", "Featheringill", "Rand", "Buttrick", "Stevenson"]
@@ -39,10 +40,13 @@ class escVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         location = pickLocationOptions[0]
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // cancels the view controller without changing any data
+    @IBAction func cancelTapped(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    // parameters for esc buttons
 
     // esc buttons to tap
     @IBAction func eatTapped(sender: UIButton) {
@@ -50,6 +54,7 @@ class escVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         eatButton.backgroundColor = UIColor.grayColor()
         studyButton.backgroundColor = UIColor.blackColor()
         chillButton.backgroundColor = UIColor.blackColor()
+        saveButton.enabled = true
     }
     
     @IBAction func studyTapped(sender: UIButton) {
@@ -57,6 +62,7 @@ class escVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         eatButton.backgroundColor = UIColor.blackColor()
         studyButton.backgroundColor = UIColor.grayColor()
         chillButton.backgroundColor = UIColor.blackColor()
+        saveButton.enabled = true
     }
     
     @IBAction func chillTapped(sender: UIButton) {
@@ -64,7 +70,11 @@ class escVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         eatButton.backgroundColor = UIColor.blackColor()
         studyButton.backgroundColor = UIColor.blackColor()
         chillButton.backgroundColor = UIColor.grayColor()
+        saveButton.enabled = true
     }
+    
+    
+    // parameters for the location picker view
     
     // The number of columns of data
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {

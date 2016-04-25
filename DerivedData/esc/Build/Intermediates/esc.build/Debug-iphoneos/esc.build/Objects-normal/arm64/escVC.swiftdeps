@@ -6,63 +6,59 @@ provides-nominal:
 provides-member:
 - ["C3esc5escVC", ""]
 provides-dynamic-lookup:
-- "location"
-- "saveButton"
-- "esc"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "chillButton"
-- "chillTapped"
-- "pickLocationOptions"
-- "eatButton"
-- "pickTime"
-- "viewDidLoad"
-- "eatTapped"
-- "studyTapped"
-- "didReceiveMemoryWarning"
-- "studyButton"
 - "numberOfComponentsInPickerView"
+- "studyTapped"
 - "pickLocation"
+- "pickLocationOptions"
+- "esc"
+- "viewDidLoad"
+- "cancelTapped"
+- "eatTapped"
+- "studyButton"
+- "chillButton"
+- "pickTime"
+- "saveButton"
+- "chillTapped"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "eatButton"
+- "location"
 depends-top-level:
-- "UIPickerViewDelegate"
-- !private "UIColor"
-- "UIPickerViewDataSource"
-- "NSString"
-- "UIButton"
-- "UIViewController"
-- "Int"
-- "UIDatePicker"
 - "String"
-- !private "StringLiteralType"
 - "UIBarButtonItem"
-- !private "Array"
-- "escVC"
-- !private "DataService"
 - "UIPickerView"
+- "UIButton"
+- "UIDatePicker"
+- "NSString"
+- "escVC"
+- !private "Array"
+- !private "BooleanLiteralType"
+- "Int"
+- "UIPickerViewDataSource"
+- !private "UIColor"
+- "UIPickerViewDelegate"
+- "UIViewController"
+- !private "StringLiteralType"
 depends-member:
-- !private ["Ps9AnyObject", "DATA_REF"]
-- !private ["Ps9AnyObject", "DataService"]
 - ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "blackColor"]
+- ["Ps9AnyObject", "cancelTapped"]
 - ["Ps9AnyObject", "chillButton"]
 - ["Ps9AnyObject", "chillTapped"]
-- !private ["Ps9AnyObject", "dataService"]
 - !private ["Ps9AnyObject", "dataSource"]
-- !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
-- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
 - ["Ps9AnyObject", "eatButton"]
 - ["Ps9AnyObject", "eatTapped"]
+- !private ["Ps9AnyObject", "enabled"]
 - ["Ps9AnyObject", "esc"]
 - !private ["Ps9AnyObject", "grayColor"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "location"]
 - ["Ps9AnyObject", "numberOfComponentsInPickerView"]
-- !private ["Ps9AnyObject", "objectForKey"]
-- !private ["Ps9AnyObject", "observeEventType"]
 - ["Ps9AnyObject", "pickLocation"]
 - ["Ps9AnyObject", "pickLocationOptions"]
 - ["Ps9AnyObject", "pickTime"]
@@ -70,7 +66,6 @@ depends-member:
 - ["Ps9AnyObject", "saveButton"]
 - ["Ps9AnyObject", "studyButton"]
 - ["Ps9AnyObject", "studyTapped"]
-- !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
@@ -96,26 +91,26 @@ depends-member:
 - ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - ["Ps21BitwiseOperationsType", "Distance"]
 - ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
-- !private ["Ps11CVarArgType", "DataService"]
 - ["Ps11CVarArgType", "Distance"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - ["Ps11CVarArgType", "String"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "blackColor"]
+- ["Ps11CVarArgType", "cancelTapped"]
 - ["Ps11CVarArgType", "chillButton"]
 - ["Ps11CVarArgType", "chillTapped"]
 - !private ["Ps11CVarArgType", "dataSource"]
 - !private ["Ps11CVarArgType", "delegate"]
-- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
 - ["Ps11CVarArgType", "eatButton"]
 - ["Ps11CVarArgType", "eatTapped"]
+- !private ["Ps11CVarArgType", "enabled"]
 - ["Ps11CVarArgType", "esc"]
 - !private ["Ps11CVarArgType", "grayColor"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "location"]
 - ["Ps11CVarArgType", "numberOfComponentsInPickerView"]
-- !private ["Ps11CVarArgType", "observeEventType"]
 - ["Ps11CVarArgType", "pickLocation"]
 - ["Ps11CVarArgType", "pickLocationOptions"]
 - ["Ps11CVarArgType", "pickTime"]
@@ -123,7 +118,6 @@ depends-member:
 - ["Ps11CVarArgType", "saveButton"]
 - ["Ps11CVarArgType", "studyButton"]
 - ["Ps11CVarArgType", "studyTapped"]
-- !private ["Ps11CVarArgType", "value"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - !private ["Ps14CollectionType", "Element"]
@@ -136,7 +130,6 @@ depends-member:
 - !private ["Ps14CollectionType", "subscript"]
 - ["Ps10Comparable", "Distance"]
 - ["Ps10Comparable", "IntegerLiteralType"]
-- !private ["Ps28CustomDebugStringConvertible", "DataService"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
@@ -146,20 +139,21 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "blackColor"]
+- ["Ps28CustomDebugStringConvertible", "cancelTapped"]
 - ["Ps28CustomDebugStringConvertible", "chillButton"]
 - ["Ps28CustomDebugStringConvertible", "chillTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
-- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
 - ["Ps28CustomDebugStringConvertible", "eatButton"]
 - ["Ps28CustomDebugStringConvertible", "eatTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "enabled"]
 - ["Ps28CustomDebugStringConvertible", "esc"]
 - !private ["Ps28CustomDebugStringConvertible", "grayColor"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "location"]
 - ["Ps28CustomDebugStringConvertible", "numberOfComponentsInPickerView"]
-- !private ["Ps28CustomDebugStringConvertible", "observeEventType"]
 - ["Ps28CustomDebugStringConvertible", "pickLocation"]
 - ["Ps28CustomDebugStringConvertible", "pickLocationOptions"]
 - ["Ps28CustomDebugStringConvertible", "pickTime"]
@@ -168,10 +162,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "studyButton"]
 - ["Ps28CustomDebugStringConvertible", "studyTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "DataService"]
 - ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "Generator"]
@@ -183,20 +175,21 @@ depends-member:
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "blackColor"]
+- ["Ps23CustomStringConvertible", "cancelTapped"]
 - ["Ps23CustomStringConvertible", "chillButton"]
 - ["Ps23CustomStringConvertible", "chillTapped"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
-- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
 - ["Ps23CustomStringConvertible", "eatButton"]
 - ["Ps23CustomStringConvertible", "eatTapped"]
+- !private ["Ps23CustomStringConvertible", "enabled"]
 - ["Ps23CustomStringConvertible", "esc"]
 - !private ["Ps23CustomStringConvertible", "grayColor"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "location"]
 - ["Ps23CustomStringConvertible", "numberOfComponentsInPickerView"]
-- !private ["Ps23CustomStringConvertible", "observeEventType"]
 - ["Ps23CustomStringConvertible", "pickLocation"]
 - ["Ps23CustomStringConvertible", "pickLocationOptions"]
 - ["Ps23CustomStringConvertible", "pickTime"]
@@ -205,32 +198,28 @@ depends-member:
 - ["Ps23CustomStringConvertible", "studyButton"]
 - ["Ps23CustomStringConvertible", "studyTapped"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["C3esc11DataService", "DATA_REF"]
-- !private ["C3esc11DataService", "dataService"]
-- !private ["Ps9Equatable", "DataService"]
 - ["Ps9Equatable", "Distance"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIColor"]
-- !private ["Ps9Equatable", "Value"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "blackColor"]
+- ["Ps9Equatable", "cancelTapped"]
 - ["Ps9Equatable", "chillButton"]
 - ["Ps9Equatable", "chillTapped"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "delegate"]
-- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "dismissViewControllerAnimated"]
 - ["Ps9Equatable", "eatButton"]
 - ["Ps9Equatable", "eatTapped"]
+- !private ["Ps9Equatable", "enabled"]
 - ["Ps9Equatable", "esc"]
 - !private ["Ps9Equatable", "grayColor"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "location"]
 - ["Ps9Equatable", "numberOfComponentsInPickerView"]
-- !private ["Ps9Equatable", "observeEventType"]
 - ["Ps9Equatable", "pickLocation"]
 - ["Ps9Equatable", "pickLocationOptions"]
 - ["Ps9Equatable", "pickTime"]
@@ -238,37 +227,31 @@ depends-member:
 - ["Ps9Equatable", "saveButton"]
 - ["Ps9Equatable", "studyButton"]
 - ["Ps9Equatable", "studyTapped"]
-- !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- !private ["CSo13FDataSnapshot", "value"]
-- !private ["OSC10FEventType", "Value"]
-- !private ["CSo6FQuery", "observeEventType"]
-- !private ["CSo8Firebase", "observeEventType"]
 - ["Ps16ForwardIndexType", "Distance"]
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - ["Ps13GeneratorType", "Element"]
-- !private ["Ps8Hashable", "DataService"]
 - ["Ps8Hashable", "Distance"]
 - ["Ps8Hashable", "IntegerLiteralType"]
 - ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIColor"]
-- !private ["Ps8Hashable", "Value"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "blackColor"]
+- ["Ps8Hashable", "cancelTapped"]
 - ["Ps8Hashable", "chillButton"]
 - ["Ps8Hashable", "chillTapped"]
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "delegate"]
-- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "dismissViewControllerAnimated"]
 - ["Ps8Hashable", "eatButton"]
 - ["Ps8Hashable", "eatTapped"]
+- !private ["Ps8Hashable", "enabled"]
 - ["Ps8Hashable", "esc"]
 - !private ["Ps8Hashable", "grayColor"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "location"]
 - ["Ps8Hashable", "numberOfComponentsInPickerView"]
-- !private ["Ps8Hashable", "observeEventType"]
 - ["Ps8Hashable", "pickLocation"]
 - ["Ps8Hashable", "pickLocationOptions"]
 - ["Ps8Hashable", "pickTime"]
@@ -276,7 +259,6 @@ depends-member:
 - ["Ps8Hashable", "saveButton"]
 - ["Ps8Hashable", "studyButton"]
 - ["Ps8Hashable", "studyTapped"]
-- !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Element"]
@@ -322,18 +304,19 @@ depends-member:
 - !private ["Ps16MutableSliceable", "count"]
 - ["Ps16MutableSliceable", "init"]
 - !private ["Ps16MutableSliceable", "subscript"]
-- !private ["PSo8NSCoding", "DataService"]
 - ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "blackColor"]
+- ["PSo8NSCoding", "cancelTapped"]
 - ["PSo8NSCoding", "chillButton"]
 - ["PSo8NSCoding", "chillTapped"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
-- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - ["PSo8NSCoding", "eatButton"]
 - ["PSo8NSCoding", "eatTapped"]
+- !private ["PSo8NSCoding", "enabled"]
 - ["PSo8NSCoding", "esc"]
 - !private ["PSo8NSCoding", "grayColor"]
 - ["PSo8NSCoding", "init"]
@@ -350,12 +333,12 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "blackColor"]
 - !private ["PSo9NSCopying", "grayColor"]
-- !private ["PSo26NSExtensionRequestHandling", "DataService"]
 - ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- ["PSo26NSExtensionRequestHandling", "cancelTapped"]
 - ["PSo26NSExtensionRequestHandling", "chillButton"]
 - ["PSo26NSExtensionRequestHandling", "chillTapped"]
-- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - ["PSo26NSExtensionRequestHandling", "eatButton"]
 - ["PSo26NSExtensionRequestHandling", "eatTapped"]
 - ["PSo26NSExtensionRequestHandling", "esc"]
@@ -371,7 +354,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "studyTapped"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["CSo8NSObject", "DataService"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSString"]
 - ["CSo8NSObject", "String"]
@@ -382,19 +364,20 @@ depends-member:
 - ["CSo8NSObject", "UIPickerView"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "blackColor"]
+- ["CSo8NSObject", "cancelTapped"]
 - ["CSo8NSObject", "chillButton"]
 - ["CSo8NSObject", "chillTapped"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "delegate"]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - ["CSo8NSObject", "eatButton"]
 - ["CSo8NSObject", "eatTapped"]
+- !private ["CSo8NSObject", "enabled"]
 - ["CSo8NSObject", "esc"]
 - !private ["CSo8NSObject", "grayColor"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "location"]
 - ["CSo8NSObject", "numberOfComponentsInPickerView"]
-- !private ["CSo8NSObject", "observeEventType"]
 - ["CSo8NSObject", "pickLocation"]
 - ["CSo8NSObject", "pickLocationOptions"]
 - ["CSo8NSObject", "pickTime"]
@@ -402,26 +385,25 @@ depends-member:
 - ["CSo8NSObject", "saveButton"]
 - ["CSo8NSObject", "studyButton"]
 - ["CSo8NSObject", "studyTapped"]
-- !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "DataService"]
 - ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
+- ["PSo16NSObjectProtocol", "cancelTapped"]
 - ["PSo16NSObjectProtocol", "chillButton"]
 - ["PSo16NSObjectProtocol", "chillTapped"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
-- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - ["PSo16NSObjectProtocol", "eatButton"]
 - ["PSo16NSObjectProtocol", "eatTapped"]
+- !private ["PSo16NSObjectProtocol", "enabled"]
 - ["PSo16NSObjectProtocol", "esc"]
 - !private ["PSo16NSObjectProtocol", "grayColor"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "location"]
 - ["PSo16NSObjectProtocol", "numberOfComponentsInPickerView"]
-- !private ["PSo16NSObjectProtocol", "observeEventType"]
 - ["PSo16NSObjectProtocol", "pickLocation"]
 - ["PSo16NSObjectProtocol", "pickLocationOptions"]
 - ["PSo16NSObjectProtocol", "pickTime"]
@@ -429,7 +411,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "saveButton"]
 - ["PSo16NSObjectProtocol", "studyButton"]
 - ["PSo16NSObjectProtocol", "studyTapped"]
-- !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "blackColor"]
@@ -446,7 +427,6 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
 - ["Ps30RangeReplaceableCollectionType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
-- !private ["Ps16RawRepresentable", "Value"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
@@ -465,22 +445,23 @@ depends-member:
 - !private ["Vs5Slice", "_Element"]
 - ["Ps10Strideable", "Distance"]
 - ["Ps10Strideable", "IntegerLiteralType"]
-- !private ["SS", "deinit"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "enabled"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "delegate"]
-- !private ["PSo21UIAppearanceContainer", "DataService"]
+- !private ["PSo12UIAppearance", "enabled"]
 - ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- ["PSo21UIAppearanceContainer", "cancelTapped"]
 - ["PSo21UIAppearanceContainer", "chillButton"]
 - ["PSo21UIAppearanceContainer", "chillTapped"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
-- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - ["PSo21UIAppearanceContainer", "eatButton"]
 - ["PSo21UIAppearanceContainer", "eatTapped"]
 - ["PSo21UIAppearanceContainer", "esc"]
@@ -496,15 +477,17 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "studyTapped"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo15UIBarButtonItem", "enabled"]
+- !private ["CSo9UIBarItem", "enabled"]
 - !private ["CSo8UIButton", "backgroundColor"]
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["CSo7UIColor", "grayColor"]
-- !private ["PSo18UIContentContainer", "DataService"]
 - ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIColor"]
+- ["PSo18UIContentContainer", "cancelTapped"]
 - ["PSo18UIContentContainer", "chillButton"]
 - ["PSo18UIContentContainer", "chillTapped"]
-- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - ["PSo18UIContentContainer", "eatButton"]
 - ["PSo18UIContentContainer", "eatTapped"]
 - ["PSo18UIContentContainer", "esc"]
@@ -527,15 +510,15 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "delegate"]
-- !private ["PSo18UIFocusEnvironment", "DataService"]
 - ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- ["PSo18UIFocusEnvironment", "cancelTapped"]
 - ["PSo18UIFocusEnvironment", "chillButton"]
 - ["PSo18UIFocusEnvironment", "chillTapped"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
-- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UIFocusEnvironment", "eatButton"]
 - ["PSo18UIFocusEnvironment", "eatTapped"]
 - ["PSo18UIFocusEnvironment", "esc"]
@@ -553,10 +536,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo12UIPickerView", "dataSource"]
 - !private ["CSo12UIPickerView", "delegate"]
-- !private ["PSo22UIPickerViewDataSource", "DataService"]
 - ["PSo22UIPickerViewDataSource", "String"]
 - !private ["PSo22UIPickerViewDataSource", "UIColor"]
 - !private ["PSo22UIPickerViewDataSource", "chillButton"]
+- !private ["PSo22UIPickerViewDataSource", "dismissViewControllerAnimated"]
 - !private ["PSo22UIPickerViewDataSource", "eatButton"]
 - !private ["PSo22UIPickerViewDataSource", "esc"]
 - !private ["PSo22UIPickerViewDataSource", "location"]
@@ -564,12 +547,13 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "pickLocation"]
 - !private ["PSo22UIPickerViewDataSource", "pickLocationOptions"]
 - ["PSo22UIPickerViewDataSource", "pickerView"]
+- !private ["PSo22UIPickerViewDataSource", "saveButton"]
 - !private ["PSo22UIPickerViewDataSource", "studyButton"]
 - ["PSo22UIPickerViewDataSource", ""]
-- !private ["PSo20UIPickerViewDelegate", "DataService"]
 - ["PSo20UIPickerViewDelegate", "String"]
 - !private ["PSo20UIPickerViewDelegate", "UIColor"]
 - !private ["PSo20UIPickerViewDelegate", "chillButton"]
+- !private ["PSo20UIPickerViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo20UIPickerViewDelegate", "eatButton"]
 - !private ["PSo20UIPickerViewDelegate", "esc"]
 - !private ["PSo20UIPickerViewDelegate", "location"]
@@ -577,9 +561,9 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "pickLocation"]
 - !private ["PSo20UIPickerViewDelegate", "pickLocationOptions"]
 - ["PSo20UIPickerViewDelegate", "pickerView"]
+- !private ["PSo20UIPickerViewDelegate", "saveButton"]
 - !private ["PSo20UIPickerViewDelegate", "studyButton"]
 - ["PSo20UIPickerViewDelegate", ""]
-- !private ["CSo11UIResponder", "DataService"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSString"]
 - ["CSo11UIResponder", "String"]
@@ -589,11 +573,12 @@ depends-member:
 - ["CSo11UIResponder", "UIDatePicker"]
 - ["CSo11UIResponder", "UIPickerView"]
 - !private ["CSo11UIResponder", "backgroundColor"]
+- ["CSo11UIResponder", "cancelTapped"]
 - ["CSo11UIResponder", "chillButton"]
 - ["CSo11UIResponder", "chillTapped"]
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
 - ["CSo11UIResponder", "eatButton"]
 - ["CSo11UIResponder", "eatTapped"]
 - ["CSo11UIResponder", "esc"]
@@ -608,12 +593,12 @@ depends-member:
 - ["CSo11UIResponder", "studyButton"]
 - ["CSo11UIResponder", "studyTapped"]
 - ["CSo11UIResponder", "viewDidLoad"]
-- !private ["PSo16UIStateRestoring", "DataService"]
 - ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
+- ["PSo16UIStateRestoring", "cancelTapped"]
 - ["PSo16UIStateRestoring", "chillButton"]
 - ["PSo16UIStateRestoring", "chillTapped"]
-- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - ["PSo16UIStateRestoring", "eatButton"]
 - ["PSo16UIStateRestoring", "eatTapped"]
 - ["PSo16UIStateRestoring", "esc"]
@@ -631,15 +616,15 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo21UITableViewDataSource", "dataSource"]
 - !private ["PSo21UITableViewDataSource", "delegate"]
-- !private ["PSo18UITraitEnvironment", "DataService"]
 - ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- ["PSo18UITraitEnvironment", "cancelTapped"]
 - ["PSo18UITraitEnvironment", "chillButton"]
 - ["PSo18UITraitEnvironment", "chillTapped"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
-- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UITraitEnvironment", "eatButton"]
 - ["PSo18UITraitEnvironment", "eatTapped"]
 - ["PSo18UITraitEnvironment", "esc"]
@@ -658,7 +643,6 @@ depends-member:
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "dataSource"]
 - !private ["CSo6UIView", "delegate"]
-- !private ["CSo16UIViewController", "DataService"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSString"]
 - ["CSo16UIViewController", "String"]
@@ -667,9 +651,10 @@ depends-member:
 - !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UIDatePicker"]
 - ["CSo16UIViewController", "UIPickerView"]
+- ["CSo16UIViewController", "cancelTapped"]
 - ["CSo16UIViewController", "chillButton"]
 - ["CSo16UIViewController", "chillTapped"]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
 - ["CSo16UIViewController", "eatButton"]
 - ["CSo16UIViewController", "eatTapped"]
 - ["CSo16UIViewController", "esc"]
@@ -738,7 +723,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "subscript"]
 - ["Ps18_SignedIntegerType", "Distance"]
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
-- !private ["C3esc5escVC", "DataService"]
 - ["C3esc5escVC", "Int"]
 - ["C3esc5escVC", "NSString"]
 - ["C3esc5escVC", "String"]
@@ -747,10 +731,11 @@ depends-member:
 - !private ["C3esc5escVC", "UIColor"]
 - ["C3esc5escVC", "UIDatePicker"]
 - ["C3esc5escVC", "UIPickerView"]
+- ["C3esc5escVC", "cancelTapped"]
 - ["C3esc5escVC", "chillButton"]
 - ["C3esc5escVC", "chillTapped"]
 - ["C3esc5escVC", "deinit"]
-- ["C3esc5escVC", "didReceiveMemoryWarning"]
+- !private ["C3esc5escVC", "dismissViewControllerAnimated"]
 - ["C3esc5escVC", "eatButton"]
 - ["C3esc5escVC", "eatTapped"]
 - ["C3esc5escVC", "esc"]
@@ -777,12 +762,7 @@ depends-nominal:
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
-- !private "C3esc11DataService"
 - "Ps9Equatable"
-- !private "CSo13FDataSnapshot"
-- !private "OSC10FEventType"
-- !private "CSo6FQuery"
-- !private "CSo8Firebase"
 - "Ps16ForwardIndexType"
 - "Ps13GeneratorType"
 - "Ps8Hashable"
@@ -806,16 +786,16 @@ depends-nominal:
 - !private "Sq"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
-- !private "Ps16RawRepresentable"
 - "Ps12SequenceType"
 - "Ps17SignedIntegerType"
 - "Ps16SignedNumberType"
 - !private "Vs5Slice"
 - "Ps10Strideable"
-- !private "SS"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
+- !private "CSo9UIBarItem"
 - !private "CSo8UIButton"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
@@ -845,7 +825,6 @@ depends-nominal:
 - "Ps18_SignedIntegerType"
 - "C3esc5escVC"
 depends-dynamic-lookup:
-- !private "objectForKey"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Users/rebeccawshaw/Documents/Xcode/esc/esc/esc-Bridging-Header.h"
@@ -921,4 +900,4 @@ depends-external:
 - "/Users/rebeccawshaw/Documents/Xcode/esc/DerivedData/esc/Build/Products/Debug-iphoneos/JSQMessagesViewController.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
-interface-hash: "88b17c5600925bbf82ab1a969d441961"
+interface-hash: "b2b686022ae10aa83e6668a3b4345297"
