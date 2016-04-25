@@ -10,5 +10,6 @@ There will be three categories users can express availability in: eat, study, an
 
 If the private feature has been turned off, the user can connect with strangers who have also signed up for the app. User’s will be limited to the college campus community to encourage safe meet ups.
 
+-- picture
 
 Caption: The picture represents the three choices that the user can make: eat, study, or chill. Once the user presses one of the buttons, the duration and location of availability will need to be specified.
