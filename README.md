@@ -10,6 +10,6 @@ There will be three categories users can express availability in: eat, study, an
 
 The user can connect with strangers who are in their friends list with the chat feature. Simply press on their cell to open up a private connection between the two users.
 
--- picture
+![Alt text](images/esc_view.png?raw=true "Optional Title")
 
 Caption: The picture represents the three choices that the user can make: eat, study, or chill. Once the user presses one of the buttons, the duration and location of availability will need to be specified or the default values will be used.
